@@ -1,11 +1,25 @@
-# Neved4's Homebrew Tap
+# `homebrew-tap` - brew taps and formulae! 💎
 
-## How do I install these formulae?
+Custom [Homebrew] taps for [Neved4]'s utils.
 
-`brew install neved4/tap/<formula>`
+## Getting started
 
-Or `brew tap neved4/tap` and then `brew install <formula>`.
+Tap this repository:
+```console
+$ brew tap Neved4/brew-tap
+```
 
-## Documentation
+Install the formulae in [Formula](Formula):
+```console
+$ brew install <formula>
+```
 
-`brew help`, `man brew`, or check [Homebrew's documentation](https://docs.brew.sh).
+## License
+                 
+`homebrew-tap` is licensed under the terms of the [MIT License].
+
+See the [LICENSE](LICENSE) file for details.
+
+[MIT License]: https://opensource.org/license/mit/
+[Homebrew]: https://brew.sh/
+[Neved4]: https://github.com/Neved4
