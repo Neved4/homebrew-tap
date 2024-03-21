@@ -9,6 +9,13 @@ Custom [Homebrew] taps for [Neved4]'s utils.
 ```sh
 brew install Neved4/tap/sw_name
 ```
+
+[tmbackup] - Seamless Time Machine backups! 📟
+
+```sh
+brew install Neved4/tap/tmbackup
+```
+
 [twc] - Tiny world clock in C! 🛠️
 
 ```sh
@@ -43,5 +50,6 @@ See the [LICENSE](LICENSE) file for details.
 [Homebrew]: https://brew.sh/
 [Neved4]: https://github.com/Neved4
 [sw_name]: https://github.com/Neved4/sw_name
+[tmbackup]: https://github.com/Neved4/tmbackup
 [twc]: https://github.com/Neved4/twc
 [twc-go]: https://github.com/Neved4/twc-go
