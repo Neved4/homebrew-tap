@@ -15,7 +15,7 @@ class TwcGo < Formula
   conflicts_with "twc", because: "both install `twc` binaries"
 
   def install
-    system "go", "build", *std_go_args, "twc.go"
+    system "go", "build", *std_go_args(ldflags: "-s -w"), "twc.go"
     bin.install_symlink "twc-go" => "twc"
     doc.install "README.md"
   end
