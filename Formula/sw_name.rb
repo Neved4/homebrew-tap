@@ -1,9 +1,10 @@
 class SwName < Formula
   desc "Print macOS friendly names!"
   homepage "https://github.com/Neved4/sw_name"
-  url "https://github.com/Neved4/sw_name/archive/ae6b7f0804452b5aacc0cccb55aae7dbcc717869.tar.gz"
-  sha256 "b3172572a172586b9ddbac7e129786d5469a3c9db86ac0fa67d8aaea8cd200ae"
+  url "https://github.com/Neved4/sw_name/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "974284d54bdc02cd9f4d4e6e150120c706b6f25bcdfc0089a96680bc6bf719e8"
   license "MIT"
+  version_scheme 1
   head "https://github.com/Neved4/sw_name.git", branch: "main"
 
   livecheck do
