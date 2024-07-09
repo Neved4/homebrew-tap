@@ -14,8 +14,10 @@ class SwName < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/sw_name-0.1.0"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "db9a53d1af449117fb2d26e691d359f6917ff9db51ca9a8022e965e546d03337"
-    sha256 cellar: :any_skip_relocation, ventura:      "eec1de1ca14568ea077bcb74049e002c1456db693da0ed68cc82402efff0375f"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "2d1b59d9b48ad0e688a9129c53ee43eb76cbcc8bf5e2fd56b5b5c44538036273"
+    sha256 cellar: :any_skip_relocation, ventura:      "3c453a0276bc85e7de68de5e8a1c4deb1a0c55b6c6308a976a7a2378ec055651"
+    sha256 cellar: :any_skip_relocation, monterey:     "c7e47048aad7b79f077eebc06886979748249d1e9574ba969bc02588e237cdb9"
   end
 
   depends_on :macos
