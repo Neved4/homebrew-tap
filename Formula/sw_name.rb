@@ -26,7 +26,7 @@ class SwName < Formula
   end
 
   test do
-    desired_output = shell_output("sw_vers --productVersion").strip
+    desired_output = shell_output("sw_vers -productVersion").strip
     assert_equal desired_output, shell_output("#{bin}/sw_name --productVersion").strip
   end
 end
