@@ -1,9 +1,10 @@
 class Tmbackup < Formula
   desc "Seamless Time Machine backups!"
   homepage "https://github.com/Neved4/tmbackup"
-  url "https://github.com/Neved4/tmbackup/archive/8a3878bd4333106674725ed218fe6a17ff7c65c3.tar.gz"
-  sha256 "e8c66ecfb77fb02eb818d8c8784546fa7412f7943b542932f41e9849d9206795"
+  url "https://github.com/Neved4/tmbackup/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "9530bc9f64bc1ea2d4f61a5120af745db232191a4826a8beb68ab223afb8ade8"
   license "MIT"
+  version_scheme 1
   head "https://github.com/Neved4/tmbackup.git", branch: "main"
 
   livecheck do
