@@ -12,6 +12,7 @@ class Twc < Formula
   end
 
   depends_on "make" => :build
+
   conflicts_with "twc-go", because: "both install `twc` binaries"
 
   def install
