@@ -6,11 +6,13 @@ Custom [Homebrew] taps for [Neved4]'s utilities.
 
 ### macOS 
 
-- [tmbackup] [<kbd>posix-shell</kbd>] [<kbd>awk</kbd>]  
+- [applist] [<kbd>posix-shell</kbd>]
+  List the paths to all installed apps.
+- [tmbackup] [<kbd>posix-shell</kbd>] [<kbd>awk</kbd>]
   Perform Time Machine backups on all connected drives.
-- [tmexcludes] [<kbd>posix-shell</kbd>]  
+- [tmexcludes] [<kbd>posix-shell</kbd>]
   Show, backup and restore Time Machine exclusions.
-- [sw_name] [<kbd>posix-shell</kbd>]  
+- [sw_name] [<kbd>posix-shell</kbd>]
   Drop-in replacement for `sw_vers` to retrieve macOS friendly names.
 
 ### Date and time ⌚️
@@ -43,6 +45,7 @@ See the [LICENSE](LICENSE) file for details.
 [Homebrew]: https://brew.sh/
 [MIT License]: https://opensource.org/license/mit/
 [Neved4]: https://github.com/Neved4
+[applist]: https://github.com/Neved4/applist
 [sw_name]: https://github.com/Neved4/sw_name
 [tmbackup]: https://github.com/Neved4/tmbackup
 [tmexcludes]: https://github.com/Neved4/tmexcludes
