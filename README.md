@@ -8,6 +8,8 @@
 
 - [applist] [<kbd>objective-c</kbd>] [<kbd>swift</kbd>] [<kbd>posix-shell</kbd>]  
   List the paths to all installed apps.
+- [apputils] [<kbd>fish-shell</kbd>] [<kbd>posix-shell</kbd>]  
+  List the paths to all installed apps.
 - [tmbackup] [<kbd>posix-shell</kbd>] [<kbd>awk</kbd>]  
   Perform Time Machine backups on all connected drives.
 - [tmexcludes] [<kbd>posix-shell</kbd>]  
@@ -40,6 +42,7 @@ See the [LICENSE](LICENSE) file for details.
 [<kbd>c</kbd>]: https://www.iso.org/standard/74528.html
 [<kbd>go</kbd>]: https://go.dev/
 [<kbd>iso-8601</kbd>]: https://www.iso.org/iso-8601-date-and-time-format.html
+[<kbd>fish-shell</kbd>]: https://fishshell.com/
 [<kbd>posix-shell</kbd>]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
 [<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
 [<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
@@ -48,6 +51,7 @@ See the [LICENSE](LICENSE) file for details.
 [MIT License]: https://opensource.org/license/mit/
 [Neved4]: https://github.com/Neved4
 [applist]: https://github.com/Neved4/applist
+[apputils]: https://github.com/Neved4/apputils
 [sw_name]: https://github.com/Neved4/sw_name
 [tmbackup]: https://github.com/Neved4/tmbackup
 [tmexcludes]: https://github.com/Neved4/tmexcludes
