@@ -11,6 +11,13 @@ class Apputils < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/apputils-0.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "21417f1ec4c717e1e85f96fecc20ec3bc5ecfecfa1e3ce99295fba8ef3614171"
+    sha256 cellar: :any_skip_relocation, ventura:      "74fa35695677c0c4eed152dc7a44ab625b8324087b8abe7c5a73da661551d720"
+    sha256 cellar: :any_skip_relocation, monterey:     "b9fc976c6aa5c572fa6b899e1afc49ff7b4021838c8244f3b04245bab8aa0137"
+  end
+
   depends_on :macos
 
   def install
