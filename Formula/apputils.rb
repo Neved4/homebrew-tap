@@ -2,7 +2,7 @@ class Apputils < Formula
   desc "Find macOS app paths!"
   homepage "https://github.com/Neved4/apputils"
   url "https://github.com/Neved4/apputils/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "1999cbf9d8503481aae148170d23840a8164a1caf88cb660a41c2ee436880a28"
+  sha256 "2958484a7d5ae117ab409631205be325baff95304484dc6aade1f6fe28a1c14d"
   license "MIT"
   head "https://github.com/Neved4/apputils.git", branch: "main"
 
