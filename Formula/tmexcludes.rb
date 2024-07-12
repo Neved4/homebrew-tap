@@ -2,7 +2,7 @@ class Tmexcludes < Formula
   desc "Manage Time Machine exclusions!"
   homepage "https://github.com/Neved4/tmexcludes"
   url "https://github.com/Neved4/tmexcludes/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "991f8be21d3da9007bfb62f066b37dde33fdfa9d11ce0d69a73863e06cbc37c6"
+  sha256 "882e92a726195ad8fef62fe070ad54a429adaa9a85d1ac271acce897dc713ce1"
   license "MIT"
   head "https://github.com/Neved4/tmbackup.git", branch: "main"
 
