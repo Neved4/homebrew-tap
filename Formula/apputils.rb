@@ -13,9 +13,10 @@ class Apputils < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/apputils-0.1.0"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "21417f1ec4c717e1e85f96fecc20ec3bc5ecfecfa1e3ce99295fba8ef3614171"
-    sha256 cellar: :any_skip_relocation, ventura:      "74fa35695677c0c4eed152dc7a44ab625b8324087b8abe7c5a73da661551d720"
-    sha256 cellar: :any_skip_relocation, monterey:     "b9fc976c6aa5c572fa6b899e1afc49ff7b4021838c8244f3b04245bab8aa0137"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "ef9e3889d53c994fc2bcc2c6a13a50e382532af14d30bbd5083981457240c7d4"
+    sha256 cellar: :any_skip_relocation, ventura:      "504ce46bde251c1048aebe1345e184d70c4546fb64faf7bada26953d6a3ee557"
+    sha256 cellar: :any_skip_relocation, monterey:     "d01d33c43881edc26adb93384ce282943a31421685419380bc3730c725949ab0"
   end
 
   depends_on :macos
