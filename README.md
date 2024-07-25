@@ -24,9 +24,15 @@
 - [gotwc] [<kbd>go</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>]  
   Go version that displays time zone information using the `tz database`.
 
-## Casks
+## External
 
-### External
+### Formulae 
+
+- [alire] <kbd>ada</kbd>  
+  Ada/SPARK package manager
+
+### Casks
+
 - [Cinny] [<kbd>rust</kbd>] [<kbd>javascript</kbd>]  
   Yet another matrix client for desktop.
 
@@ -55,6 +61,8 @@ See the [LICENSE](LICENSE) file for details.
 [<kbd>swift</kbd>]: https://developer.apple.com/swift/
 [<kbd>rust</kbd>]: https://www.rust-lang.org/
 [<kbd>javascript</kbd>]: https://ecma-international.org/publications-and-standards/standards/ecma-262/
+[<kbd>ada</kbd>]: https://www.adacore.com/about-ada
+[alire]: https://alire.ada.dev/
 [Homebrew]: https://brew.sh/
 [MIT License]: https://opensource.org/license/mit/
 [Neved4]: https://github.com/Neved4
