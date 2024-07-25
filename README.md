@@ -24,6 +24,12 @@
 - [gotwc] [<kbd>go</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>]  
   Go version that displays time zone information using the `tz database`.
 
+## Casks
+
+### External
+- [Cinny] [<kbd>rust</kbd>] [<kbd>javascript</kbd>]  
+  Yet another matrix client for desktop.
+
 ## Getting Started
 
 To install any of the formulas above, use the following command:
@@ -47,6 +53,8 @@ See the [LICENSE](LICENSE) file for details.
 [<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
 [<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
 [<kbd>swift</kbd>]: https://developer.apple.com/swift/
+[<kbd>rust</kbd>]: https://www.rust-lang.org/
+[<kbd>javascript</kbd>]: https://ecma-international.org/publications-and-standards/standards/ecma-262/
 [Homebrew]: https://brew.sh/
 [MIT License]: https://opensource.org/license/mit/
 [Neved4]: https://github.com/Neved4
@@ -57,3 +65,4 @@ See the [LICENSE](LICENSE) file for details.
 [tmexcludes]: https://github.com/Neved4/tmexcludes
 [gotwc]: https://github.com/Neved4/gotwc
 [twc]: https://github.com/Neved4/twc
+[Cinny]: https://github.com/cinnyapp/cinny-desktop
