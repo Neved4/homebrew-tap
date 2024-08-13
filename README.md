@@ -4,6 +4,8 @@
 
 ## Formulae & Casks
 
+<!-- START SYNC -->
+
 ### macOS 
 
 - [applist] [<kbd>objective-c</kbd>] [<kbd>swift</kbd>] [<kbd>posix-shell</kbd>]  
@@ -23,6 +25,8 @@ Drop-in replacement for `sw_vers` to retrieve macOS friendly names.
 Displays time zones using the tz database.
 - [gotwc] [<kbd>go</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>]  
 Go version, display different time zones from the tz database.
+
+<!-- END SYNC -->
 
 ### External & Third-party 🍺
 
