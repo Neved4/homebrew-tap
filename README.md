@@ -6,26 +6,6 @@
 
 <!-- START SYNC -->
 
-### macOS 
-
-- [applist] [<kbd>objective-c</kbd>] [<kbd>swift</kbd>] [<kbd>posix-shell</kbd>]  
-List the paths to all installed apps in macOS .
-- [apputils] [<kbd>fish-shell</kbd>] [<kbd>posix-shell</kbd>]  
-Find and list macOS app paths.
-- [tmbackup] [<kbd>posix-shell</kbd>] [<kbd>awk</kbd>]  
-Perform Time Machine backups on all connected drives.
-- [tmexcludes] [<kbd>posix-shell</kbd>]  
-Show, backup and restore Time Machine exclusions.
-- [sw_name] [<kbd>posix-shell</kbd>]  
-Drop-in replacement for `sw_vers` to retrieve macOS friendly names.
-
-### Date and time ⌚️
-
-- [twc] [<kbd>c</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>]  
-Displays time zones using the tz database.
-- [gotwc] [<kbd>go</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>]  
-Go version, display different time zones from the tz database.
-
 [<kbd>awk</kbd>]: https://github.com/onetrueawk/awk
 [<kbd>c</kbd>]: https://www.iso.org/standard/74528.html
 [<kbd>go</kbd>]: https://go.dev/
@@ -49,6 +29,26 @@ Go version, display different time zones from the tz database.
 [tmexcludes]: https://github.com/Neved4/tmexcludes
 [gotwc]: https://github.com/Neved4/gotwc
 [twc]: https://github.com/Neved4/twc
+
+### macOS 
+
+- [applist] [<kbd>objective-c</kbd>] [<kbd>swift</kbd>] [<kbd>posix-shell</kbd>]  
+List the paths to all installed apps in macOS .
+- [apputils] [<kbd>fish-shell</kbd>] [<kbd>posix-shell</kbd>]  
+Find and list macOS app paths.
+- [tmbackup] [<kbd>posix-shell</kbd>] [<kbd>awk</kbd>]  
+Perform Time Machine backups on all connected drives.
+- [tmexcludes] [<kbd>posix-shell</kbd>]  
+Show, backup and restore Time Machine exclusions.
+- [sw_name] [<kbd>posix-shell</kbd>]  
+Drop-in replacement for `sw_vers` to retrieve macOS friendly names.
+
+### Date and time ⌚️
+
+- [twc] [<kbd>c</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>]  
+Displays time zones using the tz database.
+- [gotwc] [<kbd>go</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>]  
+Go version, display different time zones from the tz database.
 
 <!-- END SYNC -->
 
