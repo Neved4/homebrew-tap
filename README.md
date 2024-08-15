@@ -35,6 +35,7 @@ Go version, display different time zones from the tz database.
 [<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
 [<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
 [<kbd>swift</kbd>]: https://developer.apple.com/swift/
+[<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
 [<kbd>rust</kbd>]: https://www.rust-lang.org/
 [<kbd>javascript</kbd>]: https://ecma-international.org/publications-and-standards/standards/ecma-262/
 [<kbd>ada</kbd>]: https://www.adacore.com/about-ada
@@ -57,9 +58,12 @@ Go version, display different time zones from the tz database.
 Ada/SPARK package manager.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]  
 Yet another matrix client for desktop.
+- [wpscan] [<kbd>ruby</kbd>]  
+WordPress security scanner.
 
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
+[wpscan]: https://github.com/wpscanteam/wpscan
 
 ## Getting Started
 
