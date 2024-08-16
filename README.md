@@ -14,6 +14,7 @@
 [<kbd>posix-shell</kbd>]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
 [<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
 [<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+[<kbd>python</kbd>]: https://www.python.org
 [<kbd>swift</kbd>]: https://developer.apple.com/swift/
 [<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
 [<kbd>rust</kbd>]: https://www.rust-lang.org/
@@ -58,11 +59,14 @@ Go version, display different time zones from the tz database.
 Ada/SPARK package manager.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]  
 Yet another matrix client for desktop.
+- [volatility] [<kbd>python</kbd>]  
+Advanced memory forensics framework.
 - [wpscan] [<kbd>ruby</kbd>]  
 WordPress security scanner.
 
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
+[volatility]: https://github.com/volatilityfoundation/volatility
 [wpscan]: https://github.com/wpscanteam/wpscan
 
 ## Getting Started
