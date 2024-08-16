@@ -10,16 +10,6 @@ class Volatility < Formula
   version_scheme 1
   head "https://github.com/volatilityfoundation/volatility3.git", branch: "develop"
 
-  bottle do
-    sha256 cellar: :any,                 arm64_sonoma:   "e3d99581f78a5d59430ff9f37c4ad70e6ab51d226eea13d3b27502b609672999"
-    sha256 cellar: :any,                 arm64_ventura:  "45217f65f7a113bdc19df88029588078fb405fb576aa3fe804b773d191d0293e"
-    sha256 cellar: :any,                 arm64_monterey: "f84bf96954fd4235a9d9c20023b8ae61f8eca5154680eae72fed19a89088381e"
-    sha256 cellar: :any,                 sonoma:         "62d9fee63af9040ac1a40e631a1b48646bc683d29bf1e1bdcbdd96b7076d4a57"
-    sha256 cellar: :any,                 ventura:        "1e7a5116183b757148dea8a17b68997c11b0241c9a897710b21b8233d144bfd5"
-    sha256 cellar: :any,                 monterey:       "f3d67210942472e9912fb052f79b539fbdd560a075a43b269838cbab17b49cbf"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "41c56045d87563f8c9c3125ab2470d48e71a6167722450baefab18dfde06be76"
-  end
-
   depends_on "rust" => :build # for rpds-py
   depends_on "openssl@3"
   depends_on "python@3.12"
