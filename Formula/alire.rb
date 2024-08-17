@@ -16,11 +16,11 @@ class Alire < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/alire-2.0.1"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "fa8258efcbaeef63b8e4f217ab71487cf218b45febb6ec386ae406aeef5ab7aa"
-    sha256 cellar: :any_skip_relocation, ventura:      "2cb31e6126253e2e953e0a004ebdc54311722d62c55e54e52be72ecf705441b4"
-    sha256 cellar: :any_skip_relocation, monterey:     "fe974b239506bc2fa517426645efa2b4997bf3db819c43d4c49916a1529be8ca"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5c0ebe6c7510af54cb7a6fd1a87423045e225f95a8cb5a4142ec9e8dad7f324e"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "e1380f80450080f3450d30fecc2016190c434817813e7bdcf9fde31d1c4decda"
+    sha256 cellar: :any_skip_relocation, ventura:      "fea03ea124aa2aa239bc48ec7b2c56d1127534ff9585c3fd762023776d912720"
+    sha256 cellar: :any_skip_relocation, monterey:     "217ac6e0f9eaa7cfb938cd07e115802fdaa05ac24cfa8820edd025989ca97e8c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "63a576a75faf669e280d51730d09ccccfd93848402b0af9dfa7d0feca2676f9d"
   end
 
   def install
