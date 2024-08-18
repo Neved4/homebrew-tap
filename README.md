@@ -16,6 +16,7 @@
 [<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
 [<kbd>python</kbd>]: https://www.python.org
 [<kbd>swift</kbd>]: https://developer.apple.com/swift/
+[<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
 [<kbd>rust</kbd>]: https://www.rust-lang.org/
 [<kbd>javascript</kbd>]: https://ecma-international.org/publications-and-standards/standards/ecma-262/
 [<kbd>ada</kbd>]: https://www.adacore.com/about-ada
@@ -59,10 +60,13 @@ Ada/SPARK package manager.
 Yet another matrix client for desktop.
 - [volatility] [<kbd>python</kbd>]
 Advanced memory forensics framework.
+- [wpscan] [<kbd>ruby</kbd>]
+WordPress security scanner.
 
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [volatility]: https://github.com/volatilityfoundation/volatility
+[wpscan]: https://github.com/wpscanteam/wpscan
 
 ## Getting Started
 
