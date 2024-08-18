@@ -7,6 +7,15 @@ class Wpscan < Formula
   revision 1
   head "https://github.com/wpscanteam/wpscan.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wpscan-3.8.25_1"
+    rebuild 1
+    sha256 cellar: :any,                 arm64_sonoma: "44d61b9c9ebe71ff48bd00690fce6625ff7f29adcffe101b5724d3cbdb97e2ef"
+    sha256 cellar: :any,                 ventura:      "decf0c0308a99e208e20a383f29f149e893e3c93f5deabc800902673b3049399"
+    sha256 cellar: :any,                 monterey:     "d721e69f9130b55c077c962854d895fd36e76e94cb982f2c4037d6f9c2b6d33c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "87c7ec11520680d7814a15da14ab5c789a93c7df9168759cc93f50ad7c569779"
+  end
+
   depends_on "ruby" # Some gems require >= ruby 2.7
   depends_on "xz" # for liblzma
 
