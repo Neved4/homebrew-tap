@@ -59,7 +59,7 @@ Go version, display different time zones from the tz database.
 Ada/SPARK package manager.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
 Yet another matrix client for desktop.
-- [volatility] [<kbd>python</kbd>]  
+- [volatility] [<kbd>python</kbd>]
 Advanced memory forensics framework.
 - [wpscan] [<kbd>ruby</kbd>]
 WordPress security scanner.
