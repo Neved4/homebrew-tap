@@ -9,11 +9,11 @@ class Wpscan < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/wpscan-3.8.25_1"
-    rebuild 1
-    sha256 cellar: :any,                 arm64_sonoma: "44d61b9c9ebe71ff48bd00690fce6625ff7f29adcffe101b5724d3cbdb97e2ef"
-    sha256 cellar: :any,                 ventura:      "decf0c0308a99e208e20a383f29f149e893e3c93f5deabc800902673b3049399"
-    sha256 cellar: :any,                 monterey:     "d721e69f9130b55c077c962854d895fd36e76e94cb982f2c4037d6f9c2b6d33c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "87c7ec11520680d7814a15da14ab5c789a93c7df9168759cc93f50ad7c569779"
+    rebuild 2
+    sha256 cellar: :any,                 arm64_sonoma: "9f9bc3921c9754785b8f5ce7e8f9449f111132f1cbac02004d835c93c25f7b9f"
+    sha256 cellar: :any,                 ventura:      "729cd5dfed29472d79ef8e04ff4c37451cbe198959784d5b3759547bade1649b"
+    sha256 cellar: :any,                 monterey:     "87a513021036e1ea9e25a116e679dc86bf6c84a79eef3dc1133b740feb553b06"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5592a1fe3a2b6fae8f025aa7980144ee727920037a9c0ec47668ef6d9473aa94"
   end
 
   depends_on "ruby" # Some gems require >= ruby 2.7
