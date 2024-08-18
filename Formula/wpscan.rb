@@ -19,6 +19,11 @@ class Wpscan < Formula
   depends_on "ruby" # Some gems require >= ruby 2.7
   depends_on "xz" # for liblzma
 
+  on_linux do
+    depends_on "libffi"
+    depends_on "zlib"
+  end
+
   # Runtime dependencies of wpscan
   # List with `gem install --explain wpscan`
 
