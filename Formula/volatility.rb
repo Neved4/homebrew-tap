@@ -10,6 +10,14 @@ class Volatility < Formula
   version_scheme 1
   head "https://github.com/volatilityfoundation/volatility3.git", branch: "develop"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/volatility-2.7.0"
+    sha256 cellar: :any,                 arm64_sonoma: "d1724d7dfb88c2aa48aad50626b18f4e99f8d1ea4c33e3c1fc7991525bf747ca"
+    sha256 cellar: :any,                 ventura:      "c3db305745e4b59887f22b6796c091235b159b0bb479effee5a03209dd4f1c7c"
+    sha256 cellar: :any,                 monterey:     "374218c29fdb41002e676aa8b80d63b0c8f0af8eed3a0af8b47ce1691079e92a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "197af9d14be25c1cb673cca147da5b6d392815930cfade845668730c535767ea"
+  end
+
   depends_on "rust" => :build # for rpds-py
   depends_on "openssl@3"
   depends_on "python@3.12"
