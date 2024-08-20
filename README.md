@@ -19,6 +19,7 @@
 [<kbd>swift</kbd>]: https://developer.apple.com/swift/
 [<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
 [<kbd>rust</kbd>]: https://www.rust-lang.org/
+[<kbd>java</kbd>]: https://dev.java/
 [<kbd>javascript</kbd>]: https://ecma-international.org/publications-and-standards/standards/ecma-262/
 [<kbd>ada</kbd>]: https://www.adacore.com/about-ada
 [Homebrew]: https://brew.sh/
@@ -61,12 +62,15 @@ Ada/SPARK package manager.
 Yet another matrix client for desktop.
 - [volatility] [<kbd>python</kbd>]
 Advanced memory forensics framework.
+- [withjava] [<kbd>rust</kbd>]
+Wrap commands in specific Java versions.
 - [wpscan] [<kbd>ruby</kbd>]
 WordPress security scanner.
 
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [volatility]: https://github.com/volatilityfoundation/volatility
+[withjava]: https://git.arielaw.ar/arisunz/with-java
 [wpscan]: https://github.com/wpscanteam/wpscan
 
 ## Getting Started
