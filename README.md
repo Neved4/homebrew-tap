@@ -60,6 +60,8 @@ Go version, display different time zones from the tz database.
 Ada/SPARK package manager.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
 Yet another matrix client for desktop.
+- [doas] [<kbd>c</kbd>]
+Execute commands as another user.
 - [volatility] [<kbd>python</kbd>]
 Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
@@ -69,6 +71,7 @@ WordPress security scanner.
 
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
+[doas]: https://github.com/slicer69/doas
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [wpscan]: https://github.com/wpscanteam/wpscan
