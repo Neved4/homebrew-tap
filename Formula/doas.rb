@@ -11,9 +11,9 @@ class Doas < Formula
     url :stable
   end
 
+  depends_on :macos
+
   def install
-    system "ln", "-s", "/opt/homebrew/bin/byacc", "/opt/homebrew/bin/yacc"
-    system "export", "PATH=/opt/homebrew/bin/yacc:$PATH"
     system "make", "all"
     bin.install "doas"
     man1.install "doas.1"
@@ -22,5 +22,12 @@ class Doas < Formula
     man1.install "doasedit.8"
     bin.install "vidoas"
     man1.install "vidoas.8"
+  end
+
+  def caveats
+    <<~EOS
+      To complete the installation, run the following commands manually with sudo:
+        sudo cp /etc/pam.d/sudo /etc/pam.d/doas
+    EOS
   end
 end
