@@ -68,6 +68,8 @@ Advanced memory forensics framework.
 Wrap commands in specific Java versions.
 - [wpscan] [<kbd>ruby</kbd>]
 WordPress security scanner.
+- [zen-browser] [<kbd>c++</kbd>]
+Zen web browser.
 
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
@@ -75,6 +77,7 @@ WordPress security scanner.
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [wpscan]: https://github.com/wpscanteam/wpscan
+[zen-browser]: https://www.zen-browser.app/
 
 ## Getting Started
 
