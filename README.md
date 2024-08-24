@@ -63,6 +63,8 @@ Ada/SPARK package manager.
 Yet another matrix client for desktop.
 - [doas] [<kbd>c</kbd>]
 Execute commands as another user.
+- [Ladybird] [<kbd>c++</kbd>]
+Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
 ASCII / ANSI art viewer.
 - [ungoogled-chromium] [<kbd>c++</kbd>]
@@ -75,6 +77,7 @@ Wrap commands in specific Java versions.
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [doas]: https://github.com/slicer69/doas
+[ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
 [ungoogled-chromium]: https://github.com/ungoogled-software/ungoogled-chromium
 [volatility]: https://github.com/volatilityfoundation/volatility
