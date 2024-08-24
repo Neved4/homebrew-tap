@@ -33,7 +33,7 @@ class Doas < Formula
 
   def caveats
     <<~EOS
-      To complete the installation, run the following commands manually with sudo:
+      To complete the installation, run the following command manually:
         sudo cp /etc/pam.d/sudo /etc/pam.d/doas
     EOS
   end
