@@ -20,7 +20,15 @@ cask "zen-browser" do
   app "Zen Browser.app"
 
   zap trash: [
-    "~/Library/Preferences/org.mozilla.com.zen.browser.plist",
-    "~/Library/Saved Application State/org.mozilla.com.zen.browser.savedState",
-  ]
+        "~/Library/Application Support/zen",
+        "~/Library/Preferences/org.mozilla.com.zen.browser.plist",
+        "~/Library/Preferences/org.mozilla.librewolf.plist",
+        "~/Library/Saved Application State/org.mozilla.librewolf.savedState",
+      ],
+      rmdir: [
+        "/Library/Mozilla",
+        "~/Library/Application Support/Mozilla",
+        "~/Library/Caches/Mozilla",
+        "~/Library/Caches/zen",
+      ]
 end
