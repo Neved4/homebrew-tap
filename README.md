@@ -8,13 +8,13 @@
 
 [<kbd>awk</kbd>]: https://github.com/onetrueawk/awk
 [<kbd>c</kbd>]: https://www.iso.org/standard/74528.html
+[<kbd>c++</kbd>]: https://isocpp.org
 [<kbd>go</kbd>]: https://go.dev/
 [<kbd>iso-8601</kbd>]: https://www.iso.org/iso-8601-date-and-time-format.html
 [<kbd>fish-shell</kbd>]: https://fishshell.com/
 [<kbd>posix-shell</kbd>]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
 [<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
 [<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
-[<kbd>python</kbd>]: https://www.python.org
 [<kbd>python</kbd>]: https://www.python.org
 [<kbd>swift</kbd>]: https://developer.apple.com/swift/
 [<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
