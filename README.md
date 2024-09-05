@@ -66,8 +66,6 @@ Execute commands as another user.
 Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
 Wrap commands in specific Java versions.
-- [wpscan] [<kbd>ruby</kbd>]
-WordPress security scanner.
 - [zen-browser] [<kbd>c++</kbd>]
 Zen web browser.
 
@@ -76,7 +74,6 @@ Zen web browser.
 [doas]: https://github.com/slicer69/doas
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
-[wpscan]: https://github.com/wpscanteam/wpscan
 [zen-browser]: https://www.zen-browser.app/
 
 ## Getting Started
