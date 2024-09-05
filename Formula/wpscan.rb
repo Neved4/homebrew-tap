@@ -7,12 +7,11 @@ class Wpscan < Formula
   head "https://github.com/wpscanteam/wpscan.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wpscan-3.8.25_1"
-    rebuild 2
-    sha256 cellar: :any,                 arm64_sonoma: "9f9bc3921c9754785b8f5ce7e8f9449f111132f1cbac02004d835c93c25f7b9f"
-    sha256 cellar: :any,                 ventura:      "729cd5dfed29472d79ef8e04ff4c37451cbe198959784d5b3759547bade1649b"
-    sha256 cellar: :any,                 monterey:     "87a513021036e1ea9e25a116e679dc86bf6c84a79eef3dc1133b740feb553b06"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5592a1fe3a2b6fae8f025aa7980144ee727920037a9c0ec47668ef6d9473aa94"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wpscan-3.8.27"
+    sha256 cellar: :any,                 arm64_sonoma: "75d3faa621ab7892d44cc6e997e9b4677b3035d2c6129a67f9bc14c50714843b"
+    sha256 cellar: :any,                 ventura:      "78c530c5a3bf171c5369a94825e31a9e8365f9e2817ef539d632822d8da2c401"
+    sha256 cellar: :any,                 monterey:     "7c111601bca6b891fb22f37cd79f3897730d05d558e8ad961a40cb977470ccfa"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1cbdf20ca91199d9a520626fd120343e1a395dcd7b7a6b360c16aea73cc4afb6"
   end
 
   depends_on "ruby" # Some gems require >= ruby 2.7
