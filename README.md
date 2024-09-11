@@ -21,6 +21,7 @@
 [<kbd>rust</kbd>]: https://www.rust-lang.org/
 [<kbd>java</kbd>]: https://dev.java/
 [<kbd>javascript</kbd>]: https://ecma-international.org/publications-and-standards/standards/ecma-262/
+[<kbd>typescript</kbd>]: https://www.typescriptlang.org/
 [<kbd>ada</kbd>]: https://www.adacore.com/about-ada
 [Homebrew]: https://brew.sh/
 [MIT License]: https://opensource.org/license/mit/
@@ -62,6 +63,8 @@ Ada/SPARK package manager.
 Yet another matrix client for desktop.
 - [doas] [<kbd>c</kbd>]
 Execute commands as another user.
+- [nfov] [<kbd>typescript</kbd>]
+ASCII / ANSI art viewer.
 - [volatility] [<kbd>python</kbd>]
 Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
@@ -72,6 +75,7 @@ Zen web browser.
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [doas]: https://github.com/slicer69/doas
+[nfov]: https://nrlquaker.github.io/nfov/
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [zen-browser]: https://www.zen-browser.app/
