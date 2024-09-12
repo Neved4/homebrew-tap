@@ -1,6 +1,6 @@
 cask "cinny" do
-  version "4.1.0"
-  sha256 "ae08fbb024525331d3dfcdb7a8f253eaa810d412e98e9a3fffe0e8ec941377d5"
+  version "4.2.0"
+  sha256 "a127955767c9c5e5f8819823ad477fe62a69b5cc381b3065132c21303af807d9"
 
   url "https://github.com/cinnyapp/cinny-desktop/releases/download/v#{version}/Cinny_desktop-universal.app.tar.gz"
   name "cinny"
