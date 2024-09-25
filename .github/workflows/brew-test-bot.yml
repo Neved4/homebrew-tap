@@ -42,3 +42,14 @@ jobs:
         with:
           name: bottles_${{ matrix.os }}
           path: '*.bottle.*'
+
+  check:
+    if: always()
+    needs:
+      - test-bot
+    runs-on: ubuntu-latest
+    steps:
+    - name: Determine whether the needed jobs succeeded or failed
+      uses: re-actors/alls-green@release/v1
+      with:
+        jobs: ${{ toJSON(needs) }}
