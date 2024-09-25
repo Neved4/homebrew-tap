@@ -7,9 +7,11 @@ cask "cardinal" do
   desc "Virtual modular synthesiser plugin"
   homepage "https://github.com/DISTRHO/Cardinal"
 
-  system "pkgutil", "--expand", "Cardinal-macOS-universal-10.15-#{version}.pkg"
-  system "sudo", "installer -pkg dpf-cardinal-resources.pkg -target /"
-  system "sudo", "installer -pkg dpf-cardinal-vst3bundles.pkg -target /"
+  system "curl", "-L", "-O", "#{url}"
+  system "pkgutil", "--expand", "Cardinal-macOS-universal-10.15-#{version}.pkg", "/opt/homebrew/Caskroom/cardinal/#{version}/tmpdir"
+  system "sudo", "installer", "-pkg", "/opt/homebrew/Caskroom/cardinal/#{version}/tmpdir/dpf-cardinal-resources.pkg", "-target", "/"
+  system "sudo", "installer", "-pkg", "/opt/homebrew/Caskroom/cardinal/#{version}/tmpdir/dpf-cardinal-vst3bundles.pkg", "-target", "/"
+  system "sudo", "rm", "-rf", "/opt/homebrew/Caskroom/cardinal/#{version}/tmpdir"
 
   uninstall pkgutil: [
     "studio.kx.distrho.cardinal.resources",
