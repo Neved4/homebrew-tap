@@ -69,8 +69,6 @@ ASCII / ANSI art viewer.
 Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
 Wrap commands in specific Java versions.
-- [zen-browser] [<kbd>c++</kbd>]
-Zen web browser.
 
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
@@ -78,7 +76,6 @@ Zen web browser.
 [nfov]: https://nrlquaker.github.io/nfov/
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
-[zen-browser]: https://www.zen-browser.app/
 
 ## Getting Started
 
