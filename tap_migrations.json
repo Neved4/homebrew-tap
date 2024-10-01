@@ -1,3 +1,4 @@
 {
-  "wpscan": "wpscanteam/homebrew-tap/wpscan"
+  "wpscan": "wpscanteam/homebrew-tap/wpscan",
+  "zen-browser": "homebrew/homebrew-cask/zen-browser"
 }
