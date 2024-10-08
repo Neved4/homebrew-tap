@@ -28,7 +28,7 @@ cask "ungoogled-chromium" do
   ]
   depends_on macos: ">= :big_sur"
 
-  app "Chromium.app", target: "Chromium Ungoogled.app"
+  app "Chromium.app", target: "Ungoogled Chromium.app"
 
   zap trash: [
     "~/Library/Application Support/Chromium",
