@@ -28,7 +28,7 @@ cask "eloston-chromium" do
   ]
   depends_on macos: ">= :big_sur"
 
-  app "Chromium.app"
+  app "Chromium.app", target: "Chromium Ungoogled.app"
 
   zap trash: [
     "~/Library/Application Support/Chromium",
