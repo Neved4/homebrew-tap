@@ -65,6 +65,8 @@ Yet another matrix client for desktop.
 Execute commands as another user.
 - [nfov] [<kbd>typescript</kbd>]
 ASCII / ANSI art viewer.
+- [ungoogled-chromium] [<kbd>c++</kbd>]
+Google Chromium, sans integration with Google.
 - [volatility] [<kbd>python</kbd>]
 Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
@@ -74,6 +76,7 @@ Wrap commands in specific Java versions.
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [doas]: https://github.com/slicer69/doas
 [nfov]: https://nrlquaker.github.io/nfov/
+[ungoogled-chromium]: https://github.com/ungoogled-software/ungoogled-chromium
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 
