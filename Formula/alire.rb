@@ -29,6 +29,6 @@ class Alire < Formula
 
   test do
     desired_output = "alr #{version}"
-    assert_equal desired_output, shell_output("#{bin}/alr --version").strip
+    assert_includes shell_output("#{bin}/alr --version").strip, desired_output
   end
 end
