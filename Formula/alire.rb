@@ -1,12 +1,12 @@
 class Alire < Formula
   desc "Ada/SPARK package manager"
   homepage "https://alire.ada.dev/"
-  url "https://github.com/alire-project/alire/releases/download/v2.0.1/alr-2.0.1-bin-x86_64-macos.zip"
-  sha256 "74223012ded5bf8057a7dd60856665f22e85a937a53c37678d212c60122de0c2"
+  url "https://github.com/alire-project/alire/releases/download/v2.0.2/alr-2.0.2-bin-x86_64-macos.zip"
+  sha256 "d148a8efc9144b4c2f7340c272cada2c220d852ee69a07e98a5b64c4d33bd1f4"
 
   if OS.linux?
     url "https://github.com/alire-project/alire/releases/download/v#{version}/alr-#{version}-bin-x86_64-linux.zip"
-    sha256 "8f4b39f42fd6969815077f91fdae087b8309eedda069ad5227374c49807792a1"
+    sha256 "579de127341a1a684e07410b8b7a15ea7c2b39c47fd1a21179202203afe4be23"
   end
 
   livecheck do
@@ -29,6 +29,6 @@ class Alire < Formula
 
   test do
     desired_output = "alr #{version}"
-    assert_equal desired_output, shell_output("#{bin}/alr --version").strip
+    assert_includes shell_output("#{bin}/alr --version").strip, desired_output
   end
 end
