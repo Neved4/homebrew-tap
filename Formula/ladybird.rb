@@ -5,7 +5,7 @@ class Ladybird < Formula
   version "0.1.0-b9e7c6a"
   sha256 "855a293849805d89c49cc29fd87a6b3e002f68d633f7ce52065e3260046be54b"
   license "BSD-2-Clause"
-  head "https://github.com/LadybirdBrowser/ladybird", branch: "master"
+  head "https://github.com/LadybirdBrowser/ladybird.git", branch: "master"
 
   depends_on "autoconf" => :build
   depends_on "autoconf-archive" => :build
