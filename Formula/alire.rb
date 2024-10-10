@@ -6,7 +6,7 @@ class Alire < Formula
 
   if OS.linux?
     url "https://github.com/alire-project/alire/releases/download/v#{version}/alr-#{version}-bin-x86_64-linux.zip"
-    sha256 "8f4b39f42fd6969815077f91fdae087b8309eedda069ad5227374c49807792a1"
+    sha256 "579de127341a1a684e07410b8b7a15ea7c2b39c47fd1a21179202203afe4be23"
   end
 
   livecheck do
