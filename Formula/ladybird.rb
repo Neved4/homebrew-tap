@@ -2,11 +2,10 @@ class Ladybird < Formula
   desc "Truly independent web browser (pre-alpha developer version)"
   homepage "https://ladybird.org/"
   url "https://github.com/LadybirdBrowser/ladybird/archive/b9e7c6a2f66d83c6af73bcc102c05d3056382c02.tar.gz"
-  version "0.1.0"
+  version "0.1.0-b9e7c6a"
   sha256 "855a293849805d89c49cc29fd87a6b3e002f68d633f7ce52065e3260046be54b"
   license "BSD-2-Clause"
   head "https://github.com/LadybirdBrowser/ladybird", branch: "master"
-  option "with-github-master", "Build from the latest GitHub master branch"
 
   depends_on "autoconf" => :build
   depends_on "autoconf-archive" => :build
@@ -18,6 +17,7 @@ class Ladybird < Formula
   depends_on "nasm" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
+  depends_on :macos
 
   def install
     ENV["CC"] = "#{Formula["llvm"].opt_bin}/clang"
