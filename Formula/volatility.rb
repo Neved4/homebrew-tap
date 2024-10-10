@@ -4,8 +4,8 @@ class Volatility < Formula
   desc "Advanced memory forensics framework"
   homepage "https://github.com/volatilityfoundation/volatility3"
   # Update pypi_formula_mappings.json to `{"package_name": "volatility3[full]"}` at version bump
-  url "https://files.pythonhosted.org/packages/c8/a8/68c5bbc799bd70fb87da2a6ea081200fa1742e2ee47de4680cbd3b1d47b7/volatility3-2.7.0.tar.gz"
-  sha256 "0b219b27b334cda79c0d7e244edba8e6928d9d0852e6d3462ba89e74f7ea92b5"
+  url "https://files.pythonhosted.org/packages/13/19/354d50bfe325d7a4e805f7e08f68b1b21a47efa0e23e454caea9a9a976de/volatility3-2.8.0.tar.gz"
+  sha256 "25a8997dad06970544da53f5cc8404e6a951b8d55be183615200a59e7b6a105c"
   license :cannot_represent
   version_scheme 1
   head "https://github.com/volatilityfoundation/volatility3.git", branch: "develop"
@@ -44,8 +44,8 @@ class Volatility < Formula
   end
 
   resource "pefile" do
-    url "https://files.pythonhosted.org/packages/78/c5/3b3c62223f72e2360737fd2a57c30e5b2adecd85e70276879609a7403334/pefile-2023.2.7.tar.gz"
-    sha256 "82e6114004b3d6911c77c3953e3838654b04511b8b66e8583db70c65998017dc"
+    url "https://files.pythonhosted.org/packages/03/4f/2750f7f6f025a1507cd3b7218691671eecfd0bbebebe8b39aa0fe1d360b8/pefile-2024.8.26.tar.gz"
+    sha256 "3ff6c5d8b43e8c37bb6e6dd5085658d658a7a0bdcd20b6a07b1fcfc1c4e9d632"
   end
 
   resource "pycryptodome" do
