@@ -6,23 +6,24 @@
 
 <!-- START SYNC -->
 
+[<kbd>ada</kbd>]: https://www.adacore.com/about-ada
 [<kbd>awk</kbd>]: https://github.com/onetrueawk/awk
-[<kbd>c</kbd>]: https://www.iso.org/standard/74528.html
 [<kbd>c++</kbd>]: https://isocpp.org
+[<kbd>c</kbd>]: https://www.iso.org/standard/74528.html
+[<kbd>fish-shell</kbd>]: https://fishshell.com/
 [<kbd>go</kbd>]: https://go.dev/
 [<kbd>iso-8601</kbd>]: https://www.iso.org/iso-8601-date-and-time-format.html
-[<kbd>fish-shell</kbd>]: https://fishshell.com/
-[<kbd>posix-shell</kbd>]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
-[<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
-[<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
-[<kbd>python</kbd>]: https://www.python.org
-[<kbd>swift</kbd>]: https://developer.apple.com/swift/
-[<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
-[<kbd>rust</kbd>]: https://www.rust-lang.org/
 [<kbd>java</kbd>]: https://dev.java/
 [<kbd>javascript</kbd>]: https://ecma-international.org/publications-and-standards/standards/ecma-262/
+[<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+[<kbd>posix-shell</kbd>]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
+[<kbd>python</kbd>]: https://www.python.org
+[<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
+[<kbd>rust</kbd>]: https://www.rust-lang.org/
+[<kbd>swift</kbd>]: https://developer.apple.com/swift/
 [<kbd>typescript</kbd>]: https://www.typescriptlang.org/
-[<kbd>ada</kbd>]: https://www.adacore.com/about-ada
+[<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
+
 [Homebrew]: https://brew.sh/
 [MIT License]: https://opensource.org/license/mit/
 [Neved4]: https://github.com/Neved4
@@ -65,20 +66,20 @@ Yet another matrix client for desktop.
 Execute commands as another user.
 - [nfov] [<kbd>typescript</kbd>]
 ASCII / ANSI art viewer.
+- [ungoogled-chromium] [<kbd>c++</kbd>]
+Google Chromium, sans integration with Google.
 - [volatility] [<kbd>python</kbd>]
 Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
 Wrap commands in specific Java versions.
-- [zen-browser] [<kbd>c++</kbd>]
-Zen web browser.
 
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [doas]: https://github.com/slicer69/doas
 [nfov]: https://nrlquaker.github.io/nfov/
+[ungoogled-chromium]: https://github.com/ungoogled-software/ungoogled-chromium
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
-[zen-browser]: https://www.zen-browser.app/
 
 ## Getting Started
 
