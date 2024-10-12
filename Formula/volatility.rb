@@ -73,6 +73,7 @@ class Volatility < Formula
   end
 
   test do
-    system bin/"vol", "--help"
+    desired_output = "Volatility 3 Framework #{version}
+    assert_includes shell_output("#{bin}/vol --help").strip, desired_output
   end
 end
