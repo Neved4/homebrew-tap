@@ -6,11 +6,6 @@ class Gotwc < Formula
   license "MIT"
   head "https://github.com/Neved4/gotwc.git", branch: "main"
 
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/gotwc-1.1.1"
     sha256 cellar: :any_skip_relocation, arm64_sonoma: "0b96aee46910236095b17dc66c18dd0ad01ff98e60df6e19fda0fb5d8e5476df"

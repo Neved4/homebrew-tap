@@ -7,11 +7,6 @@ cask "cinny" do
   desc "Yet another matrix client for desktop"
   homepage "https://github.com/cinnyapp/cinny-desktop"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   auto_updates true
   depends_on macos: ">= :high_sierra"
 

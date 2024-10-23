@@ -6,11 +6,6 @@ class Tmexcludes < Formula
   license "MIT"
   head "https://github.com/Neved4/tmbackup.git", branch: "main"
 
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/tmexcludes-0.1.0"
     rebuild 1
