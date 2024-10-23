@@ -11,17 +11,6 @@ cask "ungoogled-chromium" do
   desc "Google Chromium, sans integration with Google"
   homepage "https://ungoogled-software.github.io/"
 
-  livecheck do
-    url :url
-    regex(/^v?(\d+(?:[.-]\d+)+)(?:[._-]#{arch})?(?:[._-]+?(\d+(?:\.\d+)*))?$/i)
-    strategy :github_latest do |json, regex|
-      match = json["tag_name"]&.match(regex)
-      next if match.blank?
-
-      match[1]
-    end
-  end
-
   depends_on macos: ">= :big_sur"
 
   app "Chromium.app", target: "Ungoogled Chromium.app"
