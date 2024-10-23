@@ -11,6 +11,14 @@ class Nomore403 < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/nomore403-1.0.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "9be553c613eb550edc8992440d7bce8bdd37cf65cafcd490763e8fbc707fc668"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "1d63db5fc7314b56cda5713c33229ad6e1b1185928aaee5d97ec31be49f2b299"
+    sha256 cellar: :any_skip_relocation, ventura:       "4de2039cfcf97066ebefd5b16ab499c6cd9b46c4824906a62253a8f0ed0479a1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2417b618d44bd3213c75216935e67e8a07ee4dfdfc0c07e709aef85715d91e15"
+  end
+
   depends_on "go" => :build
 
   def install
