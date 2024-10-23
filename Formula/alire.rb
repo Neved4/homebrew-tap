@@ -9,11 +9,6 @@ class Alire < Formula
     sha256 "8f4b39f42fd6969815077f91fdae087b8309eedda069ad5227374c49807792a1"
   end
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/alire-2.0.1"
     rebuild 2

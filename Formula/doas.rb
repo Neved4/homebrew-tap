@@ -7,10 +7,6 @@ class Doas < Formula
   license "BSD-2-Clause"
   head "https://github.com/slicer69/doas.git", branch: "master"
 
-  livecheck do
-    url :stable
-  end
-
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/doas-6.3p12"
     sha256 cellar: :any_skip_relocation, arm64_sonoma: "3973d3f674d9de9fe6402e108064524105f82af8cf464ba97f22cb1a73742a03"
