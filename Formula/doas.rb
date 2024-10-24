@@ -16,12 +16,12 @@ class Doas < Formula
   def install
     system "make", "all"
     bin.install "doas"
-    man1.install "doas.1"
-    man1.install "doas.conf.5"
     bin.install "doasedit"
-    man1.install "doasedit.8"
     bin.install "vidoas"
-    man1.install "vidoas.8"
+    man1.install "doas.1"
+    man5.install "doas.conf.5"
+    man8.install "doasedit.8"
+    man8.install "vidoas.8"
   end
 
   def caveats
