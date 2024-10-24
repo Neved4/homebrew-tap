@@ -7,14 +7,10 @@ class Doas < Formula
   license "BSD-2-Clause"
   head "https://github.com/slicer69/doas.git", branch: "master"
 
-  livecheck do
-    url :stable
-  end
-
   depends_on :macos
 
   def install
-    system "make", "all"
+    system "sudo", "make", "all"
     bin.install "doas"
     bin.install "doasedit"
     bin.install "vidoas"
