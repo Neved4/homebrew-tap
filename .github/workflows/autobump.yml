@@ -2,7 +2,7 @@ name: Autobump Formulas and Casks
 
 on:
   schedule:
-    - cron: '0 */12 * * *' # every 12 hours
+    - cron: '0 0 * * *' # every 24 hours
   push:
     branches:
       - main
@@ -29,7 +29,6 @@ jobs:
           force: true # doesn't actually seem to work
           # Need to set this input if want to use `brew livecheck`
           livecheck: true
-          message: Created with `brew bump-formula-pr` and `action-homebrew-bump-formula`.
 
       - name: Update Homebrew cask
         uses: eugenesvk/action-homebrew-bump-cask@cc260684c6e41de1af9522a0f4dcb4f321a17f33

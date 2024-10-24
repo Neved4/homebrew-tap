@@ -9,8 +9,6 @@ class Withjava < Formula
 
   livecheck do
     skip "No tagged version available"
-    # url :stable
-    # regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
   bottle do

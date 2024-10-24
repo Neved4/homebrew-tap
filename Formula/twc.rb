@@ -6,11 +6,6 @@ class Twc < Formula
   license "MIT"
   head "https://github.com/Neved4/twc.git", branch: "main"
 
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/twc-1.1.1"
     sha256 cellar: :any_skip_relocation, arm64_sonoma: "1b825f603781decd62a82b2074a34de67dbe6265065dbc482650a3ded1797d7f"

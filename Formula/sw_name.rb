@@ -7,11 +7,6 @@ class SwName < Formula
   version_scheme 1
   head "https://github.com/Neved4/sw_name.git", branch: "main"
 
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/sw_name-0.1.0"
     rebuild 1
