@@ -12,11 +12,11 @@ class Nomore403 < Formula
   end
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/nomore403-1.0.1"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "9be553c613eb550edc8992440d7bce8bdd37cf65cafcd490763e8fbc707fc668"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "1d63db5fc7314b56cda5713c33229ad6e1b1185928aaee5d97ec31be49f2b299"
-    sha256 cellar: :any_skip_relocation, ventura:       "4de2039cfcf97066ebefd5b16ab499c6cd9b46c4824906a62253a8f0ed0479a1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2417b618d44bd3213c75216935e67e8a07ee4dfdfc0c07e709aef85715d91e15"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/nomore403-1.0.2"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "4f531e4aa74e4aef01d6d8590fdd980a40941e3626a53724d7787e1719f7cae1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "1cb0d3400079bcaabcab5577d500c01d468b8abc29ed45511d0cd36ddcde9858"
+    sha256 cellar: :any_skip_relocation, ventura:       "3217d2cc676f516c9af3d0cd0053d551e6d544e44f58ff8973f3d05082386a24"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8a6a53f82679ffcccc9fe661ec52d35c36920ad98da781843eefec7e1ef32a7c"
   end
 
   depends_on "go" => :build
