@@ -6,11 +6,6 @@ class Nomore403 < Formula
   license "MIT"
   head "https://github.com/devploit/nomore403.git", branch: "main"
 
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/nomore403-1.0.2"
     sha256 cellar: :any_skip_relocation, arm64_sequoia: "4f531e4aa74e4aef01d6d8590fdd980a40941e3626a53724d7787e1719f7cae1"
