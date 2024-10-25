@@ -19,7 +19,10 @@ class Gotwc < Formula
 
   def install
     system "go", "build",
-      *std_go_args(ldflags: "-w -s"), "-gcflags=all=-l -B -wb=false"
+      *std_go_args(
+        ldflags: "-w -s",
+        gcflags: "all=-l -B -wb=false",
+      )
     doc.install "README.md"
   end
 
