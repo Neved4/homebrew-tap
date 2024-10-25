@@ -8,11 +8,11 @@ class Gotwc < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/gotwc-1.1.1"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "dc01fc4d76c72d2ab791c459aac24b8e0acbefe9dd8356f174c94dde117b1ef5"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "4d1847db17f7791eb1cce33d0cd59c1cd73df3fba3ddb870107a20a99cbdba97"
-    sha256 cellar: :any_skip_relocation, ventura:       "89b97efe5ad8ea088f0fbfea74fb5e71d5ad45a0222acc388101498c9698050c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e37ef0fb43cfab724f1e5acc593c36d4dc6721829fc2b65a87d327f89b33c318"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1369333331f55b301163b552cea070a0322c941c00c4a2329483b008a151a259"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "0410b4b17960cd44950dfcc13c59ceacd70423cc504e2aad770c1cd8fd123ac0"
+    sha256 cellar: :any_skip_relocation, ventura:       "466ce4a07bbbb8a9b08fb9293afb393d868832faeb9b139886ff7fd8831e3eab"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8fa37ef210230d2f1b911486b0a2378df6a56b8ec1f9054837c35050893d6430"
   end
 
   depends_on "go" => :build
