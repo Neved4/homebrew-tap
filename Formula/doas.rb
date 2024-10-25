@@ -10,20 +10,6 @@ class Doas < Formula
   depends_on :macos
 
   def install
-    system "sudo", "make", "all"
-    bin.install "doas"
-    bin.install "doasedit"
-    bin.install "vidoas"
-    man1.install "doas.1"
-    man5.install "doas.conf.5"
-    man8.install "doasedit.8"
-    man8.install "vidoas.8"
-  end
-
-  def caveats
-    <<~EOS
-      To complete the installation, run the following commands manually with sudo:
-        sudo cp /etc/pam.d/sudo /etc/pam.d/doas
-    EOS
+    system "YACC=bison -y", "make", "PREFIX=#{prefix}", "SYSCONFDIR=#{etc}", "install"
   end
 end
