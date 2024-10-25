@@ -1,26 +1,21 @@
 class Alire < Formula
   desc "Ada/SPARK package manager"
   homepage "https://alire.ada.dev/"
-  url "https://github.com/alire-project/alire/releases/download/v2.0.1/alr-2.0.1-bin-x86_64-macos.zip"
-  sha256 "74223012ded5bf8057a7dd60856665f22e85a937a53c37678d212c60122de0c2"
+  url "https://github.com/alire-project/alire/releases/download/v2.0.2/alr-2.0.2-bin-x86_64-macos.zip"
+  sha256 "d148a8efc9144b4c2f7340c272cada2c220d852ee69a07e98a5b64c4d33bd1f4"
 
   if OS.linux?
     url "https://github.com/alire-project/alire/releases/download/v#{version}/alr-#{version}-bin-x86_64-linux.zip"
-    sha256 "8f4b39f42fd6969815077f91fdae087b8309eedda069ad5227374c49807792a1"
-  end
-
-  livecheck do
-    url :url
-    strategy :github_latest
+    sha256 "579de127341a1a684e07410b8b7a15ea7c2b39c47fd1a21179202203afe4be23"
   end
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/alire-2.0.1"
-    rebuild 2
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "e1380f80450080f3450d30fecc2016190c434817813e7bdcf9fde31d1c4decda"
-    sha256 cellar: :any_skip_relocation, ventura:      "fea03ea124aa2aa239bc48ec7b2c56d1127534ff9585c3fd762023776d912720"
-    sha256 cellar: :any_skip_relocation, monterey:     "217ac6e0f9eaa7cfb938cd07e115802fdaa05ac24cfa8820edd025989ca97e8c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "63a576a75faf669e280d51730d09ccccfd93848402b0af9dfa7d0feca2676f9d"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/alire-2.0.2"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ef6d63dd457b45c6e1f04eb2fa911f81428c0db5e71b3cabbd3094b1a7bc0d4d"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "7d2e035078de2501bd19b13863afb22460d3e816d1660edf211aec4f1b7cfb27"
+    sha256 cellar: :any_skip_relocation, ventura:       "45a77511188ba7a2e6d554ce604ce372b52178d633d21441fe4b223e9533d7b3"
+    sha256 cellar: :any_skip_relocation, monterey:      "7ba10c07676677ff770a8526a6feeb0168a7bc987c0632898cd8c3c57c8dfd29"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "52258fd08137393431eca76b2f06e7e2852e21fbe480c49321b4bbfec10ad292"
   end
 
   def install
@@ -29,6 +24,6 @@ class Alire < Formula
 
   test do
     desired_output = "alr #{version}"
-    assert_equal desired_output, shell_output("#{bin}/alr --version").strip
+    assert_includes shell_output("#{bin}/alr --version").strip, desired_output
   end
 end

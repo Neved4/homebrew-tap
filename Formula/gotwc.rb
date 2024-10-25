@@ -6,22 +6,20 @@ class Gotwc < Formula
   license "MIT"
   head "https://github.com/Neved4/gotwc.git", branch: "main"
 
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/gotwc-1.1.1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "0b96aee46910236095b17dc66c18dd0ad01ff98e60df6e19fda0fb5d8e5476df"
-    sha256 cellar: :any_skip_relocation, ventura:      "850e542f3bb1597add8d88fcc27250d455e7d2643b52493b3907a02cc9ec5f38"
-    sha256 cellar: :any_skip_relocation, monterey:     "0b18edf50adcaed63c1d4cb9d1a46e8f6fa7749d3c0ebc557ce64ad4394120df"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "dc01fc4d76c72d2ab791c459aac24b8e0acbefe9dd8356f174c94dde117b1ef5"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "4d1847db17f7791eb1cce33d0cd59c1cd73df3fba3ddb870107a20a99cbdba97"
+    sha256 cellar: :any_skip_relocation, ventura:       "89b97efe5ad8ea088f0fbfea74fb5e71d5ad45a0222acc388101498c9698050c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e37ef0fb43cfab724f1e5acc593c36d4dc6721829fc2b65a87d327f89b33c318"
   end
 
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w")
+    system "go", "build",
+      *std_go_args(ldflags: "-w -s"), "-gcflags=all=-l -B -wb=false"
     doc.install "README.md"
   end
 

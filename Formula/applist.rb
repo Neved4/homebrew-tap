@@ -6,11 +6,6 @@ class Applist < Formula
   license "MIT"
   head "https://github.com/Neved4/applist.git", branch: "main"
 
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/applist-0.1.0"
     sha256 cellar: :any_skip_relocation, arm64_sonoma: "08347646c55d0164c0b85f825c17767825b0c34535ced43a7ba870f6a74b1f04"

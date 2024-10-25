@@ -4,18 +4,18 @@ class Volatility < Formula
   desc "Advanced memory forensics framework"
   homepage "https://github.com/volatilityfoundation/volatility3"
   # Update pypi_formula_mappings.json to `{"package_name": "volatility3[full]"}` at version bump
-  url "https://files.pythonhosted.org/packages/c8/a8/68c5bbc799bd70fb87da2a6ea081200fa1742e2ee47de4680cbd3b1d47b7/volatility3-2.7.0.tar.gz"
-  sha256 "0b219b27b334cda79c0d7e244edba8e6928d9d0852e6d3462ba89e74f7ea92b5"
+  url "https://files.pythonhosted.org/packages/13/19/354d50bfe325d7a4e805f7e08f68b1b21a47efa0e23e454caea9a9a976de/volatility3-2.8.0.tar.gz"
+  sha256 "25a8997dad06970544da53f5cc8404e6a951b8d55be183615200a59e7b6a105c"
   license :cannot_represent
   version_scheme 1
   head "https://github.com/volatilityfoundation/volatility3.git", branch: "develop"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/volatility-2.7.0"
-    sha256 cellar: :any,                 arm64_sonoma: "d1724d7dfb88c2aa48aad50626b18f4e99f8d1ea4c33e3c1fc7991525bf747ca"
-    sha256 cellar: :any,                 ventura:      "c3db305745e4b59887f22b6796c091235b159b0bb479effee5a03209dd4f1c7c"
-    sha256 cellar: :any,                 monterey:     "374218c29fdb41002e676aa8b80d63b0c8f0af8eed3a0af8b47ce1691079e92a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "197af9d14be25c1cb673cca147da5b6d392815930cfade845668730c535767ea"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/volatility-2.8.0"
+    sha256 cellar: :any,                 arm64_sequoia: "e16e10dfa0b6d63d72771dbb7dbbbf93a842d6e9cc2ef329234fe496f74b8435"
+    sha256 cellar: :any,                 arm64_sonoma:  "40f29f3ee86fcd760a9703ffc64553c4966b30e0ce30309d7fb382992569d531"
+    sha256 cellar: :any,                 ventura:       "6cf0783cb9e74e21b5f744bbe22bbc3a00a38a5d25fb32e62a9b960520e14de3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d59d148f398b15760e63fd9fe7d719754d208e333a47780ef47140dcace1e8b5"
   end
 
   depends_on "rust" => :build # for rpds-py
@@ -44,8 +44,8 @@ class Volatility < Formula
   end
 
   resource "pefile" do
-    url "https://files.pythonhosted.org/packages/78/c5/3b3c62223f72e2360737fd2a57c30e5b2adecd85e70276879609a7403334/pefile-2023.2.7.tar.gz"
-    sha256 "82e6114004b3d6911c77c3953e3838654b04511b8b66e8583db70c65998017dc"
+    url "https://files.pythonhosted.org/packages/03/4f/2750f7f6f025a1507cd3b7218691671eecfd0bbebebe8b39aa0fe1d360b8/pefile-2024.8.26.tar.gz"
+    sha256 "3ff6c5d8b43e8c37bb6e6dd5085658d658a7a0bdcd20b6a07b1fcfc1c4e9d632"
   end
 
   resource "pycryptodome" do
@@ -73,6 +73,7 @@ class Volatility < Formula
   end
 
   test do
-    system bin/"vol", "--help"
+    desired_output = "Volatility 3 Framework #{version}"
+    assert_includes shell_output("#{bin}/vol --help").strip, desired_output
   end
 end
