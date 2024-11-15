@@ -7,6 +7,7 @@ class Babelfish < Formula
   head "https://github.com/bouk/babelfish.git", branch: "master"
 
   depends_on "go" => :build
+  depends_on "fish" => :test
 
   def install
     system "go", "build",
@@ -15,5 +16,11 @@ class Babelfish < Formula
         gcflags: "all=-l -B -wb=false",
       )
     doc.install "README.md"
+  end
+
+  test do
+    desired_output = "worked!"
+    command = "echo 'example() { local test=\"worked!\"; echo $test; }; example' | #{bin}/babelfish | fish"
+    assert_equal desired_output, shell_output(command).strip
   end
 end
