@@ -28,7 +28,7 @@ class Babelfish < Formula
 
   test do
     desired_output = "worked!"
-    command = "echo 'example() { local test=\"worked!\"; echo $test; }; example' | #{bin}/babelfish | fish"
+    command = "echo 'example() { test=\"worked!\"; echo $test; }; example' | #{bin}/babelfish | fish"
     assert_equal desired_output, shell_output(command).strip
   end
 end
