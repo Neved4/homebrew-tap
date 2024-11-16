@@ -26,6 +26,11 @@ class Ladybird < Formula
     system "git", "init"
     system "./Meta/ladybird.sh", "install"
 
+    cd "Build/ladybird/bin/Ladybird.app/Contents" do
+      system "unlink", "./lib"
+      system "cp", "-r", "../../../lib", "."
+    end
+
     app_name = "Ladybird.app"
     app_path = "./Build/ladybird/bin/#{app_name}"
 
