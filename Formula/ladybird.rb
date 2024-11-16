@@ -27,8 +27,8 @@ class Ladybird < Formula
     system "./Meta/ladybird.sh", "install"
 
     cd "Build/ladybird/bin/Ladybird.app/Contents" do
-      system "unlink", "./lib"
-      system "cp", "-r", "../../../lib", "."
+      rm_r("./lib")
+      cp_r("../../../lib", ".")
     end
 
     app_name = "Ladybird.app"
