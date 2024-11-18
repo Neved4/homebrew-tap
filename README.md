@@ -74,6 +74,9 @@ Google Chromium, sans integration with Google.
 Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
 Wrap commands in specific Java versions.
+- [wordtidy] [<kbd>rust</kbd>]
+Combine and clean word lists.
+
 
 [alire]: https://github.com/alire-project/alire
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
@@ -83,6 +86,7 @@ Wrap commands in specific Java versions.
 [ungoogled-chromium]: https://github.com/ungoogled-software/ungoogled-chromium
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
+[wordtidy]: https://github.com/sts10/tidy
 
 ## Getting Started
 
