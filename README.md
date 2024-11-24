@@ -69,6 +69,8 @@ Execute commands as another user.
 Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
 ASCII / ANSI art viewer.
+- [typst-ansi-hl] [<kbd>rust</kbd>]
+Highlight your Typst code using ANSI escape sequences.
 - [ungoogled-chromium] [<kbd>c++</kbd>]
 Google Chromium, sans integration with Google.
 - [volatility] [<kbd>python</kbd>]
@@ -85,6 +87,7 @@ Combine and clean word lists.
 [doas]: https://github.com/slicer69/doas
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
+[typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
 [ungoogled-chromium]: https://github.com/ungoogled-software/ungoogled-chromium
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
