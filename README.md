@@ -61,6 +61,8 @@ Go version, display different time zones from the tz database.
 Ada/SPARK package manager.
 - [babelfish] [<kbd>go</kbd>]
 Translate bash scripts to fish.
+- [Chromium] [<kbd>c++</kbd>]
+Chromium web browser, with API keys loaded.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
 Yet another matrix client for desktop.
 - [doas] [<kbd>c</kbd>]
