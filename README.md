@@ -68,7 +68,6 @@ Execute commands as another user.
 - [firefox] [<kbd>c++</kbd>]
 Firefox web browser, with timezone set to UTC-0. FF's anti-fingerprint breaks a
 lot of websites, so strict tracking protection + TZ=0 is needed in some cases.
-kinda rationale etc
 - [Ladybird] [<kbd>c++</kbd>]
 Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
