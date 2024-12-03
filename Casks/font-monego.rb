@@ -16,12 +16,12 @@ cask "font-monego" do
   font "monego-#{upstream_hash}/Monego/Monego-BoldItalic.otf"
   font "monego-#{upstream_hash}/Monego/Monego-Italic.otf"
   font "monego-#{upstream_hash}/Monego/Monego-Regular.otf"
-
+  # Monego with ligatures
   font "monego-#{upstream_hash}/Monego-with-ligatures/MonegoLigatures-Bold.otf"
   font "monego-#{upstream_hash}/Monego-with-ligatures/MonegoLigatures-BoldItalic.otf"
   font "monego-#{upstream_hash}/Monego-with-ligatures/MonegoLigatures-Italic.otf"
   font "monego-#{upstream_hash}/Monego-with-ligatures/MonegoLigatures-Regular.otf"
-
+  # Monego with ligatures nerd font glyphs
   font "monego-#{upstream_hash}/Monego-Nerd-Font/Monego_Nerd_Fixed-Bold.otf"
   font "monego-#{upstream_hash}/Monego-Nerd-Font/Monego_Nerd_Fixed-BoldItalic.otf"
   font "monego-#{upstream_hash}/Monego-Nerd-Font/Monego_Nerd_Fixed-Italic.otf"
