@@ -67,6 +67,8 @@ Chromium web browser, with API keys loaded.
 Yet another matrix client for desktop.
 - [doas] [<kbd>c</kbd>]
 Execute commands as another user.
+- [font-monego]
+The beloved Monaco monospaced font, recreated with bold and italic variants. 
 - [Ladybird] [<kbd>c++</kbd>]
 Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
@@ -87,6 +89,7 @@ Combine and clean word lists.
 [babelfish]: https://github.com/bouk/babelfish
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [doas]: https://github.com/slicer69/doas
+[font-monego]: https://github.com/cseelus/monego
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
