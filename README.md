@@ -69,6 +69,9 @@ Yet another matrix client for desktop.
  CommonMark + GFM compatible Markdown parser and renderer.
 - [doas] [<kbd>c</kbd>]
 Execute commands as another user.
+- [firefox] [<kbd>c++</kbd>]
+Firefox web browser, with timezone set to UTC-0. FF's anti-fingerprint breaks a
+lot of websites, so strict tracking protection + TZ=0 is needed in some cases.
 - [Ladybird] [<kbd>c++</kbd>]
 Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
@@ -84,12 +87,12 @@ Wrap commands in specific Java versions.
 - [wordtidy] [<kbd>rust</kbd>]
 Combine and clean word lists.
 
-
 [alire]: https://github.com/alire-project/alire
 [babelfish]: https://github.com/bouk/babelfish
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [comrak]: https://github.com/kivikakk/comrak
 [doas]: https://github.com/slicer69/doas
+[firefox]: https://www.mozilla.org/en-US/firefox/
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
