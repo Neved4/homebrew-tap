@@ -87,6 +87,7 @@ Combine and clean word lists.
 
 [alire]: https://github.com/alire-project/alire
 [babelfish]: https://github.com/bouk/babelfish
+[Chromium]: https://www.chromium.org/Home/
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [comrak]: https://github.com/kivikakk/comrak
 [doas]: https://github.com/slicer69/doas
