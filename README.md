@@ -65,6 +65,8 @@ Translate bash scripts to fish.
 Chromium web browser, with API keys loaded.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
 Yet another matrix client for desktop.
+- [comrak] [<kbd>rust</kbd>]
+ CommonMark + GFM compatible Markdown parser and renderer.
 - [doas] [<kbd>c</kbd>]
 Execute commands as another user.
 - [Ladybird] [<kbd>c++</kbd>]
@@ -86,6 +88,7 @@ Combine and clean word lists.
 [alire]: https://github.com/alire-project/alire
 [babelfish]: https://github.com/bouk/babelfish
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
+[comrak]: https://github.com/kivikakk/comrak
 [doas]: https://github.com/slicer69/doas
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
