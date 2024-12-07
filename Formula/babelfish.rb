@@ -24,6 +24,7 @@ class Babelfish < Formula
         gcflags: "all=-l -B -wb=false",
       )
     doc.install "README.md"
+    fish_function.install "babel.fish"
   end
 
   test do
