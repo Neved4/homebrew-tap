@@ -68,7 +68,7 @@ Yet another matrix client for desktop.
 - [comrak] [<kbd>rust</kbd>]
  CommonMark + GFM compatible Markdown parser and renderer.
 - [doas] [<kbd>c</kbd>]
-Execute commands as another user
+Execute commands as another user.
 - [firefox] [<kbd>c++</kbd>]
 Firefox web browser, with timezone set to UTC-0. FF's anti-fingerprint breaks a
 lot of websites, so strict tracking protection + TZ=0 is needed in some cases.
