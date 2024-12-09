@@ -61,13 +61,19 @@ Go version, display different time zones from the tz database.
 Ada/SPARK package manager.
 - [babelfish] [<kbd>go</kbd>]
 Translate bash scripts to fish.
+- [Chromium] [<kbd>c++</kbd>]
+Chromium web browser, with API keys loaded.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
 Yet another matrix client for desktop.
+- [comrak] [<kbd>rust</kbd>]
+ CommonMark + GFM compatible Markdown parser and renderer.
 - [doas] [<kbd>c</kbd>]
-Execute commands as another user.
+Execute commands as another user
 - [firefox] [<kbd>c++</kbd>]
 Firefox web browser, with timezone set to UTC-0. FF's anti-fingerprint breaks a
 lot of websites, so strict tracking protection + TZ=0 is needed in some cases.
+- [font-monego]
+The beloved Monaco monospaced font, recreated with bold and italic variants. 
 - [Ladybird] [<kbd>c++</kbd>]
 Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
@@ -85,8 +91,11 @@ Combine and clean word lists.
 
 [alire]: https://github.com/alire-project/alire
 [babelfish]: https://github.com/bouk/babelfish
+[Chromium]: https://www.chromium.org/Home/
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
+[comrak]: https://github.com/kivikakk/comrak
 [doas]: https://github.com/slicer69/doas
+[font-monego]: https://github.com/cseelus/monego
 [firefox]: https://www.mozilla.org/en-US/firefox/
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
