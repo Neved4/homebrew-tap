@@ -244,12 +244,8 @@ cask "firefox" do
 
   postflight do
     plist = "#{appdir}/Firefox.app/Contents/Info.plist"
-    system_command "plutil",
-                   args: ["-replace", "LSEnvironment.TZ", "-string", "UTC", plist],
-                   sudo: true
-    system_command "codesign",
-                   args: ["-fs", "-", "/Applications/Firefox.app"],
-                   sudo: true
+    system "plutil", "-replace", "LSEnvironment.TZ", "-string", "UTC", plist
+    system "codesign", "-fs", "-", "/Applications/Firefox.app"
   end
 
   uninstall quit: "org.mozilla.firefox"
