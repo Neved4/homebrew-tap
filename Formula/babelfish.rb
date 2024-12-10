@@ -24,6 +24,23 @@ class Babelfish < Formula
         gcflags: "all=-l -B -wb=false",
       )
     doc.install "README.md"
+    fish_function.install "babel.fish"
+  end
+
+  def caveats
+    <<~CAVEATS
+      The shell hook has been installed to which you can use by running:
+
+        $ source /opt/homebrew/share/fish/vendor_functions.d/babel.fish
+
+      This allows you to run a bash script like this:
+
+        $ source chruby.sh
+        $ chruby
+           ruby-2.5
+           ruby-2.6
+           ruby-2.7
+    CAVEATS
   end
 
   test do
