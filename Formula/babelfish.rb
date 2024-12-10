@@ -40,7 +40,7 @@ class Babelfish < Formula
            ruby-2.5
            ruby-2.6
            ruby-2.7
-       CAVEATS
+    CAVEATS
   end
 
   test do
