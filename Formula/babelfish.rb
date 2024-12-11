@@ -33,7 +33,7 @@ class Babelfish < Formula
 
         $ source /opt/homebrew/share/fish/vendor_functions.d/babel.fish
 
-      This allows you to run a bash script like this:
+      Then you can run shell scripts like this:
 
         $ source chruby.sh
         $ chruby
