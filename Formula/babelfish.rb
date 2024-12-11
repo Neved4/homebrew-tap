@@ -29,7 +29,7 @@ class Babelfish < Formula
 
   def caveats
     <<~CAVEATS
-      The shell hook has been installed to which you can use by running:
+      The shell hook has been installed, you can use it by running:
 
         $ source /opt/homebrew/share/fish/vendor_functions.d/babel.fish
 
