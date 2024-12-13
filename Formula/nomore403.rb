@@ -11,15 +11,6 @@ class Nomore403 < Formula
     skip "Current version is broken"
   end
 
-  bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/nomore403-1.0.2"
-    rebuild 2
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "dbd53634bb39915fe6e2ee6e258a3d0128954b3b51f458ee767713b453c0d8b2"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "441e81cd9eaff315d4678673a588b78b133d562c65c77c30ab3aed97a45e2565"
-    sha256 cellar: :any_skip_relocation, ventura:       "469c44662ba0d53f367ce937b6985d9be5920f3e55bed76cf94b4c56ec9ce4a0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ff3ad4084fc1718bd5b5d3a896a3c705456b35b925bb154915de1166616a149a"
-  end
-
   depends_on "go" => [:build, :test]
 
   def install
@@ -28,16 +19,16 @@ class Nomore403 < Formula
         ldflags: "-w -s",
         gcflags: "all=-l -B -wb=false",
       )
-    bin.install "payloads"
+    libexec.install "payloads"
     doc.install "README.md"
   end
 
   def caveats
     <<~CAVEATS
       You must provide the path to a payloads folder with -f or --folder. The default payloads
-      folder has been installed to #{bin}/payloads. Example:
+      folder has been installed to #{libexec}/payloads. Example:
 
-        $ nomore403 -f #{bin}/payloads -u https://example.com
+        $ nomore403 -f #{libexec}/payloads -u https://example.com
     CAVEATS
   end
 
@@ -62,7 +53,7 @@ class Nomore403 < Formula
       pid = spawn "#{testpath}/403 > log.txt"
       sleep 1
       desired_output_nomore403 = "162 bytes"
-      command = "#{bin}/nomore403 -f #{bin}/payloads -k verbs -u http://localhost:8000"
+      command = "#{bin}/nomore403 -f #{libexec}/payloads -k verbs -u http://localhost:8000"
       assert_includes shell_output(command).strip, desired_output_nomore403
 
       desired_output_logs = "User agent: nomore403"
