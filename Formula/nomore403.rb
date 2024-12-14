@@ -2,20 +2,13 @@ class Nomore403 < Formula
   desc "Tool to bypass 403/40X response codes"
   homepage "https://github.com/devploit/nomore403"
   url "https://github.com/devploit/nomore403/archive/a47e83b54def7537fe9456e6a327fef1c32939b0.tar.gz"
-  version "1.0.2-unstable-001,a47e83b54def7537fe9456e6a327fef1c32939b0"
+  version "1.0.2-unstable-001_a47e83b54def7537fe9456e6a327fef1c32939b0"
   sha256 "72e79b75857af47a4685cf50a91aa402a9c82e004b55a0f79fe0cdc6e2fa7a79"
   license "MIT"
   head "https://github.com/devploit/nomore403.git", branch: "main"
 
   livecheck do
     skip "Current version is broken"
-  end
-
-  bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/nomore403-1.0.2-unstable-001,a47e83b54def7537fe9456e6a327fef1c32939b0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "fb3ec147c317eb8efb21f09b6bd715156fd127be1b0a768355c8518c8cb8a5c2"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "d8768e8ac811f2658a54a6aa277a85da6ee1c7a21689922d31f0c3b18010ce76"
-    sha256 cellar: :any_skip_relocation, ventura:       "a6911de4b8e3cb33383816874777d5d7fa6770d0aa49085babee24c70a34974b"
   end
 
   depends_on "go" => [:build, :test]
