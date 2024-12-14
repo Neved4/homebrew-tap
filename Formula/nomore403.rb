@@ -11,6 +11,14 @@ class Nomore403 < Formula
     skip "Current version is broken"
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/nomore403-1.0.2-unstable-001_a47e83b54def7537fe9456e6a327fef1c32939b0"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e7b0d1d30a421d5801ff97a4d2a402baae1b7bc5c5ab9bd4e2216a91d93e1a86"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "677402998978e3e052010c9f6e68d2c3ee70dd555fef247df0cfe6ef079f505d"
+    sha256 cellar: :any_skip_relocation, ventura:       "e825aa1c97f5d06a2d23c78dab26a981cc80d08f4e3df0277ac8185666a92614"
+  end
+
   depends_on "go" => [:build, :test]
 
   def install
