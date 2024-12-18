@@ -1,8 +1,8 @@
 class Comrak < Formula
   desc "CommonMark + GFM compatible Markdown parser and renderer"
   homepage "https://github.com/kivikakk/comrak"
-  url "https://github.com/kivikakk/comrak/archive/refs/tags/v0.31.0.tar.gz"
-  sha256 "8911f4b6042e36557c4f8b8b3e296eacd0d5fc3e14d10710eb64a29e84744278"
+  url "https://github.com/kivikakk/comrak/archive/refs/tags/v0.32.0.tar.gz"
+  sha256 "06a495cbdcded18a11322d58d8b44f3ca117b2fab6ed1fcc627f9098dbde6bed"
   license "BSD-2-Clause"
   head "https://github.com/kivikakk/comrak.git", branch: "main"
 
