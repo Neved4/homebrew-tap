@@ -8,6 +8,14 @@ class Demagnetize < Formula
   license "MIT"
   head "https://github.com/jwodder/demagnetize.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/demagnetize-0.3.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "2db9314bec553730d8f494e4813420a4be65c319810ac4f93d1aaa5489071aba"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "24b0d5bdc05b728ce1c99a1456ec78b7b07f22c6a7e5a2c11f6bce678d492fc7"
+    sha256 cellar: :any_skip_relocation, ventura:       "af20eaa71fc17eb404a71bf948a303ed8b7eaa1b4a954b45c74e73d0785e5e6a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dbc24dd72f21c2415a43533a729a994776e662a00c9a65c826e08fee2db26342"
+  end
+
   depends_on "python@3.12"
 
   resource "anyio" do
