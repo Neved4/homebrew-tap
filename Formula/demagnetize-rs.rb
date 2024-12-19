@@ -6,6 +6,14 @@ class DemagnetizeRs < Formula
   license "MIT"
   head "https://github.com/jwodder/demagnetize-rs.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/demagnetize-rs-0.2.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1a11b7423659d721e941d43f1efac5b512de1eeeb7432beec49ccfe3241f02fe"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "0ae03b5363135214b6e3ea1b6fd035cdfc2127048ccc5ce4c2b0a1b707489776"
+    sha256 cellar: :any_skip_relocation, ventura:       "b658aa9b53ecd432a66c25e93887412f5bea773b0a852e056aaa74b3b3fc60ee"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7cfd6bd62e5f06650d7cf1b7cec9ca1d80663a5c5a6b9d36eb476f7d5e00fb6b"
+  end
+
   depends_on "rust" => :build
   depends_on "openssl@3"
 
