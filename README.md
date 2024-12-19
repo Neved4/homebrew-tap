@@ -69,6 +69,8 @@ Yet another matrix client for desktop.
  CommonMark + GFM compatible Markdown parser and renderer.
 - [demagnetize] [<kbd>python</kbd>]
 Convert magnet links to .torrent files.
+- [demagnetize-rs] [<kbd>rust</kbd>]
+ Convert magnet links to .torrent files.
 - [doas] [<kbd>c</kbd>]
 Execute commands as another user.
 - [font-monego]
@@ -95,6 +97,7 @@ Combine and clean word lists.
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [comrak]: https://github.com/kivikakk/comrak
 [demagnetize]: https://github.com/jwodder/demagnetize
+[demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [doas]: https://github.com/slicer69/doas
 [font-monego]: https://github.com/cseelus/monego
 [ladybird]: https://ladybird.org/
