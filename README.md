@@ -67,6 +67,8 @@ Chromium web browser, with API keys loaded.
 Yet another matrix client for desktop.
 - [comrak] [<kbd>rust</kbd>]
  CommonMark + GFM compatible Markdown parser and renderer.
+- [demagnetize] [<kbd>python</kbd>]
+Convert magnet links to .torrent files.
 - [doas] [<kbd>c</kbd>]
 Execute commands as another user.
 - [font-monego]
@@ -92,6 +94,7 @@ Combine and clean word lists.
 [Chromium]: https://www.chromium.org/Home/
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [comrak]: https://github.com/kivikakk/comrak
+[demagnetize]: https://github.com/jwodder/demagnetize
 [doas]: https://github.com/slicer69/doas
 [font-monego]: https://github.com/cseelus/monego
 [ladybird]: https://ladybird.org/
