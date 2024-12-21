@@ -75,6 +75,8 @@ Convert magnet links to .torrent files.
 Execute commands as another user.
 - [font-monego]
 The beloved Monaco monospaced font, recreated with bold and italic variants. 
+- [johnnybgoode] [<kbd>rust</kbd>]
+An assistant for users of the Johnny Decimal file organization system. 
 - [Ladybird] [<kbd>c++</kbd>]
 Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
@@ -100,6 +102,7 @@ Combine and clean word lists.
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [doas]: https://github.com/slicer69/doas
 [font-monego]: https://github.com/cseelus/monego
+[johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
