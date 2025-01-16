@@ -32,7 +32,7 @@ class Babelfish < Formula
     <<~CAVEATS
       The shell hook has been installed, you can use it by running:
 
-        $ source /opt/homebrew/share/fish/vendor_functions.d/babel.fish
+        $ source #{HOMEBREW_PREFIX}/share/fish/vendor_functions.d/babel.fish
 
       Then you can run shell scripts like this:
 
