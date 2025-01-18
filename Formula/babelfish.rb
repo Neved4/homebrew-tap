@@ -8,11 +8,11 @@ class Babelfish < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/babelfish-1.2.1"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "b7d6b615c4ee1be0442655297da6fa742c085d0afa74673c96ee60702c1b1e36"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "8f347cec90f74ce1d9cc1d06c327a7cc3909c96b2edc31062fc28bc211988aef"
-    sha256 cellar: :any_skip_relocation, ventura:       "14d8b33ba2f4c2745b0a11ed1432043d7b6059f31a31904e278b2d9003c35ea9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f736fa3a3c909c1018367a8054d4dd785d176533546d698b29988dea63d79448"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "38c285feced4d672c463bfd40dd79c36bbf747f2d33227b8ad9c9a7974ed780b"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "41a44990b818f70739757a4834e67f58a7857d32ab788d890a38d0ec4fbd3283"
+    sha256 cellar: :any_skip_relocation, ventura:       "0aae0b9bca4d618a4009af04b115f8f2ca91160df6994084d845a5bcbad61800"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "54ac585acc71323f1866f85e6e64a5aa804dce42d210b508864d785cf0fdaf9b"
   end
 
   depends_on "go" => :build
