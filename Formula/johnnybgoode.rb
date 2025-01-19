@@ -1,8 +1,8 @@
 class Johnnybgoode < Formula
   desc "Assistant for users of the Johnny Decimal file organization system"
   homepage "https://github.com/SwissArmyWrench/johnnybgoode"
-  url "https://github.com/SwissArmyWrench/johnnybgoode/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "35428d4cd22001aa7cee1c7b8a11f4e642eeec68b59c0d20e1130ebb6134728e"
+  url "https://github.com/SwissArmyWrench/johnnybgoode/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "049ced703b78656e40ada435934109cc8e4b6fc4be994e8bfff6c313ea762aa8"
   license "MIT"
   head "https://github.com/SwissArmyWrench/johnnybgoode.git", branch: "main"
 
