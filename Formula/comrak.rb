@@ -7,11 +7,11 @@ class Comrak < Formula
   head "https://github.com/kivikakk/comrak.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/comrak-0.33.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "3e789840061bf886259d389092b6918101688388ab550eb7579a8cf609bd9d13"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "fd79778218a0b8412b009e026559cfad1eca46743a7851881e24c98c233c5742"
-    sha256 cellar: :any_skip_relocation, ventura:       "1d70ec59ffbb32af5c03e628f2ddf88c6cd9bc5160b16adfe68b580dee817b24"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fe7cd4966427f744a1c2d0417973d66de70d8e2035d7e6841336c1f00c5afc34"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/comrak-0.34.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "9374273b9f470102b1c3278696512bd78635e0af155ad1fcfc5fa7fbb876a714"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "db600e1fc06cc7eda0967122e26542a05f5362166d2413d8aea615c44b4f552f"
+    sha256 cellar: :any_skip_relocation, ventura:       "4a61d1e29d55cfc5b62fc2bfc1157fcffed020c32a13f771a3b2e2389cc19e34"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5e94681894c6a559e0cc16801d642452654cc021c478c22318ae361e4202f4bb"
   end
 
   depends_on "rust" => :build
