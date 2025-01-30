@@ -1,6 +1,3 @@
-# typed: strict
-# frozen_string_literal: true
-
 cask "chromium" do
   arch arm: "Mac_Arm", intel: "Mac"
 
