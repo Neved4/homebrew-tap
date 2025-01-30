@@ -5,7 +5,7 @@ cask "chromium" do
   arch arm: "Mac_Arm", intel: "Mac"
 
   version "134.0.6990.0,6990.0"
-  sha256 "751d1bfc0c8ccb989b115523abc8cc058460cb8688216cf9c114f51bd48643f8"
+  sha256 "f5a370290cab9733a733d04978e569d124b84f2a44bcb91797f238ca6e1267ea"
 
   url "https://download-chromium.appspot.com/dl/#{arch}?type=snapshots",
       verified: "download-chromium.appspot.com/dl/"
