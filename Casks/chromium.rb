@@ -4,14 +4,19 @@
 cask "chromium" do
   arch arm: "Mac_Arm", intel: "Mac"
 
-  version :latest
-  sha256 :no_check
+  version "134.0.6990.0,6990.0"
+  sha256 "751d1bfc0c8ccb989b115523abc8cc058460cb8688216cf9c114f51bd48643f8"
 
   url "https://download-chromium.appspot.com/dl/#{arch}?type=snapshots",
       verified: "download-chromium.appspot.com/dl/"
   name "Chromium"
   desc "Free and open-source web browser"
   homepage "https://www.chromium.org/Home"
+
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
 
   conflicts_with cask: [
     "eloston-chromium",
