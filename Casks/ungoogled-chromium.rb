@@ -1,5 +1,5 @@
 cask "ungoogled-chromium" do
-  arch arm: "arm64", intel: "x86-64"
+  arch arm: "arm64", intel: "x86_64"
 
   version "130.0.6723.116-1.1"
   sha256 arm:   "cfeffa806393c72184bd503631bfc4fb525ca19d0578a5c9ee8c1edcc448d04f",
