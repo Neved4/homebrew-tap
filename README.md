@@ -2,6 +2,9 @@
 
 [Homebrew] taps for [Neved4]'s utilities.
 
+> [!IMPORTANT]
+> Packages are updated _weekly_.
+
 ## Formulae & Casks
 
 <!-- START SYNC -->
@@ -37,61 +40,61 @@
 ### macOS 
 
 - [applist] [<kbd>objective-c</kbd>] [<kbd>swift</kbd>] [<kbd>posix-shell</kbd>]
-List the paths to all installed apps in macOS .
+  List the paths to all installed apps in macOS .
 - [apputils] [<kbd>fish-shell</kbd>] [<kbd>posix-shell</kbd>]
-Find and list macOS app paths.
+  Find and list macOS app paths.
 - [tmbackup] [<kbd>posix-shell</kbd>] [<kbd>awk</kbd>]
-Perform Time Machine backups on all connected drives.
+  Perform Time Machine backups on all connected drives.
 - [tmexcludes] [<kbd>posix-shell</kbd>]
-Show, backup and restore Time Machine exclusions.
+  Show, backup and restore Time Machine exclusions.
 - [sw_name] [<kbd>posix-shell</kbd>]
-Drop-in replacement for `sw_vers` to retrieve macOS friendly names.
+  Drop-in replacement for `sw_vers` to retrieve macOS friendly names.
 
 ### Date and time ⌚️
 
-- [twc] [<kbd>c</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>] Displays time zones using the tz database.
+- [twc] [<kbd>c</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>]
+  Displays time zones using the tz database.
 - [gotwc] [<kbd>go</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>]
-Go version, display different time zones from the tz database.
+  Go version, display different time zones from the tz database.
 
 <!-- END SYNC -->
 
 ### External & Third-party 🍺
 
 - [alire] [<kbd>ada</kbd>]
-Ada/SPARK package manager.
+  Ada/SPARK package manager.
 - [babelfish] [<kbd>go</kbd>]
-Translate bash scripts to fish.
+  Translate bash scripts to fish.
 - [Chromium] [<kbd>c++</kbd>]
-Chromium web browser, with API keys loaded.
+  Chromium web browser, with API keys loaded.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
-Yet another matrix client for desktop.
+  Yet another matrix client for desktop.
 - [comrak] [<kbd>rust</kbd>]
- CommonMark + GFM compatible Markdown parser and renderer.
+  CommonMark + GFM compatible Markdown parser and renderer.
 - [demagnetize] [<kbd>python</kbd>]
-Convert magnet links to .torrent files.
+  Convert magnet links to .torrent files.
 - [demagnetize-rs] [<kbd>rust</kbd>]
- Convert magnet links to .torrent files.
+  Convert magnet links to .torrent files.
 - [doas] [<kbd>c</kbd>]
-Execute commands as another user.
+  Execute commands as another user.
 - [font-monego]
-The beloved Monaco monospaced font, recreated with bold and italic variants. 
+  The beloved Monaco monospaced font, recreated with bold and italic variants.
 - [johnnybgoode] [<kbd>rust</kbd>]
-An assistant for users of the Johnny Decimal file organization system. 
+  An assistant for users of the Johnny Decimal file organization system.
 - [Ladybird] [<kbd>c++</kbd>]
-Truly independent web browser.
+  Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
-ASCII / ANSI art viewer.
+  ASCII / ANSI art viewer.
 - [typst-ansi-hl] [<kbd>rust</kbd>]
-Highlight your Typst code using ANSI escape sequences.
+  Highlight your Typst code using ANSI escape sequences.
 - [ungoogled-chromium] [<kbd>c++</kbd>]
-Google Chromium, sans integration with Google.
+  Google Chromium, sans integration with Google.
 - [volatility] [<kbd>python</kbd>]
-Advanced memory forensics framework.
+  Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
-Wrap commands in specific Java versions.
+  Wrap commands in specific Java versions.
 - [wordtidy] [<kbd>rust</kbd>]
-Combine and clean word lists.
-
+  Combine and clean word lists.
 
 [alire]: https://github.com/alire-project/alire
 [babelfish]: https://github.com/bouk/babelfish
