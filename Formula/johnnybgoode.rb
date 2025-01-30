@@ -7,11 +7,11 @@ class Johnnybgoode < Formula
   head "https://github.com/SwissArmyWrench/johnnybgoode.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/johnnybgoode-1.1.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "203f5b3102d3636b7f0cf50fee3b72243190fe89d6914e31c767b6923c8f84f3"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "0ba1f63f0d08040e2780e7eb829cf8fe6fb6940774ed06fb47e928da33c972c2"
-    sha256 cellar: :any_skip_relocation, ventura:       "0e3f0991ac6513c997cc0ba70a72206cc26a4f3f6f96081f916038416b9ee6a8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c3614074db0fc7a1d2feeee7052e7bfc0e81b899d24e75efd8ac17d8955ca050"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/johnnybgoode-1.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "84bee17fd8789a0827204c283dec19724d0f9618c4a67bff44edbece8516cd49"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "9b0098218a2c274a5b884c192b254ae159da71c344b4f8ed9c303d8bbc9c399c"
+    sha256 cellar: :any_skip_relocation, ventura:       "b6e7d424174af32091e517981ad079cff43268dcef060873fc415e7ec9b79e35"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8223b2f15bfca3fdb46eba45de3d5e9443a61d20f97d10f32fb2aed8918d5887"
   end
 
   depends_on "rust" => :build
