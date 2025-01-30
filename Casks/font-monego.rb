@@ -1,6 +1,3 @@
-# typed: strict
-# frozen_string_literal: true
-
 cask "font-monego" do
   version "0.0.0,ad2acdcfc48277dabdededd3a46f1348f720d110"
   sha256 "62a0135b020858a024736b6b3415ae5f37240c31cca138b849f4a906e12c69da"
