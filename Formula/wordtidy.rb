@@ -1,8 +1,8 @@
 class Wordtidy < Formula
   desc "Combine and clean word lists"
   homepage "https://github.com/sts10/tidy"
-  url "https://github.com/sts10/tidy/archive/refs/tags/v0.3.12.tar.gz"
-  sha256 "db9956cfa2bafdfb432f5e56225c12acf064d9d65cea74fc56ce270166353cc1"
+  url "https://github.com/sts10/tidy/archive/refs/tags/v0.3.13.tar.gz"
+  sha256 "2a46e4f0e4fa8c8da53f2396680a548ab2de825c9d83c807095b41f450c90e63"
   license "MIT"
   head "https://github.com/sts10/tidy.git", branch: "main"
 
