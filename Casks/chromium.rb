@@ -1,8 +1,8 @@
 cask "chromium" do
   arch arm: "Mac_Arm", intel: "Mac"
 
-  version "133.0.6943.35,1402768"
-  sha256 "d0cd4d26aff16e6539dcf7e4263b93fef03bcb741888c38207ae2fce1fb9bfe2"
+  version "132.0.6834.161,1381561"
+  sha256 "60d5d9e2fe5b6424a0bfa123d42254ffd98a1388c27c722325ece51f691c0935"
 
   url "https://download-chromium.appspot.com/dl/#{arch}?type=snapshots",
       verified: "download-chromium.appspot.com/dl/"
@@ -14,8 +14,8 @@ cask "chromium" do
     url "https://chromiumdash.appspot.com/fetch_releases?platform=Mac&channel=stable"
     strategy :page_match do |page|
       json = JSON.parse(page)
-      latest = json.first
-      "#{latest["version"]},#{latest["chromium_main_branch_position"]}"
+      second_latest = json[1]
+      "#{second_latest["version"]},#{second_latest["chromium_main_branch_position"]}"
     end
   end
 
