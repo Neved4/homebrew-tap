@@ -1,7 +1,7 @@
 cask "chromium" do
   arch arm: "Mac_Arm", intel: "Mac"
 
-  version "134.0.6990.0,6990.0"
+  version "133.0.6943.35,1402768"
   sha256 "f5a370290cab9733a733d04978e569d124b84f2a44bcb91797f238ca6e1267ea"
 
   url "https://download-chromium.appspot.com/dl/#{arch}?type=snapshots",
@@ -11,8 +11,12 @@ cask "chromium" do
   homepage "https://www.chromium.org/Home"
 
   livecheck do
-    url :url
-    strategy :extract_plist
+    url "https://chromiumdash.appspot.com/fetch_releases?platform=Mac&channel=stable"
+    strategy :page_match do |page|
+      json = JSON.parse(page)
+      latest = json.first
+      "#{latest["version"]},#{latest["chromium_main_branch_position"]}"
+    end
   end
 
   conflicts_with cask: [
@@ -22,7 +26,6 @@ cask "chromium" do
   depends_on macos: ">= :big_sur"
 
   app "chrome-mac/Chromium.app"
-  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/chromium.wrapper.sh"
   binary shimscript, target: "chromium"
 
