@@ -1,23 +1,14 @@
 cask "chromium" do
   arch arm: "Mac_Arm", intel: "Mac"
 
-  version "132.0.6834.161,1381561"
-  sha256 "60d5d9e2fe5b6424a0bfa123d42254ffd98a1388c27c722325ece51f691c0935"
+  version :latest
+  sha256 :no_check
 
   url "https://download-chromium.appspot.com/dl/#{arch}?type=snapshots",
       verified: "download-chromium.appspot.com/dl/"
   name "Chromium"
   desc "Free and open-source web browser"
   homepage "https://www.chromium.org/Home"
-
-  livecheck do
-    url "https://chromiumdash.appspot.com/fetch_releases?platform=Mac&channel=stable"
-    strategy :page_match do |page|
-      json = JSON.parse(page)
-      second_latest = json[1]
-      "#{second_latest["version"]},#{second_latest["chromium_main_branch_position"]}"
-    end
-  end
 
   conflicts_with cask: [
     "eloston-chromium",
