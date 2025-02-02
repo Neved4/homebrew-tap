@@ -65,8 +65,10 @@
   Ada/SPARK package manager.
 - [babelfish] [<kbd>go</kbd>]
   Translate bash scripts to fish.
-- [Chromium] [<kbd>c++</kbd>]
-  Chromium web browser, with API keys loaded.
+- [chromium-enabled] [<kbd>c++</kbd>]
+  Chromium web browser, with enabled features.
+- [chromium-ungoogled] [<kbd>c++</kbd>]
+  Google Chromium, sans integration with Google.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
   Yet another matrix client for desktop.
 - [comrak] [<kbd>rust</kbd>]
@@ -87,8 +89,6 @@
   ASCII / ANSI art viewer.
 - [typst-ansi-hl] [<kbd>rust</kbd>]
   Highlight your Typst code using ANSI escape sequences.
-- [ungoogled-chromium] [<kbd>c++</kbd>]
-  Google Chromium, sans integration with Google.
 - [volatility] [<kbd>python</kbd>]
   Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
@@ -98,18 +98,18 @@
 
 [alire]: https://github.com/alire-project/alire
 [babelfish]: https://github.com/bouk/babelfish
-[Chromium]: https://www.chromium.org/Home/
+[chromium-enabled]: https://www.chromium.org/Home/
+[chromium-ungoogled]: https://github.com/ungoogled-software/ungoogled-chromium
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
 [comrak]: https://github.com/kivikakk/comrak
-[demagnetize]: https://github.com/jwodder/demagnetize
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
+[demagnetize]: https://github.com/jwodder/demagnetize
 [doas]: https://github.com/slicer69/doas
 [font-monego]: https://github.com/cseelus/monego
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
-[ungoogled-chromium]: https://github.com/ungoogled-software/ungoogled-chromium
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [wordtidy]: https://github.com/sts10/tidy

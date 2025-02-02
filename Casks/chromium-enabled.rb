@@ -1,4 +1,4 @@
-cask "chromium" do
+cask "chromium-enabled" do
   arch arm: "Mac_Arm", intel: "Mac"
 
   version :latest
