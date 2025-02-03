@@ -1,4 +1,4 @@
-cask "ungoogled-chromium" do
+cask "chromium-ungoogled" do
   arch arm: "arm64", intel: "x86_64"
 
   version "132.0.6834.110-1.1"
