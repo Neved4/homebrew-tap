@@ -31,8 +31,6 @@ cask "chromium-stable" do
   conflicts_with cask: [
     "eloston-chromium",
     "freesmug-chromium",
-    "chromium-enabled",
-    "chromium-ungoogled",
   ]
 
   postflight do
