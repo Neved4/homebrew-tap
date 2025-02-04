@@ -1,4 +1,4 @@
-cask "chromium-stable" do
+cask "chromium@stable" do
   arch arm: "MacOsArm64", intel: "MacOsx"
 
   version "2024.12.1"

@@ -65,9 +65,11 @@
   Ada/SPARK package manager.
 - [babelfish] [<kbd>go</kbd>]
   Translate bash scripts to fish.
-- [chromium-enabled] [<kbd>c++</kbd>]
-  Chromium web browser, with enabled features.
-- [chromium-ungoogled] [<kbd>c++</kbd>]
+- [chromium@api] [<kbd>c++</kbd>]
+  Chromium web browser, with API features enabled.
+- [chromium@stable] [<kbd>c++</kbd>]
+  Chromium stable, from Burp Browser.
+- [chromium@ungoogled] [<kbd>c++</kbd>]
   Google Chromium, sans integration with Google.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
   Yet another matrix client for desktop.
@@ -81,6 +83,8 @@
   Execute commands as another user.
 - [font-monego]
   The beloved Monaco monospaced font, recreated with bold and italic variants.
+- [google-chrome@testing] [<kbd>c++</kbd>]
+  Google Chrome for Testing.
 - [johnnybgoode] [<kbd>rust</kbd>]
   An assistant for users of the Johnny Decimal file organization system.
 - [Ladybird] [<kbd>c++</kbd>]
