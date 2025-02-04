@@ -34,18 +34,15 @@ cask "chromium@stable" do
   ]
 
   postflight do
-    burp_app = staged_path.join("Burp Suite Community Edition.app")
-    chromium_version = Dir.glob(burp_app.join("Contents/Resources/app/burpbrowser/*")).map do |p|
-      File.basename(p)
-    end.first
-    chromium_app = burp_app.join("Contents/Resources/app/burpbrowser/#{chromium_version}/Chromium.app")
+    chromium_app = Dir[
+      "#{staged_path}/Burp Suite Community Edition.app/Contents/Resources/app/" \
+      "burpbrowser/*/Chromium.app"
+    ].first
 
-    if chromium_app.exist?
-      system_command "/bin/mv",
-                     args: [chromium_app, "#{appdir}/Chromium.app"],
-                     sudo: false
+    if chromium_app
+      FileUtils.mv chromium_app, "#{appdir}/Chromium.app"
     else
-      opoo "Chromium.app was not found at expected location: #{chromium_app}"
+      opoo "Chromium.app was not found in the expected location."
     end
   end
 
