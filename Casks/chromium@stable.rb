@@ -33,18 +33,11 @@ cask "chromium@stable" do
     "freesmug-chromium",
   ]
 
-  postflight do
-    chromium_app = Dir[
-      "#{staged_path}/Burp Suite Community Edition.app/Contents/Resources/app/" \
-      "burpbrowser/*/Chromium.app"
-    ].first
-
-    if chromium_app
-      FileUtils.mv chromium_app, "#{appdir}/Chromium.app"
-    else
-      opoo "Chromium.app was not found in the expected location."
-    end
-  end
+  chromium_app = Dir[
+    "#{staged_path}/Burp Suite Community Edition.app/Contents/Resources/app/" \
+    "burpbrowser/*/Chromium.app"
+  ].first
+  app "#{chromium_app}"
 
   uninstall delete: "#{appdir}/Chromium.app"
 
