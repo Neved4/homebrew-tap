@@ -37,7 +37,7 @@ cask "chromium@stable" do
     "#{staged_path}/Burp Suite Community Edition.app/Contents/Resources/app/" \
     "burpbrowser/*/Chromium.app"
   ].first
-  app "#{chromium_app}"
+  app chromium_app.to_s
 
   uninstall delete: "#{appdir}/Chromium.app"
 
