@@ -91,7 +91,9 @@
   Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
-- [typst-ansi-hl] [<kbd>rust</kbd>]
+- [regular] [<kbd>typescript</kbd>]
+  Job scheduler: an alternative to cron and anacron.
+- [typst-ansi-hl] [<kbd>go</kbd>]
   Highlight your Typst code using ANSI escape sequences.
 - [volatility] [<kbd>python</kbd>]
   Advanced memory forensics framework.
@@ -113,6 +115,7 @@
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
+[regular]: https://github.com/dbohdan/regular
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
