@@ -64,6 +64,8 @@
 
 - [alire] [<kbd>ada</kbd>]
   Ada/SPARK package manager.
+- [apg-go] [<kbd>go</kbd>]
+  A modern "Automated Password Generator"-clone written in Go.
 - [babelfish] [<kbd>go</kbd>]
   Translate bash scripts to fish.
 - [chromium@api] [<kbd>c++</kbd>]
@@ -110,6 +112,7 @@
   Combine and clean word lists.
 
 [alire]: https://github.com/alire-project/alire
+[apg-go]: https://github.com/wneessen/apg-go
 [babelfish]: https://github.com/bouk/babelfish
 [chromium@api]: https://www.chromium.org/Home/
 [chromium@stable]: https://www.chromium.org/Home/
