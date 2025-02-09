@@ -6,6 +6,14 @@ class Packer < Formula
   license "BUSL-1.1"
   head "https://github.com/hashicorp/packer.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/packer-1.12.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8fbf64c8e97ef3f03859685da54bc8905a1aca2c7404c84c7401ea6f35532a20"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "5cb6a09d40b89761eb5cf3da044d5e588799e7b68e04d4ac4545ec8babe4bca3"
+    sha256 cellar: :any_skip_relocation, ventura:       "1f98607e00ab167ff1432f76d3cd6727d17280c29d77f3244e746d328ca59b72"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7e525ffb8d5b776b5ef126a4214498968f7b42a5806970a28568e3e1b79520c1"
+  end
+
   depends_on "go" => :build
 
   def install
