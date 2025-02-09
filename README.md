@@ -9,23 +9,24 @@
 
 <!-- START SYNC -->
 
+[<kbd>ada</kbd>]: https://www.adacore.com/about-ada
 [<kbd>awk</kbd>]: https://github.com/onetrueawk/awk
-[<kbd>c</kbd>]: https://www.iso.org/standard/74528.html
 [<kbd>c++</kbd>]: https://isocpp.org
+[<kbd>c</kbd>]: https://www.iso.org/standard/74528.html
+[<kbd>fish-shell</kbd>]: https://fishshell.com/
 [<kbd>go</kbd>]: https://go.dev/
 [<kbd>iso-8601</kbd>]: https://www.iso.org/iso-8601-date-and-time-format.html
-[<kbd>fish-shell</kbd>]: https://fishshell.com/
-[<kbd>posix-shell</kbd>]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
-[<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
-[<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
-[<kbd>python</kbd>]: https://www.python.org
-[<kbd>swift</kbd>]: https://developer.apple.com/swift/
-[<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
-[<kbd>rust</kbd>]: https://www.rust-lang.org/
 [<kbd>java</kbd>]: https://dev.java/
 [<kbd>javascript</kbd>]: https://ecma-international.org/publications-and-standards/standards/ecma-262/
+[<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+[<kbd>posix-shell</kbd>]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
+[<kbd>python</kbd>]: https://www.python.org
+[<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
+[<kbd>rust</kbd>]: https://www.rust-lang.org/
+[<kbd>swift</kbd>]: https://developer.apple.com/swift/
 [<kbd>typescript</kbd>]: https://www.typescriptlang.org/
-[<kbd>ada</kbd>]: https://www.adacore.com/about-ada
+[<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
+[<kbd>zig</kbd>]: https://ziglang.org/
 [Homebrew]: https://brew.sh/
 [MIT License]: https://opensource.org/license/mit/
 [Neved4]: https://github.com/Neved4
@@ -87,6 +88,8 @@
   Google Chrome for Testing.
 - [johnnybgoode] [<kbd>rust</kbd>]
   An assistant for users of the Johnny Decimal file organization system.
+- [koino] [<kbd>zig</kbd>]
+  CommonMark + GFM compatible Markdown parser and renderer
 - [Ladybird] [<kbd>c++</kbd>]
   Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
@@ -115,6 +118,7 @@
 [font-monego]: https://github.com/cseelus/monego
 [google-chrome@testing]: https://developer.chrome.com/blog/chrome-for-testing
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
+[koino]: https://github.com/kivikakk/koino
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
 [regular]: https://github.com/dbohdan/regular
