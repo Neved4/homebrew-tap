@@ -1,5 +1,5 @@
 class ApgGo < Formula
-  desc "A modern Automated Password Generator-clone written in Go"
+  desc "Modern Automated Password Generator-clone written in Go"
   homepage "https://github.com/wneessen/apg-go"
   url "https://github.com/wneessen/apg-go/archive/refs/tags/v1.2.0.tar.gz"
   sha256 "dfe7633a6fe7fd40f9fc2ae43ce66a5d8224a732b8051f65504123fe0a95bb40"
