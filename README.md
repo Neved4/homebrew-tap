@@ -91,6 +91,8 @@
   Truly independent web browser.
 - [nfov] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
+- [puncia] [<kbd>python</kbd>]
+  Official CLI utility for Osprey Vision, Subdomain Center & Exploit Observer.
 - [regular] [<kbd>typescript</kbd>]
   Job scheduler: an alternative to cron and anacron.
 - [typst-ansi-hl] [<kbd>go</kbd>]
@@ -117,6 +119,7 @@
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
+[puncia]: https://github.com/ARPSyndicate/puncia
 [regular]: https://github.com/dbohdan/regular
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
 [volatility]: https://github.com/volatilityfoundation/volatility
