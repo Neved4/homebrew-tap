@@ -8,6 +8,14 @@ class Puncia < Formula
   license "MIT"
   head "https://github.com/ARPSyndicate/puncia.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/puncia-0.27"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "6354ab04f375e1f050c76c5b24521bcdae54a84cd13c9f63f0921231c32f536a"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "ac36b499e6de767b81dc943a2b905e91bfd71a8c5f28a1fb7141b1e58057c868"
+    sha256 cellar: :any_skip_relocation, ventura:       "d5e404ee16aeb400fd98ba20a583e712271fac56e7863b0d1e40279ec328e487"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "96746123f24a90750056de992972998f58054440f361338ac2f8781728452fb7"
+  end
+
   depends_on "python@3.13"
 
   resource "certifi" do
