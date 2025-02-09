@@ -5,7 +5,7 @@ class Koino < Formula
   sha256 "3f98f9eb38350dab8fd3718df26e7cef2a96caf30f2baf12aa62f2c773fecf2a"
   license "MIT"
   # brew wants `main` which won't actually build on zig >=0.13.0
-  #head "https://github.com/kivikakk/koino.git", branch: "zig-0.13.0"
+  # head "https://github.com/kivikakk/koino.git", branch: "zig-0.13.0"
 
   livecheck do
     skip "No tagged version available"
