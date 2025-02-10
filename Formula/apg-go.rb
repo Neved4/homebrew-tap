@@ -6,6 +6,14 @@ class ApgGo < Formula
   license "MIT"
   head "https://github.com/wneessen/apg-go.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/apg-go-1.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "b784e5afd5ab85887239894bfe781c73059b19621fe2862afd220d27fc1878fe"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "50387f827947a01d190ba002ea736f2be39f65dda1a3b893014e1136f0821de8"
+    sha256 cellar: :any_skip_relocation, ventura:       "1fde078d4ebe37483b0c16f693ae255739af73211078710e9f922fd07f32e49f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0244aacd456d619cecf4f4d27f5f09dfad08f9c4a6a1fcb03c5e91e70addd911"
+  end
+
   depends_on "go" => :build
 
   def install
