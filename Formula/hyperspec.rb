@@ -13,6 +13,14 @@ class Hyperspec < Formula
     end
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/hyperspec-7.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "0980b6ac1842dd42ef40dc801428cde0fb2eff7b59eeff03716bc57ced3fa56b"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "a31b4fbe3ebb5a669a248fc6fc83194266eaacf7f8c24c563c511a8041f375a6"
+    sha256 cellar: :any_skip_relocation, ventura:       "0f8a93185df2ba5bd4c2a7d143129070f1f66de1d80bb8672e896d4ba2a61f2a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "88cdedec47f26c12d145d785fdd660ae82953bcd23e5ceac68834abd8c703145"
+  end
+
   def install
     doc.install Dir["*"]
   end
