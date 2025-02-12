@@ -88,6 +88,8 @@
   The beloved Monaco monospaced font, recreated with bold and italic variants.
 - [google-chrome@testing] [<kbd>c++</kbd>]
   Google Chrome for Testing.
+- [hyperspec]
+  Common Lisp ANSI-standard Hyperspec.
 - [johnnybgoode] [<kbd>rust</kbd>]
   An assistant for users of the Johnny Decimal file organization system.
 - [koino] [<kbd>zig</kbd>]
@@ -124,6 +126,7 @@
 [doas]: https://github.com/slicer69/doas
 [font-monego]: https://github.com/cseelus/monego
 [google-chrome@testing]: https://developer.chrome.com/blog/chrome-for-testing
+[hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [koino]: https://github.com/kivikakk/koino
 [ladybird]: https://ladybird.org/
