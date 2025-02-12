@@ -9,6 +9,14 @@ class Unarj < Formula
     regex(/href=.*?unarj[._-]v?(\d+(?:\.\d+)+[a-z]?)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/unarj-2.65"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "2322006fa53e1e6318c91c2f5b9f0266319405282e0dd9dd9b7d2d5e1419bfea"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "0ed47a012058845d2dee6e3ea9c4197f030aec7314d49abd68ffea006ed36c94"
+    sha256 cellar: :any_skip_relocation, ventura:       "4b6bffaea32945e763707c417a41a01d4d728945c779b7e6338cb6a23a2577cf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "451bacefa8a1caf04023bf2e095296357ddf80d0bf6a6df57580f119a95be18c"
+  end
+
   resource "testfile" do
     url "https://s3.amazonaws.com/ARJ/ARJ286.EXE"
     sha256 "e7823fe46fd971fe57e34eef3105fa365ded1cc4cc8295ca3240500f95841c1f"
