@@ -92,6 +92,8 @@
   Common Lisp ANSI-standard Hyperspec.
 - [johnnybgoode] [<kbd>rust</kbd>]
   An assistant for users of the Johnny Decimal file organization system.
+- [jsmin] [<kbd>c</kbd>]
+  Minify JavaScript code.
 - [koino] [<kbd>zig</kbd>]
   CommonMark + GFM compatible Markdown parser and renderer
 - [Ladybird] [<kbd>c++</kbd>]
@@ -130,6 +132,7 @@
 [google-chrome@testing]: https://developer.chrome.com/blog/chrome-for-testing
 [hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
+[jsmin]: https://www.crockford.com/javascript/jsmin.html
 [koino]: https://github.com/kivikakk/koino
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
