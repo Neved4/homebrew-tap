@@ -90,6 +90,8 @@
   Google Chrome for Testing.
 - [johnnybgoode] [<kbd>rust</kbd>]
   An assistant for users of the Johnny Decimal file organization system.
+- [jsmin] [<kbd>c</kbd>]
+  Minify JavaScript code.
 - [koino] [<kbd>zig</kbd>]
   CommonMark + GFM compatible Markdown parser and renderer
 - [Ladybird] [<kbd>c++</kbd>]
@@ -125,6 +127,7 @@
 [font-monego]: https://github.com/cseelus/monego
 [google-chrome@testing]: https://developer.chrome.com/blog/chrome-for-testing
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
+[jsmin]: https://www.crockford.com/javascript/jsmin.html
 [koino]: https://github.com/kivikakk/koino
 [ladybird]: https://ladybird.org/
 [nfov]: https://nrlquaker.github.io/nfov/
