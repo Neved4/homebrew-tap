@@ -76,8 +76,6 @@
   Google Chromium, sans integration with Google.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
   Yet another matrix client for desktop.
-- [comrak] [<kbd>rust</kbd>]
-  CommonMark + GFM compatible Markdown parser and renderer.
 - [demagnetize] [<kbd>python</kbd>]
   Convert magnet links to .torrent files.
 - [demagnetize-rs] [<kbd>rust</kbd>]
@@ -124,7 +122,6 @@
 [chromium@stable]: https://www.chromium.org/Home/
 [chromium@ungoogled]: https://github.com/ungoogled-software/ungoogled-chromium
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
-[comrak]: https://github.com/kivikakk/comrak
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
 [doas]: https://github.com/slicer69/doas
