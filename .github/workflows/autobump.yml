@@ -3,9 +3,6 @@ name: Autobump Formulas and Casks
 on:
   schedule:
     - cron: "0 0 * * 0"
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
