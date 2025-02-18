@@ -76,8 +76,6 @@
   Google Chromium, sans integration with Google.
 - [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
   Yet another matrix client for desktop.
-- [comrak] [<kbd>rust</kbd>]
-  CommonMark + GFM compatible Markdown parser and renderer.
 - [demagnetize] [<kbd>python</kbd>]
   Convert magnet links to .torrent files.
 - [demagnetize-rs] [<kbd>rust</kbd>]
@@ -98,9 +96,9 @@
   CommonMark + GFM compatible Markdown parser and renderer
 - [Ladybird] [<kbd>c++</kbd>]
   Truly independent web browser.
-- [nfov] [<kbd>typescript</kbd>]
+- [nfov@tmp] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
-- [packer] [<kbd>go</kbd>]
+- [packer@tmp] [<kbd>go</kbd>]
   Tool for creating identical machine images for multiple platforms.
 - [puncia] [<kbd>python</kbd>]
   Official CLI utility for Osprey Vision, Subdomain Center & Exploit Observer.
