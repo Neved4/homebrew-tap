@@ -106,7 +106,7 @@
   Job scheduler: an alternative to cron and anacron.
 - [typst-ansi-hl] [<kbd>go</kbd>]
   Highlight your Typst code using ANSI escape sequences.
-- [ujarj] [<kbd>c</kbd>]
+- [unarj] [<kbd>c</kbd>]
   ARJ file archiver.
 - [volatility] [<kbd>python</kbd>]
   Advanced memory forensics framework.
