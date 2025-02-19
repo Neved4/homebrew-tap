@@ -41,6 +41,6 @@ class Hyperspec < Formula
   end
 
   test do
-    assert_predicate doc/"HyperSpec-README.text", :exist?
+    assert_path_exists doc/"HyperSpec-README.text"
   end
 end
