@@ -1,4 +1,4 @@
-cask "nfov@tmp" do
+cask "nfov-tmp" do
   version "1.3.1"
   sha256 "a23ef50f243453cec012a2f2a754fb44b3c5e997a0703feabda53235274c1e69"
 
