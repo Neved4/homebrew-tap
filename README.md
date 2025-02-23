@@ -98,7 +98,7 @@
   Truly independent web browser.
 - [nfov@tmp] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
-- [packer@tmp] [<kbd>go</kbd>]
+- [packer-tmp] [<kbd>go</kbd>]
   Tool for creating identical machine images for multiple platforms.
 - [puncia] [<kbd>python</kbd>]
   Official CLI utility for Osprey Vision, Subdomain Center & Exploit Observer.
@@ -106,7 +106,7 @@
   Job scheduler: an alternative to cron and anacron.
 - [typst-ansi-hl] [<kbd>go</kbd>]
   Highlight your Typst code using ANSI escape sequences.
-- [ujarj] [<kbd>c</kbd>]
+- [unarj] [<kbd>c</kbd>]
   ARJ file archiver.
 - [volatility] [<kbd>python</kbd>]
   Advanced memory forensics framework.
@@ -133,8 +133,8 @@
 [jsmin]: https://www.crockford.com/javascript/jsmin.html
 [koino]: https://github.com/kivikakk/koino
 [ladybird]: https://ladybird.org/
-[nfov]: https://nrlquaker.github.io/nfov/
-[packer]: https://www.packer.io/
+[nfov@tmp]: https://nrlquaker.github.io/nfov/
+[packer-tmp]: https://www.packer.io/
 [puncia]: https://github.com/ARPSyndicate/puncia
 [regular]: https://github.com/dbohdan/regular
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
