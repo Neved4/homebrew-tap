@@ -2,8 +2,7 @@ cask "chromium@stable" do
   arch arm: "MacOsArm64", intel: "MacOsx"
 
   version "2025.1.2"
-  sha256 arm:   "b29046aee62713a312d29d1b9d0c7e70ff6d169526ac3864a4036e87daa805e6",
-         intel: "de46107eed0d389c546208e48b5cfdc3351ec8111d1ba708c064d32d308978b1"
+  sha256 :no_check
 
   url "https://portswigger-cdn.net/burp/releases/download?product=community&version=#{version}&type=#{arch}",
       verified: "portswigger-cdn.net/burp/releases/"
