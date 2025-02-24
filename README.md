@@ -122,7 +122,6 @@
 [chromium@stable]: https://www.chromium.org/Home/
 [chromium@ungoogled]: https://github.com/ungoogled-software/ungoogled-chromium
 [Cinny]: https://github.com/cinnyapp/cinny-desktop
-[comrak]: https://github.com/kivikakk/comrak
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
 [doas]: https://github.com/slicer69/doas
