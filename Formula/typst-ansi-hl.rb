@@ -1,8 +1,8 @@
 class TypstAnsiHl < Formula
   desc "Highlight your Typst code using ANSI escape sequences"
   homepage "https://github.com/frozolotl/typst-ansi-hl"
-  url "https://github.com/frozolotl/typst-ansi-hl/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "b79ed864ed5efcd5379a8a74ea4fd358e598812baaea84bd264bc1bd133b7876"
+  url "https://github.com/frozolotl/typst-ansi-hl/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "312cd936305dfa7abc584f29bc4eb7703c84a141ae33dbd22b17efe9ad3ab56b"
   license "EUPL-1.2"
   head "https://github.com/frozolotl/typst-ansi-hl.git", branch: "master"
 
