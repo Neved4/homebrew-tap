@@ -7,11 +7,11 @@ class TypstAnsiHl < Formula
   head "https://github.com/frozolotl/typst-ansi-hl.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/typst-ansi-hl-0.2.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "43fb932693b87d7c93e4f75b8eb8df82bbd6952706d01f43ba8877bd026ed79b"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "d4de0bb2e151596fc576fc24c3b220ea3dd5a9c8187356c60f0630aa478b35be"
-    sha256 cellar: :any_skip_relocation, ventura:       "4932643818528e6f9fe20e6402e1124d5262a78948f6626c50c18da3324d0395"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "19fea07d8aa957f5f869cbf9a71a2399032f7371e034a1b6b5cf3e549712f25c"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/typst-ansi-hl-0.4.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "237e7e2b7e10f707db0734d6e01b1970fa37128195c7521628d4f783efcfb622"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "161fcbc85c90b4af853b09fd62a491fd920c76fc17ea92ce74cf0261c2a47666"
+    sha256 cellar: :any_skip_relocation, ventura:       "3f39f59578899af9f28c06fb4ef2f9d19735c7a74d45f83d48de5cf2b59bbbfc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1c367a44c522aa8c26366b23b7d1a34acf97980b9883e88ceae9754ae8915d81"
   end
 
   depends_on "rust" => :build
