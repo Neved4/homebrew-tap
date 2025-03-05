@@ -1,8 +1,7 @@
 class Alire < Formula
   desc "Ada/SPARK package manager"
   homepage "https://alire.ada.dev/"
-  os = OS.mac? ? "macos" : "linux"
-  url "https://github.com/alire-project/alire/releases/download/v2.1.0/alr-2.1.0-bin-x86_64-${os}.zip"
+  url "https://github.com/alire-project/alire/releases/download/v2.1.0/alr-2.1.0-bin-x86_64-#{OS.mac? ? "macos" : "linux"}.zip"
   if OS.mac?
     sha256 "67d3389833b936a56534b7ad2ea91164b18db40318571e904fc8ab41aca7acc8"
   elsif OS.linux?
