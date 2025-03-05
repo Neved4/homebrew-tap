@@ -1,12 +1,12 @@
 class Alire < Formula
   desc "Ada/SPARK package manager"
   homepage "https://alire.ada.dev/"
-  url "https://github.com/alire-project/alire/releases/download/v2.1.0/alr-2.1.0-bin-x86_64-macos.zip"
-  sha256 "67d3389833b936a56534b7ad2ea91164b18db40318571e904fc8ab41aca7acc8"
-
-  if OS.linux?
-    url "https://github.com/alire-project/alire/releases/download/v#{version}/alr-#{version}-bin-x86_64-linux.zip"
-    sha256 "579de127341a1a684e07410b8b7a15ea7c2b39c47fd1a21179202203afe4be23"
+  os = OS.mac? ? "macos" : "linux"
+  url "https://github.com/alire-project/alire/releases/download/v2.1.0/alr-2.1.0-bin-x86_64-${os}.zip"
+  if OS.mac?
+    sha256 "67d3389833b936a56534b7ad2ea91164b18db40318571e904fc8ab41aca7acc8"
+  elsif OS.linux?
+    sha256 "e3b32cb0afe981b23d1a68da77452cf81ee1d82de8ebaf01c5e233be8b463fbe"
   end
 
   bottle do
