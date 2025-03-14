@@ -13,9 +13,11 @@ class Iozone < Formula
     end
   end
 
-  depends_on "gcc@13" => :build
+  # depends_on "gcc@13" => :build
 
   def install
+    ENV.append_to_cflags "-Wno-implicit-function-declaration" if DevelopmentTools.clang_build_version >= 1403
+
     cd "src/current" do
       target = OS.mac? ? "macosx" : OS.kernel_name.downcase
       system "make", "clean"
