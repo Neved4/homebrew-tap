@@ -15,6 +15,7 @@ class Iozone < Formula
 
   def install
     ENV.append_to_cflags "-Wno-implicit-function-declaration" if DevelopmentTools.clang_build_version >= 1403
+    ENV.append_to_cflags "-Wno-deprecated-non-prototype" if DevelopmentTools.clang_build_version >= 1403
 
     cd "src/current" do
       target = OS.mac? ? "macosx" : OS.kernel_name.downcase
