@@ -13,6 +13,8 @@ class Iozone < Formula
     end
   end
 
+  depends_on "gcc@13" => :build
+
   def install
     cd "src/current" do
       target = OS.mac? ? "macosx" : OS.kernel_name.downcase
