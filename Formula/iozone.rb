@@ -13,8 +13,6 @@ class Iozone < Formula
     end
   end
 
-  # depends_on "gcc@13" => :build
-
   def install
     ENV.append_to_cflags "-Wno-implicit-function-declaration" if DevelopmentTools.clang_build_version >= 1403
 
