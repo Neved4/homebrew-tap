@@ -96,8 +96,6 @@
   Minify JavaScript code.
 - [koino] [<kbd>zig</kbd>]
   CommonMark + GFM compatible Markdown parser and renderer
-- [Ladybird] [<kbd>c++</kbd>]
-  Truly independent web browser.
 - [nfov@tmp] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
 - [packer-tmp] [<kbd>go</kbd>]
@@ -134,7 +132,6 @@
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [jsmin]: https://www.crockford.com/javascript/jsmin.html
 [koino]: https://github.com/kivikakk/koino
-[ladybird]: https://ladybird.org/
 [nfov@tmp]: https://nrlquaker.github.io/nfov/
 [packer-tmp]: https://www.packer.io/
 [puncia]: https://github.com/ARPSyndicate/puncia
