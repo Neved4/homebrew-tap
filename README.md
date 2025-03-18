@@ -82,8 +82,6 @@
   Convert magnet links to .torrent files.
 - [dgen] [<kbd>c</kbd>]
   Sega Genesis / Mega Drive emulator.
-- [doas] [<kbd>c</kbd>]
-  Execute commands as another user.
 - [font-monego]
   The beloved Monaco monospaced font, recreated with bold and italic variants.
 - [google-chrome@testing] [<kbd>c++</kbd>]
@@ -125,7 +123,6 @@
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
 [dgen]: https://dgen.sourceforge.net/
-[doas]: https://github.com/slicer69/doas
 [font-monego]: https://github.com/cseelus/monego
 [google-chrome@testing]: https://developer.chrome.com/blog/chrome-for-testing
 [hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
