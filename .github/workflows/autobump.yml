@@ -10,7 +10,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Update Homebrew formula
-        uses: dawidd6/action-homebrew-bump-formula@baf2b60c51fc1f8453c884b0c61052668a71bd1d
+        uses: dawidd6/action-homebrew-bump-formula@8d494330bce4434918392df134ad3db1167904db # v4
         with:
           token: ${{ secrets.HOMEBREW_TAP_GITHUB_API_TOKEN }}
           user_name: Neved4
@@ -20,7 +20,7 @@ jobs:
           force: true
           livecheck: true
       - name: Update Homebrew cask
-        uses: eugenesvk/action-homebrew-bump-cask@cc260684c6e41de1af9522a0f4dcb4f321a17f33
+        uses: eugenesvk/action-homebrew-bump-cask@cc260684c6e41de1af9522a0f4dcb4f321a17f33 # v3.8.4
         with:
           token: ${{ secrets.HOMEBREW_TAP_GITHUB_API_TOKEN }}
           tap: Neved4/homebrew-tap
