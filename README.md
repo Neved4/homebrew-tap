@@ -12,7 +12,7 @@
 [<kbd>ada</kbd>]: https://www.adacore.com/about-ada
 [<kbd>awk</kbd>]: https://github.com/onetrueawk/awk
 [<kbd>c++</kbd>]: https://isocpp.org
-[<kbd>c</kbd>]: https://www.iso.org/standard/74528.html
+[<kbd>c</kbd>]: https://www.c-language.org/
 [<kbd>fish-shell</kbd>]: https://fishshell.com/
 [<kbd>go</kbd>]: https://go.dev/
 [<kbd>iso-8601</kbd>]: https://www.iso.org/iso-8601-date-and-time-format.html
@@ -27,6 +27,7 @@
 [<kbd>typescript</kbd>]: https://www.typescriptlang.org/
 [<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
 [<kbd>zig</kbd>]: https://ziglang.org/
+
 [Homebrew]: https://brew.sh/
 [MIT License]: https://opensource.org/license/mit/
 [Neved4]: https://github.com/Neved4
