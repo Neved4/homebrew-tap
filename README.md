@@ -1,11 +1,11 @@
 # `homebrew-tap` - Homebrew taps and formulae! 💎
 
-[Homebrew] taps for [Neved4]'s utilities.
+[Homebrew] taps for [Neved4]'s patches & utilities.
 
 > [!IMPORTANT]
 > Packages are updated _weekly_.
 
-## Formulae & Casks
+## Formulae & Casks 🍺
 
 <!-- START SYNC -->
 
@@ -61,7 +61,9 @@
 
 <!-- END SYNC -->
 
-### External & Third-party 🍺
+## External & Third-party 🍻
+
+### Formula
 
 - [alire] [<kbd>ada</kbd>]
   Ada/SPARK package manager.
@@ -71,24 +73,12 @@
   Translate bash scripts to fish.
 - [center] [<kbd>c</kbd>]
   Centers text read from stdin.
-- [chromium@api] [<kbd>c++</kbd>]
-  Chromium web browser, with API features enabled.
-- [chromium@stable] [<kbd>c++</kbd>]
-  Chromium stable, from Burp Browser.
-- [chromium@ungoogled] [<kbd>c++</kbd>]
-  Google Chromium, sans integration with Google.
-- [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
-  Yet another matrix client for desktop.
 - [demagnetize] [<kbd>python</kbd>]
   Convert magnet links to .torrent files.
 - [demagnetize-rs] [<kbd>rust</kbd>]
   Convert magnet links to .torrent files.
 - [dgen] [<kbd>c</kbd>]
   Sega Genesis / Mega Drive emulator.
-- [font-monego]
-  The beloved Monaco monospaced font, recreated with bold and italic variants.
-- [google-chrome@testing] [<kbd>c++</kbd>]
-  Google Chrome for Testing.
 - [hyperspec]
   Common Lisp ANSI-standard Hyperspec.
 - [johnnybgoode] [<kbd>rust</kbd>]
@@ -97,8 +87,6 @@
   Minify JavaScript code.
 - [koino] [<kbd>zig</kbd>]
   CommonMark + GFM compatible Markdown parser and renderer
-- [nfov@tmp] [<kbd>typescript</kbd>]
-  ASCII / ANSI art viewer.
 - [packer-tmp] [<kbd>go</kbd>]
   Tool for creating identical machine images for multiple platforms.
 - [puncia] [<kbd>python</kbd>]
@@ -115,6 +103,23 @@
   Wrap commands in specific Java versions.
 - [wordtidy] [<kbd>rust</kbd>]
   Combine and clean word lists.
+
+### Casks
+
+- [chromium@api] [<kbd>c++</kbd>]
+  Chromium web browser, with API features enabled.
+- [chromium@stable] [<kbd>c++</kbd>]
+  Chromium stable, from Burp Browser.
+- [chromium@ungoogled] [<kbd>c++</kbd>]
+  Google Chromium, sans integration with Google.
+- [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
+  Yet another matrix client for desktop.
+- [font-monego]
+  The beloved Monaco monospaced font, recreated with bold and italic variants.
+- [google-chrome@testing] [<kbd>c++</kbd>]
+  Google Chrome for Testing.
+- [nfov@tmp] [<kbd>typescript</kbd>]
+  ASCII / ANSI art viewer.
 
 [alire]: https://github.com/alire-project/alire
 [apg-go]: https://github.com/wneessen/apg-go
