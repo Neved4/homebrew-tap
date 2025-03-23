@@ -69,6 +69,8 @@
   A modern "Automated Password Generator"-clone written in Go.
 - [babelfish] [<kbd>go</kbd>]
   Translate bash scripts to fish.
+- [center] [<kbd>c</kbd>]
+  Centers text read from stdin.
 - [chromium@api] [<kbd>c++</kbd>]
   Chromium web browser, with API features enabled.
 - [chromium@stable] [<kbd>c++</kbd>]
@@ -117,6 +119,7 @@
 [alire]: https://github.com/alire-project/alire
 [apg-go]: https://github.com/wneessen/apg-go
 [babelfish]: https://github.com/bouk/babelfish
+[center]: https://github.com/LizzyFleckenstein03/center
 [chromium@api]: https://www.chromium.org/Home/
 [chromium@stable]: https://www.chromium.org/Home/
 [chromium@ungoogled]: https://github.com/ungoogled-software/ungoogled-chromium
