@@ -116,6 +116,8 @@
   Yet another matrix client for desktop.
 - [font-monego]
   The beloved Monaco monospaced font, recreated with bold and italic variants.
+- [freewrite] [<kbd>swift</kbd>]
+  Write continuously without distraction.
 - [google-chrome@testing] [<kbd>c++</kbd>]
   Google Chrome for Testing.
 - [nfov@tmp] [<kbd>typescript</kbd>]
@@ -133,6 +135,7 @@
 [demagnetize]: https://github.com/jwodder/demagnetize
 [dgen]: https://dgen.sourceforge.net/
 [font-monego]: https://github.com/cseelus/monego
+[freewrite]: https://freewrite.io/
 [google-chrome@testing]: https://developer.chrome.com/blog/chrome-for-testing
 [hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
