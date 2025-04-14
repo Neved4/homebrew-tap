@@ -81,6 +81,8 @@
   Sega Genesis / Mega Drive emulator.
 - [hyperspec]
   Common Lisp ANSI-standard Hyperspec.
+- [iozone] [<kbd>c</kbd>]
+  File system benchmark tool.
 - [johnnybgoode] [<kbd>rust</kbd>]
   An assistant for users of the Johnny Decimal file organization system.
 - [jsmin] [<kbd>c</kbd>]
@@ -138,6 +140,7 @@
 [freewrite]: https://freewrite.io/
 [google-chrome@testing]: https://developer.chrome.com/blog/chrome-for-testing
 [hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
+[iozone]: https://www.iozone.org
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [jsmin]: https://www.crockford.com/javascript/jsmin.html
 [koino]: https://github.com/kivikakk/koino
