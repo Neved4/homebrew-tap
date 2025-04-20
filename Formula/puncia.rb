@@ -3,8 +3,8 @@ class Puncia < Formula
 
   desc "Official CLI utility for Osprey Vision, Subdomain Center & Exploit Observer"
   homepage "https://github.com/ARPSyndicate/puncia"
-  url "https://github.com/ARPSyndicate/puncia/archive/refs/tags/v0.30.tar.gz"
-  sha256 "aa63cc7ca1f4b3cd8d7df9fcbd0273d2249d7aad2d4dbb9e27685caf4a3ffcfd"
+  url "https://github.com/ARPSyndicate/puncia/archive/refs/tags/v0.31.tar.gz"
+  sha256 "c6d722d75f6cfcb68c0a33f07d9b5eed6af07bc41d7308e2239bc240d2046146"
   license "MIT"
   head "https://github.com/ARPSyndicate/puncia.git", branch: "master"
 
