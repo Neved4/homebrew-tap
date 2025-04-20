@@ -97,6 +97,8 @@
   Highlight your Typst code using ANSI escape sequences.
 - [unarj] [<kbd>c</kbd>]
   ARJ file archiver.
+- [urlfinder] [<kbd>go</kbd>]
+  Tool for passively gathering URLs.
 - [volatility] [<kbd>python</kbd>]
   Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
@@ -147,6 +149,7 @@
 [regular]: https://github.com/dbohdan/regular
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
 [unarj]: http://www.arjsoftware.com/files.htm
+[urlfinder]: https://github.com/projectdiscovery/urlfinder
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [wordtidy]: https://github.com/sts10/tidy
