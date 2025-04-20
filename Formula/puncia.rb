@@ -9,11 +9,11 @@ class Puncia < Formula
   head "https://github.com/ARPSyndicate/puncia.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/puncia-0.30"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "09d893655ba8d6c8c00eab8348096da8fd199004b4c2c713b01565370de72bac"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "c0deb1546c78a4de408da8724e8391cd6ab969159ef296630185c7abeac18b28"
-    sha256 cellar: :any_skip_relocation, ventura:       "d8140cbcd043b963498f987066bae9a9bfdd97db7acd431256b8e1c9b8d42e8c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c8c89d82937565580bc7de8f36299a7a6b2b8cc4bc6a8d026d7509fb4274b662"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/puncia-0.31"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8b215be5319a2d4481c8f59a8ea2079b678d3abed930ca853f977987a9fa5c9a"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "b208720c56f82221d2ccdf51a1df2d230896abcb6df786054656b53e6c0fc1f3"
+    sha256 cellar: :any_skip_relocation, ventura:       "3dca7b37cdf7815d9037b276192d2fe2edcfda7bfe23e6cb1aee06b177f9e7d1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cda7f47559295d669bcaecbe8c3f339cc809cd88b5ff5ad453f4007c2836f937"
   end
 
   depends_on "python@3.13"
