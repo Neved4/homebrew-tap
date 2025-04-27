@@ -1,8 +1,8 @@
 class Regular < Formula
   desc "Job scheduler: an alternative to cron and anacron"
   homepage "https://github.com/dbohdan/regular"
-  url "https://github.com/dbohdan/regular/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "c0840f9bbf447fff87305cc3f8bc465c5fd33901092587356763a558b1d4da4e"
+  url "https://github.com/dbohdan/regular/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "53d9a144c0d4d86f9cf33ffced9e3881dbe304997d3e9c0a185397798d8e10d5"
   license "MIT"
   head "https://github.com/dbohdan/regular.git", branch: "master"
 
