@@ -7,11 +7,11 @@ class Regular < Formula
   head "https://github.com/dbohdan/regular.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/regular-0.1.1"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "3c692c88272fae8e47880935943dd4006cd8db23335496496dfd169760778a7e"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "e358641a87d54e69341a0989c241debe51f0a8e7e3562723da1f2b70b4e1548e"
-    sha256 cellar: :any_skip_relocation, ventura:       "34d629e5030cdb17327b8424c91adcdd58f3de36a57dc215906d3704894d4050"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9f3df58f5b90f7adfd2633f9b0acb44f233ab276ea4a8353ed5c41a3ac8387b5"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/regular-0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f018d3bc7dd3947d94a1d930cdeb4355b13430168a7eca334d0614787ad768bc"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "ad6c057a3e7450cd847e8d355b6a7b9a04bb42280ee699bd988359a7c0d6c4d5"
+    sha256 cellar: :any_skip_relocation, ventura:       "6298a6f07b21554c22b9644582b2a1cd48b945cadfacf2ae4002406da0cd2469"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bfc9d6f9ad28814cc2f003e5cff2207a82743c641c35c051bf695d7b052599af"
   end
 
   depends_on "go" => :build
