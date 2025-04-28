@@ -23,7 +23,7 @@
 [<kbd>python</kbd>]: https://www.python.org
 [<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
 [<kbd>rust</kbd>]: https://www.rust-lang.org/
-[<kbd>swift</kbd>]: https://developer.apple.com/swift/
+[<kbd>swift</kbd>]: https://www.swift.org/
 [<kbd>typescript</kbd>]: https://www.typescriptlang.org/
 [<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
 [<kbd>zig</kbd>]: https://ziglang.org/
