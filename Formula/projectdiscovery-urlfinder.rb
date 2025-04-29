@@ -2,7 +2,7 @@ class ProjectdiscoveryUrlfinder < Formula
   desc "Tool for passively gathering URLs"
   homepage "https://github.com/projectdiscovery/urlfinder"
   url "https://github.com/projectdiscovery/urlfinder/archive/refs/tags/v0.0.3.tar.gz"
-  sha256 "cf97cba60ce01d5daa55dd7bb737bf534b63dc5143efd984c6c5f969650a19c"
+  sha256 "cf97cba60ce01d5daa55dd7bb737bf534b63dc5143efd984c6c5f969650a19cb"
   license "MIT"
   head "https://github.com/projectdiscovery/urlfinder.git", branch: "dev"
 
