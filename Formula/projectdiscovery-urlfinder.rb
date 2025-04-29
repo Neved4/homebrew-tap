@@ -1,4 +1,4 @@
-class Urlfinder < Formula
+class ProjectdiscoveryUrlfinder < Formula
   desc "Tool for passively gathering URLs"
   homepage "https://github.com/projectdiscovery/urlfinder"
   url "https://github.com/projectdiscovery/urlfinder/archive/refs/tags/v0.0.3.tar.gz"
