@@ -97,7 +97,7 @@
   Highlight your Typst code using ANSI escape sequences.
 - [unarj] [<kbd>c</kbd>]
   ARJ file archiver.
-- [urlfinder] [<kbd>go</kbd>]
+- [projectdiscovery-urlfinder] [<kbd>go</kbd>]
   Tool for passively gathering URLs.
 - [volatility] [<kbd>python</kbd>]
   Advanced memory forensics framework.
@@ -120,6 +120,8 @@
   The beloved Monaco monospaced font, recreated with bold and italic variants.
 - [freewrite] [<kbd>swift</kbd>]
   Write continuously without distraction.
+- [google-chrome@testing-override] [<kbd>c++</kbd>]
+  Google Chrome for Testing with the name and icon of standard Google Chrome.
 - [google-chrome@testing] [<kbd>c++</kbd>]
   Google Chrome for Testing.
 - [nfov@tmp] [<kbd>typescript</kbd>]
@@ -138,6 +140,7 @@
 [dgen]: https://dgen.sourceforge.net/
 [font-monego]: https://github.com/cseelus/monego
 [freewrite]: https://freewrite.io/
+[google-chrome@testing-override]: https://developer.chrome.com/blog/chrome-for-testing
 [google-chrome@testing]: https://developer.chrome.com/blog/chrome-for-testing
 [hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
@@ -145,11 +148,11 @@
 [koino]: https://github.com/kivikakk/koino
 [nfov@tmp]: https://nrlquaker.github.io/nfov/
 [packer-tmp]: https://www.packer.io/
+[projectdiscovery-urlfinder]: https://github.com/projectdiscovery/urlfinder
 [puncia]: https://github.com/ARPSyndicate/puncia
 [regular]: https://github.com/dbohdan/regular
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
 [unarj]: http://www.arjsoftware.com/files.htm
-[urlfinder]: https://github.com/projectdiscovery/urlfinder
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [wordtidy]: https://github.com/sts10/tidy
