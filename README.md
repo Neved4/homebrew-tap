@@ -97,7 +97,7 @@
   Highlight your Typst code using ANSI escape sequences.
 - [unarj] [<kbd>c</kbd>]
   ARJ file archiver.
-- [projectdiscovery-urlfinder] [<kbd>go</kbd>]
+- [pd-urlfinder] [<kbd>go</kbd>]
   Tool for passively gathering URLs.
 - [volatility] [<kbd>python</kbd>]
   Advanced memory forensics framework.
@@ -148,7 +148,7 @@
 [koino]: https://github.com/kivikakk/koino
 [nfov@tmp]: https://nrlquaker.github.io/nfov/
 [packer-tmp]: https://www.packer.io/
-[projectdiscovery-urlfinder]: https://github.com/projectdiscovery/urlfinder
+[pd-urlfinder]: https://github.com/projectdiscovery/urlfinder
 [puncia]: https://github.com/ARPSyndicate/puncia
 [regular]: https://github.com/dbohdan/regular
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
