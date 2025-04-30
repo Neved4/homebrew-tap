@@ -6,6 +6,14 @@ class PdUrlfinder < Formula
   license "MIT"
   head "https://github.com/projectdiscovery/urlfinder.git", branch: "dev"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/pd-urlfinder-0.0.3"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "23cb35d4e5e9264dbbd1aae81306ee401e87d8c568821832bb71e1b07347c764"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "bc7f7da96cb7a989eb10c53576b44b3965385f34204b1722501fbda675ad30e7"
+    sha256 cellar: :any_skip_relocation, ventura:       "4f57988e5dc95fde721746e293c7ccee7afa4dd6aa6aedb6cb5f70dc4aa7d747"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5888680f018c7fcec3134f99d30671b36ec32c61065c754479b4fa8a9c1dfda9"
+  end
+
   depends_on "go" => :build
 
   def install
