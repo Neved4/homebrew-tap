@@ -22,10 +22,12 @@ class ProjectdiscoveryUrlfinder < Formula
 
     # very hacky workaround for https://github.com/projectdiscovery/urlfinder/issues/113
     10.times do |i|
-      output = shell_output("#{bin}/projectdiscovery-urlfinder --version 2>&1").strip
+      output = pipe_output("#{bin}/projectdiscovery-urlfinder --version 2>&1").strip
+      ohai "Attempt #{i}"
       if output.include?(desired_output)
         assert_includes output, desired_output
         break
       end
+    end
   end
 end
