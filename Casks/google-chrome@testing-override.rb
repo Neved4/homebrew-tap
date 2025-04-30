@@ -25,7 +25,9 @@ cask "google-chrome@testing-override" do
   app "chrome-mac-#{arch}/Google Chrome for Testing.app", target: "Google Chrome.app"
 
   preflight do
-    FileUtils.cp("Resources/google-chrome.icns",
+    cask_file_dir = Pathname.new(__FILE__).dirname
+
+    FileUtils.cp(cask_file_dir/"../Resources/google-chrome.icns",
                  "#{staged_path}/chrome-mac-#{arch}/Google Chrome for Testing.app/Contents/Resources/app.icns")
   end
 
