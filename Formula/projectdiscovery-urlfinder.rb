@@ -19,6 +19,6 @@ class ProjectdiscoveryUrlfinder < Formula
 
   test do
     desired_output = "Current Version: v#{version}"
-    assert_includes shell_output("#{bin}/urlfinder --version 2>&1").strip, desired_output
+    assert_includes shell_output("#{bin}/projectdiscovery-urlfinder --version 2>&1").strip, desired_output
   end
 end
