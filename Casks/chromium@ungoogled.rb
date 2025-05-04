@@ -1,7 +1,7 @@
 cask "chromium@ungoogled" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "135.0.7049.95-1.1"
+  version "136.0.7103.59-1.1"
   sha256 :no_check
 
   url "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/#{version}/ungoogled-chromium_#{version}_#{arch}-macos.dmg",
