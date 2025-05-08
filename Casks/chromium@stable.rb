@@ -1,7 +1,7 @@
 cask "chromium@stable" do
   arch arm: "MacOsArm64", intel: "MacOsx"
 
-  version "2025.3.3"
+  version "2025.3.4"
   sha256 :no_check
 
   url "https://portswigger-cdn.net/burp/releases/download?product=community&version=#{version}&type=#{arch}",
@@ -34,7 +34,7 @@ cask "chromium@stable" do
 
   chromium_app = Dir[
     "#{staged_path}/Burp Suite Community Edition.app/Contents/Resources/app/" \
-    "burpbrowser/*/Chromium.app"
+    "burpbrowser/*/Chromium.app",
   ].first
   app chromium_app.to_s
 
