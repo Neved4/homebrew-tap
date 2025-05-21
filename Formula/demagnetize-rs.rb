@@ -7,11 +7,11 @@ class DemagnetizeRs < Formula
   head "https://github.com/jwodder/demagnetize-rs.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/demagnetize-rs-0.4.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "04a27df0b85be25059e61010dbbb6bf554108e0250795e0f5ec8e648bf5a5e3a"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "9da2fd3a4602aa21becb913557f9d26eb88f01336b6ed28f5aaa5757510ba33d"
-    sha256 cellar: :any_skip_relocation, ventura:       "e2c91e00d46457cca8602fa6b2f176fb2b8bca2aa30a72f6ac0719d1442e3237"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ca50b5ef58c615cdec51b4937a16659594e288779cf2b2ef7468ec414c129ccc"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/demagnetize-rs-0.5.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1cf16939bf65b31b7be6b3a03830949368aa6efe48951e76e6fab791a28e4169"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "1119183e2e1e30a5ef89c0517cdbe6f4582707f7c25a8b6cc4acbfd9186c84e1"
+    sha256 cellar: :any_skip_relocation, ventura:       "edd8635e3864bc93a3f109c80c5af43c2694216c86f9f863b03e07834a2adda4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6ca87dcbf71551e89fba3913585a907e11c765a47892e982630196d1d50b98c4"
   end
 
   depends_on "rust" => :build
