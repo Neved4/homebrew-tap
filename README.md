@@ -3,7 +3,7 @@
 [Homebrew] taps for [Neved4]'s patches & utilities.
 
 > [!IMPORTANT]
-> Packages are updated _weekly_.
+> Packages are updated _monthly_.
 
 ## Formulae & Casks 🍺
 
