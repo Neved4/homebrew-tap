@@ -38,6 +38,6 @@ class PackerTmp < Formula
         }]
       }
     JSON
-    system bin/"packer", "validate", "-syntax-only", minimal
+    system bin/"packer-tmp", "validate", "-syntax-only", minimal
   end
 end
