@@ -6,6 +6,14 @@ class PackerTmp < Formula
   license "BUSL-1.1"
   head "https://github.com/hashicorp/packer.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/packer-tmp-1.13.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "6657adc384be3576bb585e825cbe2ab6595fd5882d73baef5afe2d1092db3dff"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "0929128c7a11ae99d2628ac761166f7c02b4143cab910bc8aa4abc4a9dfc8b41"
+    sha256 cellar: :any_skip_relocation, ventura:       "a02202346e0e873535a7b3513937920259bcd8659ef39e19c99e85c5d6285583"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6c047d69ca671a21222cee9cb74539b2d4daac491cad40ac78a6c4e72ca6a1e9"
+  end
+
   depends_on "go" => :build
 
   def install
