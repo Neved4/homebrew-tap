@@ -114,7 +114,7 @@
   Chromium stable, from Burp Browser.
 - [chromium@ungoogled] [<kbd>c++</kbd>]
   Google Chromium, sans integration with Google.
-- [Cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
+- [cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
   Yet another matrix client for desktop.
 - [font-monego]
   The beloved Monaco monospaced font, recreated with bold and italic variants.
@@ -134,7 +134,7 @@
 [chromium@api]: https://www.chromium.org/Home/
 [chromium@stable]: https://www.chromium.org/Home/
 [chromium@ungoogled]: https://github.com/ungoogled-software/ungoogled-chromium
-[Cinny]: https://github.com/cinnyapp/cinny-desktop
+[cinny]: https://github.com/cinnyapp/cinny-desktop
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
 [dgen]: https://dgen.sourceforge.net/
