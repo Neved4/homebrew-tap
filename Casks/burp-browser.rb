@@ -1,4 +1,4 @@
-cask "chromium@stable" do
+cask "burp-browser" do
   arch arm: "MacOsArm64", intel: "MacOsx"
 
   version "2025.5.5"

@@ -1,4 +1,4 @@
-cask "google-chrome@testing-override" do
+cask "google-chrome-testing" do
   arch arm: "arm64", intel: "x64"
 
   version "138.0.7204.49"
