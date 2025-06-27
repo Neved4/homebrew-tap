@@ -69,8 +69,6 @@
   Ada/SPARK package manager.
 - [apg-go] [<kbd>go</kbd>]
   A modern "Automated Password Generator"-clone written in Go.
-- [babelfish] [<kbd>go</kbd>]
-  Translate bash scripts to fish.
 - [center] [<kbd>c</kbd>]
   Centers text read from stdin.
 - [demagnetize] [<kbd>python</kbd>]
@@ -110,38 +108,31 @@
 
 - [chromium@api] [<kbd>c++</kbd>]
   Chromium web browser, with API features enabled.
-- [chromium@stable] [<kbd>c++</kbd>]
+- [burp-browser] [<kbd>c++</kbd>]
   Chromium stable, from Burp Browser.
-- [chromium@ungoogled] [<kbd>c++</kbd>]
-  Google Chromium, sans integration with Google.
 - [cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
   Yet another matrix client for desktop.
 - [font-monego]
-  The beloved Monaco monospaced font, recreated with bold and italic variants.
+  Monaco monospaced inspired font.
 - [freewrite] [<kbd>swift</kbd>]
   Write continuously without distraction.
-- [google-chrome@testing-override] [<kbd>c++</kbd>]
-  Google Chrome for Testing with the name and icon of standard Google Chrome.
-- [google-chrome@testing] [<kbd>c++</kbd>]
-  Google Chrome for Testing.
+- [google-chrome-testing] [<kbd>c++</kbd>]
+  Google Chrome for Testing override.
 - [nfov@tmp] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
 
 [alire]: https://github.com/alire-project/alire
 [apg-go]: https://github.com/wneessen/apg-go
-[babelfish]: https://github.com/bouk/babelfish
+[burp-browser]: https://www.chromium.org/Home/
 [center]: https://github.com/LizzyFleckenstein03/center
 [chromium@api]: https://www.chromium.org/Home/
-[chromium@stable]: https://www.chromium.org/Home/
-[chromium@ungoogled]: https://github.com/ungoogled-software/ungoogled-chromium
 [cinny]: https://github.com/cinnyapp/cinny-desktop
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
 [dgen]: https://dgen.sourceforge.net/
 [font-monego]: https://github.com/cseelus/monego
 [freewrite]: https://freewrite.io/
-[google-chrome@testing-override]: https://developer.chrome.com/blog/chrome-for-testing
-[google-chrome@testing]: https://developer.chrome.com/blog/chrome-for-testing
+[google-chrome-testing]: https://developer.chrome.com/blog/chrome-for-testing
 [hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [jsmin]: https://www.crockford.com/javascript/jsmin.html
