@@ -6,6 +6,7 @@ class ApfsCloneChecker < Formula
   license "MIT"
 
   head "https://github.com/dyorgio/apfs-clone-checker.git", branch: "main"
+  depends_on :macos
 
   def install
     system ENV.cc, "clone_checker.c", "-o", "clone_checker"
