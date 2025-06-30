@@ -67,6 +67,8 @@
 
 - [alire] [<kbd>ada</kbd>]
   Ada/SPARK package manager.
+- [apfs-clone-checker] [<kbd>c</kbd>]
+  Utility to check if two files are APFS clones.
 - [apg-go] [<kbd>go</kbd>]
   A modern "Automated Password Generator"-clone written in Go.
 - [center] [<kbd>c</kbd>]
@@ -122,6 +124,7 @@
   ASCII / ANSI art viewer.
 
 [alire]: https://github.com/alire-project/alire
+[apfs-clone-checker]: https://github.com/dyorgio/apfs-clone-checker
 [apg-go]: https://github.com/wneessen/apg-go
 [burp-browser]: https://www.chromium.org/Home/
 [center]: https://github.com/LizzyFleckenstein03/center
