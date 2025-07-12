@@ -7,11 +7,11 @@ class Wordtidy < Formula
   head "https://github.com/sts10/tidy.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wordtidy-0.3.13"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "a89458b86025c5af03d5898a5674265be543baaa082c57895880fc80e2517a1d"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "32009f3c3f765e148cd7feb4c82d15f7f014e6d3552779aa9bf21b00dc4c6f51"
-    sha256 cellar: :any_skip_relocation, ventura:       "59d633b79db1d0bd954c0e59964e392240804ab767323c1e738edc457dd4c0fe"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "47e64f06b3c665dc9f509c975546091db3bfb34c7ed137d079a2494ad361de0b"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wordtidy-0.3.16"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "47f9115d69fb54fdbf7aed7577cbca0b8fd1ed6bd77d0cee85ec5202d74763be"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "890ebce5a557964d96d08fcea1cae9fd83a4b93e06507f07c32b5a3b8f2c1559"
+    sha256 cellar: :any_skip_relocation, ventura:       "7ab1411a3e5c4c4c0ba0f3bd904b85fd662e18b61b645bf4c6e850cff35517c5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e9da8ed45cf5fa438deb57e7e06d923a3e223a209f4ff90ebab4a04a99650393"
   end
 
   depends_on "rust" => :build
