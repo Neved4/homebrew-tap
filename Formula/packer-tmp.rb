@@ -7,11 +7,11 @@ class PackerTmp < Formula
   head "https://github.com/hashicorp/packer.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/packer-tmp-1.14.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ccc38a77423cc312fe5eba7fce7ddb51f162f4c411da318a3def0f61b66e08bb"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "8bf2f6092ecadb7cf969e507d6f7d3aa77703b2d3d0aa32258572161e24c7c86"
-    sha256 cellar: :any_skip_relocation, ventura:       "7af30e2ec95528dd48655684f8d697e29ff68b651d40e8af593f705d83fb209a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f25c23d6300e3fe78b972da4687a5bc614a3fb4fb380ebd7eab77b6054b2dffe"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/packer-tmp-1.14.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "21fcf8fe1c0cbf1757dfb5fed20b1942181151c517c9953bee5fce64980b28d4"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "3c65d8ab1eea903a9a9601e54c2236e50aff92c98af9490bb92a687b429818af"
+    sha256 cellar: :any_skip_relocation, ventura:       "c5b787a2a83aeec62801064e7080dd7c48414992507f6b5725665437fd3c2372"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e71b8c422827874c74bd5e9b1bb9c2f5cd753a1fc141fb539f7d2180c733230f"
   end
 
   depends_on "go" => :build
