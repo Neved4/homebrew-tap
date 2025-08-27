@@ -79,6 +79,8 @@
   Convert magnet links to .torrent files.
 - [dgen] [<kbd>c</kbd>]
   Sega Genesis / Mega Drive emulator.
+- [elegantbouncer] [<kbd>rust</kbd>]
+  Detection tool for file-based exploits.
 - [hyperspec]
   Common Lisp ANSI-standard Hyperspec.
 - [johnnybgoode] [<kbd>rust</kbd>]
@@ -133,6 +135,7 @@
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
 [dgen]: https://dgen.sourceforge.net/
+[elegantbouncer]: https://github.com/msuiche/elegant-bouncer
 [font-monego]: https://github.com/cseelus/monego
 [freewrite]: https://freewrite.io/
 [google-chrome-testing]: https://developer.chrome.com/blog/chrome-for-testing
