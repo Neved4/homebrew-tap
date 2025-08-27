@@ -11,6 +11,13 @@ class Elegantbouncer < Formula
     skip "No tagged version available"
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/elegantbouncer-0.2,3016295e58d0539e79fb1f2bd9faa77be8489f3d"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8c4f82235bb9c2e0064e743b09a8e2f3b9e8b9657c74dbde200ebf8296dffa57"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "568cdc1396d86a8fac8e7a303ebaed688f659577b682b6c790d5261457954893"
+    sha256 cellar: :any_skip_relocation, ventura:       "1aaca93b9c153884174f61f1ac7d53a77994ce5b69548110e5e1d1163dd103fc"
+  end
+
   depends_on "rust" => :build
   depends_on :macos
 
