@@ -5,6 +5,7 @@ class Elegantbouncer < Formula
   version "0.2_1-3016295e58d0539e79fb1f2bd9faa77be8489f3d"
   sha256 "d80b0c81c16a0b230e6c2eed8dcdd93deaff607a5187189a1c4566bebd13085f"
   license "CC-BY-NC-SA-4.0"
+  version_scheme 1
   head "https://github.com/msuiche/elegant-bouncer.git", branch: "main"
 
   livecheck do
