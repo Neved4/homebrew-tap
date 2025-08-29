@@ -13,10 +13,10 @@ class Elegantbouncer < Formula
   end
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/elegantbouncer-0.2,3016295e58d0539e79fb1f2bd9faa77be8489f3d"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8c4f82235bb9c2e0064e743b09a8e2f3b9e8b9657c74dbde200ebf8296dffa57"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "568cdc1396d86a8fac8e7a303ebaed688f659577b682b6c790d5261457954893"
-    sha256 cellar: :any_skip_relocation, ventura:       "1aaca93b9c153884174f61f1ac7d53a77994ce5b69548110e5e1d1163dd103fc"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/elegantbouncer-0.2_1-3016295e58d0539e79fb1f2bd9faa77be8489f3d"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "2914c49b7dd81207c3770a5ad5c66f33497f80976f11bedef8da7cec2cb54b66"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "2a880b61e9747a28958b1e633fc7c894b7ef80e129dfdfd7368631d7086dd66f"
+    sha256 cellar: :any_skip_relocation, ventura:       "200a6384c977b43cf048eb9a4bcd045cd710e5fd87fb9f0b605f6e96bcfdee87"
   end
 
   depends_on "rust" => :build
