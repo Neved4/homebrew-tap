@@ -1,9 +1,6 @@
 # `homebrew-tap` - Homebrew taps and formulae! 💎
 
-[Homebrew] taps for [Neved4]'s patches & utilities.
-
-> [!IMPORTANT]
-> Packages are updated _monthly_.
+[Homebrew] taps for [Neved4]'s patches & utilities. Updated _monthly_.
 
 ## Formulae & Casks 🍺
 
