@@ -121,6 +121,8 @@
   Google Chrome for Testing override.
 - [nfov@tmp] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
+- [runtimebrowser] [<kbd>objective-c</kbd>]
+  Class browser for the Objective-C runtime.
 
 [alire]: https://github.com/alire-project/alire
 [apfs-clone-checker]: https://github.com/dyorgio/apfs-clone-checker
@@ -145,6 +147,7 @@
 [pd-urlfinder]: https://github.com/projectdiscovery/urlfinder
 [puncia]: https://github.com/ARPSyndicate/puncia
 [regular]: https://github.com/dbohdan/regular
+[runtimebrowser]: https://github.com/nst/RuntimeBrowser
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
 [unarj]: http://www.arjsoftware.com/files.htm
 [volatility]: https://github.com/volatilityfoundation/volatility
