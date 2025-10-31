@@ -121,6 +121,8 @@
   Google Chrome for Testing override.
 - [nfov@tmp] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
+- [pear] [<kbd>typescript</kbd>]
+  YouTube Music desktop app.
 - [runtimebrowser] [<kbd>objective-c</kbd>]
   Class browser for the Objective-C runtime.
 
@@ -145,6 +147,7 @@
 [nfov@tmp]: https://nrlquaker.github.io/nfov/
 [packer-tmp]: https://www.packer.io/
 [pd-urlfinder]: https://github.com/projectdiscovery/urlfinder
+[pear]: https://github.com/pear-devs/pear-desktop
 [puncia]: https://github.com/ARPSyndicate/puncia
 [regular]: https://github.com/dbohdan/regular
 [runtimebrowser]: https://github.com/nst/RuntimeBrowser
