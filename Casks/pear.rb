@@ -3,7 +3,9 @@ cask "pear" do
 
   version "3.11.0"
   sha256 arm:   "a2d68bd80117ce376a08229f5cfb0a4570d98aba4e56af8040c725b22e856e0d",
-         intel: "27f74b53c7c4dd8c77ce44d7c7d0f955cb083e5251701e6ca2b3781e85c4e373"
+         intel: "27f74b53c7c4dd8c77ce44d7c7d0f955cb083e5251701e6ca2b3781e85c4e373",
+         arm64_linux:  "0", # workaround for brew bug https://github.com/orgs/Homebrew/discussions/6008, https://github.com/Homebrew/homebrew-cask/issues/205491
+         x86_64_linux: "0"
 
   url "https://github.com/pear-devs/pear-desktop/releases/download/v#{version}/YouTube-Music-3.11.0#{arch}.dmg"
   name "Pear Desktop"
