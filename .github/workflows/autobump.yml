@@ -20,7 +20,7 @@ jobs:
           force: true
           livecheck: true
       - name: Update Homebrew cask
-        uses: eugenesvk/action-homebrew-bump-cask@cc260684c6e41de1af9522a0f4dcb4f321a17f33 # v3.8.4
+        uses: eugenesvk/action-homebrew-bump-cask@a05fd49892799eade237259963d787ba0143dab1 # v3.8.5
         with:
           token: ${{ secrets.HOMEBREW_TAP_GITHUB_API_TOKEN }}
           tap: Neved4/homebrew-tap
