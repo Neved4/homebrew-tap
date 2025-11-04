@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Set up Homebrew
         id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@65230870f9052190d1abac8192df9ffa5026fdf1 # no tagged version
+        uses: Homebrew/actions/setup-homebrew@0fd01fffe2bb7ba090ade9655fe7e89ab5c613d4 # 2025-10-31, no tagged version
 
       - name: Cache Homebrew Bundler RubyGems
         uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
