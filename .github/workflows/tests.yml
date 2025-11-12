@@ -10,9 +10,14 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: [macos-14, macos-15, macos-26, ubuntu-latest]
+        os: [macos-15, macos-26, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
+      - uses: maxim-lobanov/setup-xcode@v1
+        if: ${{ runner.os != 'Linux' }}
+        with:
+          xcode-version: "^26.1"
+
       - name: Set up Homebrew
         id: set-up-homebrew
         uses: Homebrew/actions/setup-homebrew@0fd01fffe2bb7ba090ade9655fe7e89ab5c613d4 # 2025-10-31, no tagged version
