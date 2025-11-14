@@ -14,6 +14,19 @@ class Penelope < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/penelope -v")
+    assert_match version.to_s, shell_output("#{bin}/penelope -v 2>&1")
+
+    # Eventually add in a better test, this one doesn't work for some reason
+    # require "pty"
+    # ENV["TERM"] = "xterm"
+    # PTY.spawn(bin/"penelope") do |r, w, pid|
+    #   # sleep 3
+    #   # assert_match "Netcat + named pipe", r.read
+    #   sleep 1
+    #   w.write "\cC"
+    # ensure
+    #   # Process.kill("TERM", pid)
+    #   Process.wait(pid)
+    # end
   end
 end
