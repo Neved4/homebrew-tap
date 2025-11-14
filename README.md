@@ -98,6 +98,8 @@
   ARJ file archiver.
 - [pd-urlfinder] [<kbd>go</kbd>]
   Tool for passively gathering URLs.
+- [penelope] [<kbd>python</kbd>]
+  Powerful shell handler built as a modern netcat replacement.
 - [volatility] [<kbd>python</kbd>]
   Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
@@ -148,6 +150,7 @@
 [packer-tmp]: https://www.packer.io/
 [pd-urlfinder]: https://github.com/projectdiscovery/urlfinder
 [pear]: https://github.com/pear-devs/pear-desktop
+[penelope]: https://github.com/brightio/penelope
 [puncia]: https://github.com/ARPSyndicate/puncia
 [regular]: https://github.com/dbohdan/regular
 [runtimebrowser]: https://github.com/nst/RuntimeBrowser
