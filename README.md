@@ -39,7 +39,7 @@
 ### macOS 
 
 - [applist] [<kbd>objective-c</kbd>] [<kbd>swift</kbd>] [<kbd>posix-shell</kbd>]
-  List the paths to all installed apps in macOS .
+  List the paths to all installed apps in macOS.
 - [apputils] [<kbd>fish-shell</kbd>] [<kbd>posix-shell</kbd>]
   Find and list macOS app paths.
 - [tmbackup] [<kbd>posix-shell</kbd>] [<kbd>awk</kbd>]
