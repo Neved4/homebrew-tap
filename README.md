@@ -68,6 +68,8 @@
   Utility to check if two files are APFS clones.
 - [apg-go] [<kbd>go</kbd>]
   A modern "Automated Password Generator"-clone written in Go.
+- [autorecon] [<kbd>python</kbd>]
+  Multi-threaded network reconnaissance tool.
 - [center] [<kbd>c</kbd>]
   Centers text read from stdin.
 - [demagnetize] [<kbd>python</kbd>]
@@ -131,6 +133,7 @@
 [alire]: https://github.com/alire-project/alire
 [apfs-clone-checker]: https://github.com/dyorgio/apfs-clone-checker
 [apg-go]: https://github.com/wneessen/apg-go
+[autorecon]: https://github.com/Tib3rius/AutoRecon
 [burp-browser]: https://www.chromium.org/Home/
 [center]: https://github.com/LizzyFleckenstein03/center
 [chromium@api]: https://www.chromium.org/Home/
