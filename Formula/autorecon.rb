@@ -22,6 +22,13 @@ class Autorecon < Formula
     end
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/autorecon-2.0.36"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "adcc5f901a70c8852576986c6ea64f1d9500eef284247d5173afe004f8361812"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "35f4f36df8c8778cca0f4734d779726d018024632c263afe2adaa2ad24a4ecbf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1a475399b570d5a2d947eda374299118bc850ec7102260ab045390fa0c6d6488"
+  end
+
   depends_on "cryptography"
   depends_on "openssl@3"
   depends_on "python@3.14"
