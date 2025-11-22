@@ -117,6 +117,8 @@
   Chromium stable, from Burp Browser.
 - [cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
   Yet another matrix client for desktop.
+- [cluely] [<kbd>javascript</kbd>]
+  AI meeting assistant with live notes and real-time insights.
 - [font-monego]
   Monaco monospaced inspired font.
 - [freewrite] [<kbd>swift</kbd>]
@@ -138,6 +140,7 @@
 [center]: https://github.com/LizzyFleckenstein03/center
 [chromium@api]: https://www.chromium.org/Home/
 [cinny]: https://github.com/cinnyapp/cinny-desktop
+[cluely]: https://cluely.com/
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
 [dgen]: https://dgen.sourceforge.net/
