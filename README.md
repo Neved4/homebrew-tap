@@ -72,6 +72,8 @@
   Multi-threaded network reconnaissance tool.
 - [center] [<kbd>c</kbd>]
   Centers text read from stdin.
+- [cut-cdn] [<kbd>go</kbd>]
+  Remove CDN IPs from the list of IP addresses.
 - [demagnetize] [<kbd>python</kbd>]
   Convert magnet links to .torrent files.
 - [demagnetize-rs] [<kbd>rust</kbd>]
@@ -141,6 +143,7 @@
 [chromium@api]: https://www.chromium.org/Home/
 [cinny]: https://github.com/cinnyapp/cinny-desktop
 [cluely]: https://cluely.com/
+[cut-cdn]: https://github.com/ImAyrix/cut-cdn
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
 [dgen]: https://dgen.sourceforge.net/
