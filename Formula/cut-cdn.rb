@@ -14,7 +14,7 @@ class CutCdn < Formula
   end
 
   test do
-    output = shell_output("#{bin}/cut-cdn -version")
+    output = shell_output("#{bin}/cut-cdn -version 2>&1")
     assert_match "Current Version: v#{version}", output
   end
 end
