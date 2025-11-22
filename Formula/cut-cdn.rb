@@ -6,6 +6,13 @@ class CutCdn < Formula
   license "MIT"
   head "https://github.com/ImAyrix/cut-cdn.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/cut-cdn-2.0.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "5ef21fe752d2c9c49e995434c994242cadcacefb5c6c99f4f4554d2a230654a6"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "9f5b0195b2034e2f3552d6173c160f254d779702546461ee99f2e5d4fd6c4599"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0b90e8c5cc00528f7543563eb3418e6c5f4349c269d84fc316c8716f3909a0ec"
+  end
+
   depends_on "go" => :build
 
   def install
