@@ -10,7 +10,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Update Homebrew formula
-        uses: dawidd6/action-homebrew-bump-formula@eb2b2ae18746ad074c139fbbf1d098b301f51752 # v5
+        uses: dawidd6/action-homebrew-bump-formula@c5ddc585e75f0f750a8b4f610688b4bec9e80915 # v6
         with:
           token: ${{ secrets.HOMEBREW_TAP_GITHUB_API_TOKEN }}
           user_name: Neved4
