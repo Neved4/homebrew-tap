@@ -6,7 +6,20 @@ class HtraceSh < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/trimstray/htrace.sh.git", branch: "master"
 
+  depends_on "jq"
+  depends_on "libmaxminddb"
+  depends_on "nghttp2"
+  depends_on "nmap"
+  depends_on "ssllabs-scan"
+  depends_on "subfinder"
+  depends_on "testssl"
+
   def install
+    # Remove dependencies that are not in Homebrew
+    # inreplace "src/__init__", "observatory", ""
+    # inreplace "src/__init__", "mixed-content-scan", ""
+    # inreplace "src/__init__", "wafw00f", ""
+
     libexec.install Dir["*"]
     bin.install_symlink libexec/"bin/htrace.sh"
   end
