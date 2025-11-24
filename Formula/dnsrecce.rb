@@ -7,6 +7,13 @@ class Dnsrecce < Formula
   license "MIT"
   head "https://github.com/Neved4/dnsrecce.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/dnsrecce-1.3.2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "e03960294c537c6260931527c353096512ce1d193301c928f3b6d9fce6c3130d"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "0d0dba37b0ab65617e90a9751c9be93ef9659ae9c9e31498ddf7d235454d2230"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d663038f8439c552d8a730cdfc9d6ec3281d527e3979442a112130f74bab117f"
+  end
+
   depends_on "go" => :build
 
   def install
