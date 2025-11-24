@@ -11,8 +11,8 @@ class Dnspeek < Formula
 
   def install
     system "go", "build", *std_go_args(
-      output:   libexec/"dnspeek",
-      ldflags:  "-s -w",
+      output:  libexec/"dnspeek",
+      ldflags: "-s -w",
     ), "./cmd/dnspeek"
 
     pkgshare.install Dir["data/*"]
