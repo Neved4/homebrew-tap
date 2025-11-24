@@ -20,10 +20,10 @@ class CutCdn < Formula
   end
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/cut-cdn-2.0.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "5ef21fe752d2c9c49e995434c994242cadcacefb5c6c99f4f4554d2a230654a6"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "9f5b0195b2034e2f3552d6173c160f254d779702546461ee99f2e5d4fd6c4599"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0b90e8c5cc00528f7543563eb3418e6c5f4349c269d84fc316c8716f3909a0ec"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/cut-cdn-1.0.31"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "afb1a4c01ff3370b11f88e872afb8cd40b79e51eb4095a729ff27a78d56ad1ae"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1c2000f544e76282d955e1cf5079ef7325d888dde3d0990c52f5fdabb7a30b63"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9f2c9367ca9c0ac65b4362712246ca246e525a9dd48810d735177888da729e60"
   end
 
   depends_on "go" => :build
