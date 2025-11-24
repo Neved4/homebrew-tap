@@ -11,8 +11,8 @@ class Dnsrecce < Formula
 
   def install
     system "go", "build", *std_go_args(
-      output:   libexec/"dnsrecce",
-      ldflags:  "-s -w",
+      output:  libexec/"dnsrecce",
+      ldflags: "-s -w",
     ), "./cmd/dnsrecce"
 
     pkgshare.install Dir["data/*"]
