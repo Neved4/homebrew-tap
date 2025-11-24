@@ -1,10 +1,23 @@
 class CutCdn < Formula
   desc "Remove CDN IPs from the list of IP addresses"
   homepage "https://github.com/ImAyrix/cut-cdn"
-  url "https://github.com/ImAyrix/cut-cdn/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "0dbb3aaca5b4850e729f6ad916ff7297c41acfe4604e07f0d601b0db30573fa7"
+  url "https://github.com/ImAyrix/cut-cdn/archive/refs/tags/v1.0.31.tar.gz"
+  sha256 "0fc090c40f6051651f3bd437bfd9462eff09fb1f2a951127ac779b8295eef049"
   license "MIT"
+  version_scheme 1
   head "https://github.com/ImAyrix/cut-cdn.git", branch: "master"
+
+  livecheck do
+    url :stable
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
+    strategy :git do |tags, regex|
+      tags.filter_map do |tag|
+        next if /^v?2\.0\.0$/.match?(tag)
+
+        tag[regex, 1]
+      end
+    end
+  end
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/cut-cdn-2.0.0"
