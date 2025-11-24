@@ -7,6 +7,10 @@ class Dnspeek < Formula
   license "MIT"
   head "https://github.com/Neved4/dnspeek.git", branch: "main"
 
+  livecheck do
+    skip "No tagged version available"
+  end
+
   depends_on "go" => :build
 
   def install

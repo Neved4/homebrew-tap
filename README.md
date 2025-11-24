@@ -80,6 +80,8 @@
   Convert magnet links to .torrent files.
 - [dgen] [<kbd>c</kbd>]
   Sega Genesis / Mega Drive emulator.
+- [dnspeek] [<kbd>go</kbd>]
+  DNS reconnaissance CLI written in Go.
 - [dnsrecce] [<kbd>go</kbd>]
   DNS reconnaissance CLI with Google scraping and XML output.
 - [elegantbouncer] [<kbd>rust</kbd>]
@@ -149,6 +151,7 @@
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
 [dgen]: https://dgen.sourceforge.net/
+[dnspeek]: https://github.com/Neved4/dnspeek
 [dnsrecce]: https://github.com/Neved4/dnsrecce
 [elegantbouncer]: https://github.com/msuiche/elegant-bouncer
 [font-monego]: https://github.com/cseelus/monego
