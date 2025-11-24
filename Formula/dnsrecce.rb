@@ -13,10 +13,10 @@ class Dnsrecce < Formula
   end
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/dnsrecce-1.3.2"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "e03960294c537c6260931527c353096512ce1d193301c928f3b6d9fce6c3130d"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "0d0dba37b0ab65617e90a9751c9be93ef9659ae9c9e31498ddf7d235454d2230"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d663038f8439c552d8a730cdfc9d6ec3281d527e3979442a112130f74bab117f"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/dnsrecce-0.0.0_3db87e811b29f42da83adf4944099642439f39ac"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "641c6971b630021f6c92db6077f66cf8d5170875ba0931823ca6d4dd58264eeb"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "94d108674b865ddacf582f8c4c53af8e92628c5339d6e435ab25820cf20c7d78"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5b71e4916a97f9bbb82ae30088250d35f504db306f00388791ff7e5bc3863310"
   end
 
   depends_on "go" => :build
