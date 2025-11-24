@@ -11,6 +11,13 @@ class Dnspeek < Formula
     skip "No tagged version available"
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/dnspeek-0.0.0_a7ed8a43bad68a8c96036dcb6eac95cc8ba4170e"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "788b086537010c2305977606dca702759f0cf37ad840ce332447cba659e2e7ea"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e6f07a704b1e3c9dd57b529281b1effa178e1212ba7a72547760e20a4b881c01"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e6b1c1ea7a585190a680910bf36dd18a0dea852bca11bec9563c0d549af43a30"
+  end
+
   depends_on "go" => :build
 
   def install
