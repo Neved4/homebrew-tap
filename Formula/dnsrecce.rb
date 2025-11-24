@@ -1,11 +1,16 @@
 class Dnsrecce < Formula
   desc "DNS reconnaissance CLI with Google scraping and XML output"
   homepage "https://github.com/Neved4/dnsrecce"
-  url "https://github.com/Neved4/dnsrecce/archive/refs/heads/main.tar.gz"
-  version "1.3.2"
-  sha256 "e792003010cd40fc7f5834ab45457061182c87469a410495e249fc15224967a7"
+  url "https://github.com/Neved4/dnsrecce/archive/3db87e811b29f42da83adf4944099642439f39ac.tar.gz"
+  version "0.0.0_3db87e811b29f42da83adf4944099642439f39ac"
+  sha256 "fb9e1f9f980c5f3bdca77d13bb15de56334b5795f3acd1da39548d877860d22f"
   license "MIT"
+  version_scheme 1
   head "https://github.com/Neved4/dnsrecce.git", branch: "main"
+
+  livecheck do
+    skip "No tagged version available"
+  end
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/dnsrecce-1.3.2"
