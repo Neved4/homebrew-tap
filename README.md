@@ -2,7 +2,7 @@
 <p align="center">
   <a href="#getting-started">Getting Started</a> &bull;
   <a href="#my-formulae--casks-">My Formulae & Casks</a> &bull;
-  <a href="#external--third-party-">External & Third-party</a> &bull;
+  <a href="#third-party-">Third-party</a> &bull;
   <a href="#license">License</a>
 </p>
 
@@ -85,7 +85,7 @@ To install any of the formulas below:
 
 <!-- END SYNC -->
 
-## External & Third-party 🍻
+## Third-party 🍻
 
 ### Formula
 
