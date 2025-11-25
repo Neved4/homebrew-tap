@@ -1,4 +1,4 @@
-<h3 align="center">💎 Neved4's Homebrew formulae!</h3>
+<h3 align="center">💎 Neved4's Homebrew Formulae & Casks!</h3>
 <p align="center">
   <a href="#getting-started">Getting Started</a> &bull;
   <a href="#my-formulae--casks-">My Formulae & Casks</a> &bull;
