@@ -1,8 +1,32 @@
-# `homebrew-tap` - Homebrew taps and formulae! 💎
+<h3 align="center">💎 Neved4's Homebrew formulae!</h3>
+<p align="center">
+  <a href="#getting-started">Getting Started</a> &bull;
+  <a href="#my-formulae--casks-">My Formulae & Casks</a> &bull;
+  <a href="#external--third-party-">External & Third-party</a> &bull;
+  <a href="#license">License</a>
+</p>
+
+---
 
 [Homebrew] taps for [Neved4]'s patches & utilities. Updated _monthly_.
 
-## Formulae & Casks 🍺
+## Getting Started
+
+To install any of the formulas below:
+
+1. Tap the repository:
+
+    ```sh
+    brew tap Neved4/tap
+    ```
+
+2. Install a formula:
+
+    ```sh
+    brew install <name>
+    ```
+
+## My Formulae & Casks 🍺
 
 <!-- START SYNC -->
 
@@ -14,9 +38,12 @@
 [<kbd>go</kbd>]: https://go.dev/
 [<kbd>iso-8601</kbd>]: https://www.iso.org/iso-8601-date-and-time-format.html
 [<kbd>java</kbd>]: https://dev.java/
-[<kbd>javascript</kbd>]: https://ecma-international.org/publications-and-standards/standards/ecma-262/
-[<kbd>objective-c</kbd>]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
-[<kbd>posix-shell</kbd>]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
+[<kbd>javascript</kbd>]:
+  https://ecma-international.org/publications-and-standards/standards/ecma-262/
+[<kbd>objective-c</kbd>]:
+  https://developer.apple.com/documentation/objc
+[<kbd>posix-shell</kbd>]:
+  https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
 [<kbd>python</kbd>]: https://www.python.org
 [<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
 [<kbd>rust</kbd>]: https://www.rust-lang.org/
@@ -26,7 +53,7 @@
 [<kbd>zig</kbd>]: https://ziglang.org/
 
 [Homebrew]: https://brew.sh/
-[MIT License]: https://opensource.org/license/mit/
+[BSD 2-Clause License]: https://opensource.org/license/bsd-2-clause/
 [Neved4]: https://github.com/Neved4
 [applist]: https://github.com/Neved4/applist
 [apputils]: https://github.com/Neved4/apputils
@@ -175,16 +202,8 @@
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [wordtidy]: https://github.com/sts10/tidy
 
-## Getting Started
-
-To install any of the formulas above, use the following command:
-
-```sh
-brew install Neved4/tap/<name>
-```
-
 ## License
 
-This repo is licensed under the terms of the [MIT License].
+This repo is licensed under the [BSD 2-Clause License].
 
 See the [LICENSE](LICENSE) file for details.
