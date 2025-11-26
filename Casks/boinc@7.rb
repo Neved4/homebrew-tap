@@ -1,4 +1,4 @@
-cask "boinc" do
+cask "boinc@7" do
   version "7.24.4"
   sha256 "edc6111d9d9c553e7c4bedd3f54e9a5a9d94fcc61dac44f0bca4ed7d4e9a4328"
 
@@ -11,6 +11,9 @@ cask "boinc" do
   livecheck do
     skip "Old version being maintained for compatibility with certain projects"
   end
+
+  conflicts_with cask: "boinc"
+  depends_on macos: ">= :high_sierra"
 
   pkg "boinc_#{version}_macOSX_universal/BOINC Installer.app/Contents/Resources/BOINC.pkg"
 
