@@ -13,7 +13,7 @@ cask "boinc@7" do
   end
 
   conflicts_with cask: "boinc"
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :catalina"
 
   pkg "boinc_#{version}_macOSX_universal/BOINC Installer.app/Contents/Resources/BOINC.pkg"
 
