@@ -3,7 +3,7 @@ class Nbtscan < Formula
   homepage "https://github.com/resurrecting-open-source-projects/nbtscan"
   url "https://github.com/resurrecting-open-source-projects/nbtscan/" \
       "archive/refs/tags/1.7.2.tar.gz"
-  sha256 "2adad7f157e036d5a4d175650854c1233409e371d4b796c52ae3c29d5599bb61"
+  sha256 "00e61be7c05cd3a34d5fefedffff86dc6add02d4c728b22e13fb9fbeabba1984"
   license "GPL-2.0-or-later"
   head "https://github.com/resurrecting-open-source-projects/nbtscan.git",
     branch: "master"
