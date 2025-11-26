@@ -10,6 +10,13 @@ class Impacket < Formula
   license "Apache-1.1"
   head "https://github.com/fortra/impacket.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/impacket-0.13.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "0caeb5b49596ad4e8f0375cd238fbb5563bfa24966a10f88079e98fe491921f1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e9fb61f6f4986b2d71223433d13208dc8cad8f7b4848539da596cc5ea0f7baaa"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "61e18476b5402dd84f28f83768b8b0ab901c6a631b7cfaaed36f67ce2e10f7b3"
+  end
+
   depends_on "pkg-config" => :build
   depends_on "rust" => :build
   depends_on "cryptography"
