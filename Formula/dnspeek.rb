@@ -1,10 +1,8 @@
 class Dnspeek < Formula
   desc "DNS reconnaissance CLI written in Go"
   homepage "https://github.com/Neved4/dnspeek"
-  url "https://github.com/Neved4/dnspeek/archive/" \
-      "062617e4a4866861d7c1b521f2ff354a3d88d0d4.tar.gz"
-  version "0.0.0_062617e4a4866861d7c1b521f2ff354a3d88d0d4"
-  sha256 "e3da47f61faeaf16eac95beacc305339d2a79513e84cbfa1e28c8d05fc64c04d"
+  url "https://github.com/Neved4/dnspeek/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "ed5324f16d43921a36177760059796a4a401844dd8d237dd375beb54a8a1f88f"
   license "MIT"
   head "https://github.com/Neved4/dnspeek.git", branch: "main"
 
