@@ -18,7 +18,7 @@ class Nbtscan < Formula
   end
 
   test do
-    version_output = shell_output("#{bin}/nbtscan -V").strip
-    assert_match version.to_s, version_output
+    version_output = shell_output("#{bin}/nbtscan --help").strip
+    assert_match "NBTscan version #{version}", version_output
   end
 end
