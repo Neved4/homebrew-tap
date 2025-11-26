@@ -7,7 +7,7 @@ class Impacket < Formula
       "1058cc156b6a6812b4218383c204b854f36211de18601f78b8d9a1226389/" \
       "impacket-0.13.0.tar.gz"
   sha256 "d09a52befc54db82033360567deb70c48a081813d08a2221b2d1a259cd7e4e3a"
-  license "Apache-2.0"
+  license "Apache-1.1"
   head "https://github.com/fortra/impacket.git", branch: "master"
 
   depends_on "pkg-config" => :build
@@ -76,7 +76,7 @@ class Impacket < Formula
     url "https://files.pythonhosted.org/packages/14/48/" \
         "2757e0453f828e33f7b41e5489976fbe7d504d513e07da53eb904030a288/" \
         "ldapdomaindump-0.10.0.tar.gz"
-    sha256 "cbc66c32a7787473ffd169c5319acde46c02fdc9d444556e6448e0def91d3299"
+    sha256 "cbc66b32a7787473ffd169c5319acde46c02fdc9d444556e6448e0def91d3299"
   end
 
   resource "markupsafe" do
@@ -140,7 +140,7 @@ class Impacket < Formula
   end
 
   test do
-    cmd_output = shell_output("#{bin}/impacket-secretsdump -h")
-    assert_match "impacket", cmd_output
+    assert_includes shell_output("#{bin}/mqtt_check.py --help 2>&1"),
+      "Impacket v#{version}"
   end
 end
