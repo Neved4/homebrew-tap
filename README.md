@@ -144,10 +144,12 @@ To install any of the formulas below:
 
 ### Casks
 
-- [chromium@api] [<kbd>c++</kbd>]
-  Chromium web browser, with API features enabled.
+- [boinc@7]
+  Downloads scientific computing jobs and runs them invisibly in the background.
 - [burp-browser] [<kbd>c++</kbd>]
   Chromium stable, from Burp Browser.
+- [chromium@api] [<kbd>c++</kbd>]
+  Chromium web browser, with API features enabled.
 - [cinny] [<kbd>javascript</kbd>] [<kbd>rust</kbd>]
   Yet another matrix client for desktop.
 - [cluely] [<kbd>javascript</kbd>]
@@ -169,6 +171,7 @@ To install any of the formulas below:
 [apfs-clone-checker]: https://github.com/dyorgio/apfs-clone-checker
 [apg-go]: https://github.com/wneessen/apg-go
 [autorecon]: https://github.com/Tib3rius/AutoRecon
+[boinc@7]: https://boinc.berkeley.edu/
 [burp-browser]: https://www.chromium.org/Home/
 [center]: https://github.com/LizzyFleckenstein03/center
 [chromium@api]: https://www.chromium.org/Home/
