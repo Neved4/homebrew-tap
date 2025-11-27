@@ -113,6 +113,8 @@ To install any of the formulas below:
   DNS reconnaissance CLI with Google scraping and XML output.
 - [elegantbouncer] [<kbd>rust</kbd>]
   Detection tool for file-based exploits.
+- [htrace-sh] [<kbd>posix-shell</kbd>]
+  HTTP/HTTPS troubleshooting and profiling wrapper.
 - [hyperspec]
   Common Lisp ANSI-standard Hyperspec.
 - [johnnybgoode] [<kbd>rust</kbd>]
@@ -187,6 +189,7 @@ To install any of the formulas below:
 [font-monego]: https://github.com/cseelus/monego
 [freewrite]: https://freewrite.io/
 [google-chrome-testing]: https://developer.chrome.com/blog/chrome-for-testing
+[htrace-sh]: https://github.com/trimstray/htrace.sh/
 [hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [jsmin]: https://www.crockford.com/javascript/jsmin.html
