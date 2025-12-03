@@ -12,6 +12,7 @@ class WmiexecPro < Formula
   depends_on "pkg-config" => :build
   depends_on "rust" => :build
   depends_on "cryptography"
+  depends_on :macos
   depends_on "openssl@3"
   depends_on "python@3.13"
 
