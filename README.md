@@ -111,6 +111,8 @@ To install any of the formulas below:
   DNS reconnaissance CLI written in Go.
 - [dnsrecce] [<kbd>go</kbd>]
   DNS reconnaissance CLI with Google scraping and XML output.
+- [dnsrecon] [<kbd>python</kbd>]
+  DNS enumeration and reconnaissance tool.
 - [elegantbouncer] [<kbd>rust</kbd>]
   Detection tool for file-based exploits.
 - [hyperspec]
@@ -183,6 +185,7 @@ To install any of the formulas below:
 [dgen]: https://dgen.sourceforge.net/
 [dnspeek]: https://github.com/Neved4/dnspeek
 [dnsrecce]: https://github.com/Neved4/dnsrecce
+[dnsrecon]: https://github.com/darkoperator/dnsrecon
 [elegantbouncer]: https://github.com/msuiche/elegant-bouncer
 [font-monego]: https://github.com/cseelus/monego
 [freewrite]: https://freewrite.io/
