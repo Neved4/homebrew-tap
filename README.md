@@ -141,6 +141,8 @@ To install any of the formulas below:
   Advanced memory forensics framework.
 - [withjava] [<kbd>rust</kbd>]
   Wrap commands in specific Java versions.
+- [wmiexec-pro] [<kbd>python</kbd>]
+  New generation of wmiexec.py
 - [wordtidy] [<kbd>rust</kbd>]
   Combine and clean word lists.
 
@@ -209,6 +211,7 @@ To install any of the formulas below:
 [unarj]: http://www.arjsoftware.com/files.htm
 [volatility]: https://github.com/volatilityfoundation/volatility
 [withjava]: https://git.arielaw.ar/arisunz/with-java
+[wmiexec-pro]: https://github.com/XiaoliChan/wmiexec-Pro
 [wordtidy]: https://github.com/sts10/tidy
 
 ## License
