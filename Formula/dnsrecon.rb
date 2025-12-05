@@ -8,6 +8,13 @@ class Dnsrecon < Formula
   license "GPL-2.0-only"
   head "https://github.com/darkoperator/dnsrecon.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/dnsrecon-1.5.1"
+    sha256 cellar: :any,                 arm64_tahoe:   "e5224dc457759023d85cd0832cb960b8a457bad9b370010915c0c87b682921d1"
+    sha256 cellar: :any,                 arm64_sequoia: "e103e00bab3fa91d38a6b5cdbab4a7ca82be3dd216f745bd21899585992cc5c5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "898e3f0f18b41d921a2e191e096226762b699af6197af24550ce81def9828b34"
+  end
+
   depends_on "pkg-config" => :build
   depends_on "rust" => :build
   depends_on "libxml2"
