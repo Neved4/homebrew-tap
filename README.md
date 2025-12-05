@@ -162,6 +162,8 @@ To install any of the formulas below:
   Write continuously without distraction.
 - [google-chrome-testing] [<kbd>c++</kbd>]
   Google Chrome for Testing override.
+- [interviewcoder]
+  Provides assistance during coding interviews.
 - [nfov@tmp] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
 - [pear] [<kbd>typescript</kbd>]
@@ -191,6 +193,7 @@ To install any of the formulas below:
 [freewrite]: https://freewrite.io/
 [google-chrome-testing]: https://developer.chrome.com/blog/chrome-for-testing
 [hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
+[interviewcoder]: https://www.interviewcoder.co/
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [jsmin]: https://www.crockford.com/javascript/jsmin.html
 [koino]: https://github.com/kivikakk/koino
