@@ -1,7 +1,7 @@
 cask "burp-browser" do
   arch arm: "MacOsArm64", intel: "MacOsx"
 
-  version "2025.10.6"
+  version "2025.10.7"
   sha256 :no_check
 
   url "https://portswigger-cdn.net/burp/releases/download?product=community&version=#{version}&type=#{arch}",
