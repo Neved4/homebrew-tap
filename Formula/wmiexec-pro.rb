@@ -9,6 +9,12 @@ class WmiexecPro < Formula
   license :cannot_represent
   head "https://github.com/XiaoliChan/wmiexec-Pro.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wmiexec-pro-0.4.1,1,8821901"
+    sha256 cellar: :any, arm64_tahoe:   "41e99bb0d0f301c889afa98f95db17af4490411a233aa94e3783f2f85329e407"
+    sha256 cellar: :any, arm64_sequoia: "62b2d60161ddcfc9850e179e41b7e4e5cf2dd07486d03a49f2fe46f5a7f67749"
+  end
+
   depends_on "pkg-config" => :build
   depends_on "rust" => :build
   depends_on "cryptography"
