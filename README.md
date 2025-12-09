@@ -115,6 +115,8 @@ To install any of the formulas below:
   DNS enumeration and reconnaissance tool.
 - [elegantbouncer] [<kbd>rust</kbd>]
   Detection tool for file-based exploits.
+- [evry] [<kbd>rust</kbd>]
+  Shell-script-centric task scheduler.
 - [hyperspec]
   Common Lisp ANSI-standard Hyperspec.
 - [johnnybgoode] [<kbd>rust</kbd>]
@@ -191,6 +193,7 @@ To install any of the formulas below:
 [dnsrecce]: https://github.com/Neved4/dnsrecce
 [dnsrecon]: https://github.com/darkoperator/dnsrecon
 [elegantbouncer]: https://github.com/msuiche/elegant-bouncer
+[evry]: https://github.com/purarue/evry
 [font-monego]: https://github.com/cseelus/monego
 [freewrite]: https://freewrite.io/
 [google-chrome-testing]: https://developer.chrome.com/blog/chrome-for-testing
