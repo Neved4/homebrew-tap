@@ -28,6 +28,6 @@ class Gotwc < Formula
 
   test do
     desired_output = "UTC  " + shell_output('date -u +"%Y-%m-%dT%H:%M:%SZ"').strip
-    assert_equal desired_output, shell_output("#{bin}/gotwc -t UTC").strip
+    assert_equal desired_output, shell_output("#{bin}/gotwc -t UTC -s '%Y-%m-%dT%H:%M:%SZ'").strip
   end
 end
