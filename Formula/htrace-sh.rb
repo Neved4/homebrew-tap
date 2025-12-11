@@ -6,9 +6,17 @@ class HtraceSh < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/trimstray/htrace.sh.git", branch: "master"
 
+  depends_on "libmaxminddb"
+  depends_on "nghttp2"
+  depends_on "nmap"
+  depends_on "ssllabs-scan"
+  depends_on "subfinder"
+  depends_on "testssl"
+
   def install
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"bin/htrace.sh"
+    (libexec/"bin/htrace.sh").chmod 0555
+    (bin/"htrace.sh").write_env_script libexec/"bin/htrace.sh", {}
   end
 
   test do
