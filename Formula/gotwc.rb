@@ -1,8 +1,8 @@
 class Gotwc < Formula
   desc "Tiny world clock in Go!"
   homepage "https://github.com/Neved4/gotwc"
-  url "https://github.com/Neved4/gotwc/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "2ada413dc14d2aede39da5dc79030260623ca91e4abbe0f5b648f700736dfec5"
+  url "https://github.com/Neved4/gotwc/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "278fd89508d44e2f867b4cc75677185a458593f900111c0ba4ebbe9276adcb60"
   license "MIT"
   head "https://github.com/Neved4/gotwc.git", branch: "main"
 
