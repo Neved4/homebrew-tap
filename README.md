@@ -136,6 +136,8 @@ To install any of the formulas below:
   Periodic command scheduler.
 - [gochro] [<kbd>go</kbd>]
   Take screenshots of websites and create PDF from HTML pages using Chromium and Docker.
+- [htrace-sh] [<kbd>posix-shell</kbd>]
+  HTTP/HTTPS troubleshooting and profiling wrapper.
 - [hyperspec]
   Common Lisp ANSI-standard Hyperspec.
 - [inferno] [<kbd>rust</kbd>]
@@ -249,6 +251,7 @@ To install any of the formulas below:
 [freewrite]: https://freewrite.io/
 [gochro]: https://github.com/firefart/gochro
 [google-chrome-testing]: https://developer.chrome.com/blog/chrome-for-testing
+[htrace-sh]: https://github.com/trimstray/htrace.sh/
 [hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
 [inferno]: https://github.com/jonhoo/inferno
 [interviewcoder]: https://www.interviewcoder.co/
