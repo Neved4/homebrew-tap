@@ -7,10 +7,10 @@ class Penelope < Formula
   head "https://github.com/brightio/penelope.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/penelope-0.14.8"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "436c8d1a5ffce6144267e64a7ab9f2586f2f2e78acb99ce132874968c89366db"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "b49944a8973ddcd87661cf91990334295d79b4c192baa38665f965d182cce15b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "882d68f05cf0b98adbda893b58224040426fabfa184cf5ce59c9d4197a2b0267"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/penelope-0.14.14"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "c8ab7ba8328ff210b1cc3641dfb290a3946a2e7eb1af2dc2ddebc17504a7f512"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "df710bde42b3526dc3b57608c49466ef8e1f61cba643615c0e37f91f6bb76a3a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1fe4fa285d384b97df124716f0126b60d3386106a8c1d21c7fd650c96a289c6d"
   end
 
   depends_on "python@3.14"
