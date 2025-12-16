@@ -168,6 +168,8 @@ To install any of the formulas below:
   Google Chrome for Testing override.
 - [interviewcoder]
   Provides assistance during coding interviews.
+- [lofloccus] [<kbd>c++</kbd>] [<kbd>go</kbd>]
+  Sync Floccus bookmarks to a local folder or any cloud service.
 - [nfov@tmp] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
 - [pear] [<kbd>typescript</kbd>]
@@ -202,6 +204,7 @@ To install any of the formulas below:
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [jsmin]: https://www.crockford.com/javascript/jsmin.html
 [koino]: https://github.com/kivikakk/koino
+[lofloccus]: https://github.com/TCB13/LoFloccus
 [nfov@tmp]: https://nrlquaker.github.io/nfov/
 [packer-tmp]: https://www.packer.io/
 [pd-urlfinder]: https://github.com/projectdiscovery/urlfinder
