@@ -14,11 +14,12 @@ class Nbtscan < Formula
   def install
     system "./autogen.sh"
     system "./configure", "--disable-dependency-tracking", "--prefix=#{prefix}"
+    system "make"
     system "make", "install"
   end
 
   test do
-    version_output = shell_output(bin/"nbtscan").strip
-    assert_match "NBTscan version #{version}", version_output
+    output = shell_output(bin/"nbtscan", 2).strip
+    assert_match "192.168.0.1:NT_SERVER:00U", output
   end
 end

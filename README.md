@@ -125,6 +125,8 @@ To install any of the formulas below:
   Minify JavaScript code.
 - [koino] [<kbd>zig</kbd>]
   CommonMark + GFM compatible Markdown parser and renderer
+- [nbtscan] [<kbd>c</kbd>]
+  Scan networks for NetBIOS name information.
 - [packer-tmp] [<kbd>go</kbd>]
   Tool for creating identical machine images for multiple platforms.
 - [puncia] [<kbd>python</kbd>]
@@ -205,6 +207,7 @@ To install any of the formulas below:
 [jsmin]: https://www.crockford.com/javascript/jsmin.html
 [koino]: https://github.com/kivikakk/koino
 [lofloccus]: https://github.com/TCB13/LoFloccus
+[nbtscan]: https://github.com/resurrecting-open-source-projects/nbtscan
 [nfov@tmp]: https://nrlquaker.github.io/nfov/
 [packer-tmp]: https://www.packer.io/
 [pd-urlfinder]: https://github.com/projectdiscovery/urlfinder
