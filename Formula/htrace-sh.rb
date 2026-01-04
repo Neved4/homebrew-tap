@@ -6,6 +6,7 @@ class HtraceSh < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/trimstray/htrace.sh.git", branch: "master"
 
+  depends_on "composer"
   depends_on "libmaxminddb"
   depends_on "nghttp2"
   depends_on "nmap"
