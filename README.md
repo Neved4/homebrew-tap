@@ -143,6 +143,8 @@ To install any of the formulas below:
   Powerful shell handler built as a modern netcat replacement.
 - [volatility] [<kbd>python</kbd>]
   Advanced memory forensics framework.
+- [wafw00f] [<kbd>python</kbd>]
+  Web Application Firewall (WAF) fingerprinting tool.
 - [withjava] [<kbd>rust</kbd>]
   Wrap commands in specific Java versions.
 - [wmiexec-pro] [<kbd>python</kbd>]
@@ -219,6 +221,7 @@ To install any of the formulas below:
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
 [unarj]: http://www.arjsoftware.com/files.htm
 [volatility]: https://github.com/volatilityfoundation/volatility
+[wafw00f]: https://github.com/EnableSecurity/wafw00f
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [wmiexec-pro]: https://github.com/XiaoliChan/wmiexec-Pro
 [wordtidy]: https://github.com/sts10/tidy
