@@ -7,6 +7,13 @@ class Wafw00f < Formula
   sha256 "e4a784b5c6f0632d129146e0a6a769495044e6faa7ab8b498d1f6d5b14744479"
   license "BSD-3-Clause"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wafw00f-2.3.2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "05f77e3331b903ed823d92bb08c8aca14e6adb858225b3c27bb80c0c4753dd41"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "b99db22a51ce71667c6737831dbacd4a8693580fac74a0709d55e83d5975300a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f897ae331602e97f69fa835d40a5d422abe7ae26354457454a0f095d9f96cab3"
+  end
+
   depends_on "python@3.13"
 
   resource "certifi" do
