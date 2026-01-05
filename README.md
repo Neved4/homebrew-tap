@@ -85,6 +85,13 @@ To install any of the formulas below:
 - [gotwc] [<kbd>go</kbd>] [<kbd>iso-8601</kbd>] [<kbd>tz-database</kbd>]
   Go version, display different time zones from the tz database.
 
+### Security 🔐
+
+- [dnspeek] [<kbd>go</kbd>]
+  DNS reconnaissance CLI written in Go.
+- [dnsrecce] [<kbd>go</kbd>]
+  DNS reconnaissance CLI with Google scraping and XML output.
+
 <!-- END SYNC -->
 
 ## Third-party 🍻
@@ -115,10 +122,6 @@ To install any of the formulas below:
   Convert magnet links to .torrent files.
 - [dgen] [<kbd>c</kbd>]
   Sega Genesis / Mega Drive emulator.
-- [dnspeek] [<kbd>go</kbd>]
-  DNS reconnaissance CLI written in Go.
-- [dnsrecce] [<kbd>go</kbd>]
-  DNS reconnaissance CLI with Google scraping and XML output.
 - [dnsrecon] [<kbd>python</kbd>]
   DNS enumeration and reconnaissance tool.
 - [elegantbouncer] [<kbd>rust</kbd>]
