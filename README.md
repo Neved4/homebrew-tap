@@ -155,6 +155,28 @@ To install any of the formulas below:
   Combine and clean word lists.
 - [pprof] [<kbd>go</kbd>]
   Interactive visualizations and analysis of profiling data.
+- [astroguard] [<kbd>posix-shell</kbd>]
+  Code auditing and profiling tool based on gcc for C programs.
+- [codacy-analysis-cli] [<kbd>java</kbd>]
+  CLI for running Codacy analysis engines.
+- [cronie] [<kbd>c</kbd>]
+  Cron daemon for Unix-like operating systems.
+- [fcron] [<kbd>c</kbd>]
+  Periodic command scheduler.
+- [gochro] [<kbd>go</kbd>]
+  Take screenshots of websites and create PDF from HTML pages using Chromium and Docker.
+- [inferno] [<kbd>rust</kbd>]
+  High-performance flamegraph generator.
+- [iozone] [<kbd>c</kbd>]
+  Filesystem benchmark tool.
+- [keyscan] [<kbd>python</kbd>]
+  GitHub Gists scanner with LLM-based classification.
+- [seclists]
+  Collection of multiple security wordlists.
+- [tidy] [<kbd>rust</kbd>]
+  Word list cleaner and deduper.
+- [tuckr] [<kbd>rust</kbd>]
+  Dotfile manager for templated and synced configs.
 
 ### Casks
 
@@ -233,6 +255,17 @@ To install any of the formulas below:
 [wmiexec-pro]: https://github.com/XiaoliChan/wmiexec-Pro
 [wordlists]: https://gitlab.com/kalilinux/packages/wordlists
 [wordtidy]: https://github.com/sts10/tidy
+[astroguard]: https://github.com/ANG13T/astroguard
+[codacy-analysis-cli]: https://github.com/codacy/codacy-analysis-cli
+[cronie]: https://github.com/cronie-crond/cronie
+[fcron]: https://github.com/yo8192/fcron
+[gochro]: https://github.com/firefart/gochro
+[inferno]: https://github.com/jonhoo/inferno
+[iozone]: https://www.iozone.org/
+[keyscan]: https://github.com/kevinMEH/keyscan
+[seclists]: https://github.com/danielmiessler/SecLists
+[tidy]: https://github.com/sts10/tidy
+[tuckr]: https://github.com/RaphGL/Tuckr
 [pprof]: https://github.com/google/pprof
 
 ## License
