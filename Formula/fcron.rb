@@ -9,6 +9,9 @@ class Fcron < Formula
 
   depends_on "autoconf" => :build
   depends_on "pkg-config" => :build
+  on_linux do
+    depends_on "libxcrypt"
+  end
 
   def install
     system "autoconf"
