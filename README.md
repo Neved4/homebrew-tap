@@ -151,8 +151,10 @@ To install any of the formulas below:
   New generation of wmiexec.py
 - [wordtidy] [<kbd>rust</kbd>]
   Combine and clean word lists.
-- [kamal] [<kbd>ruby</kbd>]
-  Deploy web apps in containers to servers running Docker with zero downtime.
+- [pprof] [<kbd>go</kbd>]
+  Interactive visualizations and analysis of profiling data.
+- [pprof] [<kbd>go</kbd>]
+  Interactive visualizations and analysis of profiling data.
 
 ### Casks
 
@@ -230,7 +232,8 @@ To install any of the formulas below:
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [wmiexec-pro]: https://github.com/XiaoliChan/wmiexec-Pro
 [wordtidy]: https://github.com/sts10/tidy
-[kamal]: https://github.com/basecamp/kamal
+[pprof]: https://github.com/google/pprof
+[pprof]: https://github.com/google/pprof
 
 ## License
 
