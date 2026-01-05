@@ -180,6 +180,8 @@ To install any of the formulas below:
   YouTube Music desktop app.
 - [runtimebrowser] [<kbd>objective-c</kbd>]
   Class browser for the Objective-C runtime.
+- [spacestation14]
+  Launcher for Space Station 14 game.
 
 [alire]: https://github.com/alire-project/alire
 [apfs-clone-checker]: https://github.com/dyorgio/apfs-clone-checker
@@ -218,6 +220,7 @@ To install any of the formulas below:
 [puncia]: https://github.com/ARPSyndicate/puncia
 [regular]: https://github.com/dbohdan/regular
 [runtimebrowser]: https://github.com/nst/RuntimeBrowser
+[spacestation14]: https://spacestation14.com/
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
 [unarj]: http://www.arjsoftware.com/files.htm
 [volatility]: https://github.com/volatilityfoundation/volatility
