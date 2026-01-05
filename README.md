@@ -153,8 +153,6 @@ To install any of the formulas below:
   Combine and clean word lists.
 - [pprof] [<kbd>go</kbd>]
   Interactive visualizations and analysis of profiling data.
-- [pprof] [<kbd>go</kbd>]
-  Interactive visualizations and analysis of profiling data.
 
 ### Casks
 
