@@ -5,6 +5,13 @@ class Kamal < Formula
   sha256 "53b7ecb4c33dd83b1aedfc7aacd1c059f835993258a552d70d584c6ce32b6340"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/kamal-2.10.1"
+    sha256 cellar: :any,                 arm64_tahoe:   "24e00ec5dc2db048c1d07e6fc24eea90ce2f2fca1ce7d2a331456c86c6fc66be"
+    sha256 cellar: :any,                 arm64_sequoia: "640dd22c9692bb8de58e6308a2d14779be89bfb890beec33511fca0abf06bd93"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5166732ea3bd8d897a4e55dd75b8b326d06269e83ebcf007ffefa57575bd6cbd"
+  end
+
   depends_on "ruby"
 
   resource "activesupport" do
