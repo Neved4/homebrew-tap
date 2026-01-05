@@ -233,7 +233,6 @@ To install any of the formulas below:
 [wmiexec-pro]: https://github.com/XiaoliChan/wmiexec-Pro
 [wordtidy]: https://github.com/sts10/tidy
 [pprof]: https://github.com/google/pprof
-[pprof]: https://github.com/google/pprof
 
 ## License
 
