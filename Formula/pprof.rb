@@ -10,6 +10,13 @@ class Pprof < Formula
     skip "No tagged version available"
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/pprof-0.0.0-20251213-b05bdac"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "292396f58d1accea2d8aac6f05d1a5e78c2163d587129849193ea10940f0da08"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e823c474306fdf954a2e06e93d9ee55a30755ee85cfee94a1ad11057ab7ccb3b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3c51055ae04e1cbcc24bb702dbe1cfb72c018c02c99e2c37843eaaabf521ea19"
+  end
+
   depends_on "go" => :build
 
   def install
