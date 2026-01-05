@@ -51,6 +51,7 @@ To install any of the formulas below:
 [<kbd>swift</kbd>]: https://www.swift.org/
 [<kbd>typescript</kbd>]: https://www.typescriptlang.org/
 [<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
+[<kbd>txt</kbd>]: https://en.wikipedia.org/wiki/Plain_text
 [<kbd>zig</kbd>]: https://ziglang.org/
 
 [Homebrew]: https://brew.sh/
@@ -158,7 +159,7 @@ To install any of the formulas below:
   Official CLI utility for Osprey Vision, Subdomain Center & Exploit Observer.
 - [regular] [<kbd>typescript</kbd>]
   Job scheduler: an alternative to cron and anacron.
-- [seclists]
+- [seclists] [<kbd>txt</kbd>]
   Collection of multiple security wordlists.
 - [tidy] [<kbd>rust</kbd>]
   Word list cleaner and deduper.
@@ -176,7 +177,7 @@ To install any of the formulas below:
   Wrap commands in specific Java versions.
 - [wmiexec-pro] [<kbd>python</kbd>]
   New generation of wmiexec.py
-- [wordlists]
+- [wordlists] [<kbd>txt</kbd>]
   Collection of common wordlists.
 - [wordtidy] [<kbd>rust</kbd>]
   Combine and clean word lists.
