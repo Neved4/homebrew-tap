@@ -257,7 +257,7 @@ To install any of the formulas below:
 [spacestation14]: https://spacestation14.com/
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
 [unarj]: http://www.arjsoftware.com/files.htm
-[volatility]: https://github.com/volatilityfoundation/volatility
+[volatility]: https://github.com/volatilityfoundation/volatility3
 [wafw00f]: https://github.com/EnableSecurity/wafw00f
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [wmiexec-pro]: https://github.com/XiaoliChan/wmiexec-Pro
