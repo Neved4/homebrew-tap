@@ -149,6 +149,8 @@ To install any of the formulas below:
   Wrap commands in specific Java versions.
 - [wmiexec-pro] [<kbd>python</kbd>]
   New generation of wmiexec.py
+- [wordlists]
+  Collection of common wordlists.
 - [wordtidy] [<kbd>rust</kbd>]
   Combine and clean word lists.
 - [pprof] [<kbd>go</kbd>]
@@ -229,6 +231,7 @@ To install any of the formulas below:
 [wafw00f]: https://github.com/EnableSecurity/wafw00f
 [withjava]: https://git.arielaw.ar/arisunz/with-java
 [wmiexec-pro]: https://github.com/XiaoliChan/wmiexec-Pro
+[wordlists]: https://gitlab.com/kalilinux/packages/wordlists
 [wordtidy]: https://github.com/sts10/tidy
 [pprof]: https://github.com/google/pprof
 
