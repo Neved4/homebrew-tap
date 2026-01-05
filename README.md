@@ -180,7 +180,7 @@ To install any of the formulas below:
   YouTube Music desktop app.
 - [runtimebrowser] [<kbd>objective-c</kbd>]
   Class browser for the Objective-C runtime.
-- [spacestation14]
+- [spacestation14] [<kbd>c#</kbd>]
   Launcher for Space Station 14 game.
 
 [alire]: https://github.com/alire-project/alire
