@@ -50,7 +50,7 @@ To install any of the formulas below:
 [<kbd>rust</kbd>]: https://www.rust-lang.org/
 [<kbd>swift</kbd>]: https://www.swift.org/
 [<kbd>typescript</kbd>]: https://www.typescriptlang.org/
-[<kbd>typeface</kbd>]: https://en.wikipedia.org/wiki/Typeface
+[<kbd>font-family</kbd>]: https://en.wikipedia.org/wiki/Typeface
 [<kbd>tz-database</kbd>]: https://www.iana.org/time-zones
 [<kbd>txt</kbd>]: https://en.wikipedia.org/wiki/Plain_text
 [<kbd>zig</kbd>]: https://ziglang.org/
@@ -198,7 +198,7 @@ To install any of the formulas below:
   Yet another matrix client for desktop.
 - [cluely] [<kbd>javascript</kbd>]
   AI meeting assistant with live notes and real-time insights.
-- [font-monego] [<kbd>typeface</kbd>]
+- [font-monego] [<kbd>font-family</kbd>]
   Monaco monospaced inspired font.
 - [freewrite] [<kbd>swift</kbd>]
   Write continuously without distraction.
