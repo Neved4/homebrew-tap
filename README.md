@@ -34,6 +34,7 @@ To install any of the formulas below:
 [<kbd>awk</kbd>]: https://github.com/onetrueawk/awk
 [<kbd>c++</kbd>]: https://isocpp.org
 [<kbd>c</kbd>]: https://www.c-language.org/
+[<kbd>c-sharp</kbd>]: https://learn.microsoft.com/dotnet/csharp/
 [<kbd>fish-shell</kbd>]: https://fishshell.com/
 [<kbd>go</kbd>]: https://go.dev/
 [<kbd>iso-8601</kbd>]: https://www.iso.org/iso-8601-date-and-time-format.html
@@ -123,6 +124,8 @@ To install any of the formulas below:
   An assistant for users of the Johnny Decimal file organization system.
 - [jsmin] [<kbd>c</kbd>]
   Minify JavaScript code.
+- [kamal] [<kbd>ruby</kbd>]
+  Deploy web apps anywhere.
 - [koino] [<kbd>zig</kbd>]
   CommonMark + GFM compatible Markdown parser and renderer
 - [nbtscan] [<kbd>c</kbd>]
@@ -206,7 +209,7 @@ To install any of the formulas below:
   YouTube Music desktop app.
 - [runtimebrowser] [<kbd>objective-c</kbd>]
   Class browser for the Objective-C runtime.
-- [spacestation14] [<kbd>c#</kbd>]
+- [spacestation14] [<kbd>c-sharp</kbd>]
   Launcher for Space Station 14 game.
 
 [alire]: https://github.com/alire-project/alire
@@ -235,6 +238,7 @@ To install any of the formulas below:
 [interviewcoder]: https://www.interviewcoder.co/
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [jsmin]: https://www.crockford.com/javascript/jsmin.html
+[kamal]: https://github.com/basecamp/kamal
 [koino]: https://github.com/kivikakk/koino
 [lofloccus]: https://github.com/TCB13/LoFloccus
 [nbtscan]: https://github.com/resurrecting-open-source-projects/nbtscan
