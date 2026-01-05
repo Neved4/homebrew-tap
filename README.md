@@ -184,7 +184,7 @@ To install any of the formulas below:
 
 ### Casks
 
-- [boinc@7]
+- [boinc@7] [<kbd>c++</kbd>]
   Downloads scientific computing jobs and runs them invisibly in the background.
 - [burp-browser] [<kbd>c++</kbd>]
   Chromium stable, from Burp Browser.
