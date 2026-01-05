@@ -96,10 +96,16 @@ To install any of the formulas below:
   Utility to check if two files are APFS clones.
 - [apg-go] [<kbd>go</kbd>]
   A modern "Automated Password Generator"-clone written in Go.
+- [astroguard] [<kbd>posix-shell</kbd>]
+  Code auditing and profiling tool based on gcc for C programs.
 - [autorecon] [<kbd>python</kbd>]
   Multi-threaded network reconnaissance tool.
 - [center] [<kbd>c</kbd>]
   Centers text read from stdin.
+- [codacy-analysis-cli] [<kbd>java</kbd>]
+  CLI for running Codacy analysis engines.
+- [cronie] [<kbd>c</kbd>]
+  Cron daemon for Unix-like operating systems.
 - [cut-cdn] [<kbd>go</kbd>]
   Remove CDN IPs from the list of IP addresses.
 - [demagnetize] [<kbd>python</kbd>]
@@ -118,32 +124,50 @@ To install any of the formulas below:
   Detection tool for file-based exploits.
 - [evry] [<kbd>rust</kbd>]
   Shell-script-centric task scheduler.
+- [fcron] [<kbd>c</kbd>]
+  Periodic command scheduler.
+- [gochro] [<kbd>go</kbd>]
+  Take screenshots of websites and create PDF from HTML pages using Chromium and Docker.
 - [hyperspec]
   Common Lisp ANSI-standard Hyperspec.
+- [inferno] [<kbd>rust</kbd>]
+  High-performance flamegraph generator.
+- [iozone] [<kbd>c</kbd>]
+  Filesystem benchmark tool.
 - [johnnybgoode] [<kbd>rust</kbd>]
   An assistant for users of the Johnny Decimal file organization system.
 - [jsmin] [<kbd>c</kbd>]
   Minify JavaScript code.
 - [kamal] [<kbd>ruby</kbd>]
   Deploy web apps anywhere.
+- [keyscan] [<kbd>python</kbd>]
+  GitHub Gists scanner with LLM-based classification.
 - [koino] [<kbd>zig</kbd>]
   CommonMark + GFM compatible Markdown parser and renderer
 - [nbtscan] [<kbd>c</kbd>]
   Scan networks for NetBIOS name information.
 - [packer-tmp] [<kbd>go</kbd>]
   Tool for creating identical machine images for multiple platforms.
-- [puncia] [<kbd>python</kbd>]
-  Official CLI utility for Osprey Vision, Subdomain Center & Exploit Observer.
-- [regular] [<kbd>typescript</kbd>]
-  Job scheduler: an alternative to cron and anacron.
-- [typst-ansi-hl] [<kbd>go</kbd>]
-  Highlight your Typst code using ANSI escape sequences.
-- [unarj] [<kbd>c</kbd>]
-  ARJ file archiver.
 - [pd-urlfinder] [<kbd>go</kbd>]
   Tool for passively gathering URLs.
 - [penelope] [<kbd>python</kbd>]
   Powerful shell handler built as a modern netcat replacement.
+- [pprof] [<kbd>go</kbd>]
+  Interactive visualizations and analysis of profiling data.
+- [puncia] [<kbd>python</kbd>]
+  Official CLI utility for Osprey Vision, Subdomain Center & Exploit Observer.
+- [regular] [<kbd>typescript</kbd>]
+  Job scheduler: an alternative to cron and anacron.
+- [seclists]
+  Collection of multiple security wordlists.
+- [tidy] [<kbd>rust</kbd>]
+  Word list cleaner and deduper.
+- [tuckr] [<kbd>rust</kbd>]
+  Dotfile manager for templated and synced configs.
+- [typst-ansi-hl] [<kbd>go</kbd>]
+  Highlight your Typst code using ANSI escape sequences.
+- [unarj] [<kbd>c</kbd>]
+  ARJ file archiver.
 - [volatility] [<kbd>python</kbd>]
   Advanced memory forensics framework.
 - [wafw00f] [<kbd>python</kbd>]
@@ -156,30 +180,6 @@ To install any of the formulas below:
   Collection of common wordlists.
 - [wordtidy] [<kbd>rust</kbd>]
   Combine and clean word lists.
-- [pprof] [<kbd>go</kbd>]
-  Interactive visualizations and analysis of profiling data.
-- [astroguard] [<kbd>posix-shell</kbd>]
-  Code auditing and profiling tool based on gcc for C programs.
-- [codacy-analysis-cli] [<kbd>java</kbd>]
-  CLI for running Codacy analysis engines.
-- [cronie] [<kbd>c</kbd>]
-  Cron daemon for Unix-like operating systems.
-- [fcron] [<kbd>c</kbd>]
-  Periodic command scheduler.
-- [gochro] [<kbd>go</kbd>]
-  Take screenshots of websites and create PDF from HTML pages using Chromium and Docker.
-- [inferno] [<kbd>rust</kbd>]
-  High-performance flamegraph generator.
-- [iozone] [<kbd>c</kbd>]
-  Filesystem benchmark tool.
-- [keyscan] [<kbd>python</kbd>]
-  GitHub Gists scanner with LLM-based classification.
-- [seclists]
-  Collection of multiple security wordlists.
-- [tidy] [<kbd>rust</kbd>]
-  Word list cleaner and deduper.
-- [tuckr] [<kbd>rust</kbd>]
-  Dotfile manager for templated and synced configs.
 
 ### Casks
 
