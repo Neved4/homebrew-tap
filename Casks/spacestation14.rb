@@ -5,7 +5,7 @@ cask "spacestation14" do
   url "https://github.com/space-wizards/SS14.Launcher/releases/download/v#{version}/SS14.Launcher_macOS.zip",
       verified: "github.com/space-wizards/SS14.Launcher/"
   name "Space Station 14 Launcher"
-  desc "Launcher for Space Station 14"
+  desc "Launcher for Space Station 14 game"
   homepage "https://spacestation14.com/"
 
   livecheck do
