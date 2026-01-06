@@ -8,11 +8,14 @@ on:
 jobs:
   autobump:
     runs-on: macos-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Update Homebrew formula
         uses: dawidd6/action-homebrew-bump-formula@1446dca236b0440c6f02723a3f14f13be2c04ab0 # v7
         with:
-          token: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           user_name: Neved4
           user_email: 63655535+Neved4@users.noreply.github.com
           no_fork: true
@@ -22,6 +25,6 @@ jobs:
       - name: Update Homebrew cask
         uses: eugenesvk/action-homebrew-bump-cask@a05fd49892799eade237259963d787ba0143dab1 # v3.8.5
         with:
-          token: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           tap: Neved4/homebrew-tap
           livecheck: true
