@@ -55,15 +55,17 @@ To install any of the formulas below:
 [<kbd>txt</kbd>]: https://en.wikipedia.org/wiki/Plain_text
 [<kbd>zig</kbd>]: https://ziglang.org/
 
-[Homebrew]: https://brew.sh/
-[BSD 2-Clause License]: https://opensource.org/license/bsd-2-clause/
-[Neved4]: https://github.com/Neved4
 [applist]: https://github.com/Neved4/applist
 [apputils]: https://github.com/Neved4/apputils
+[BSD 2-Clause License]: https://opensource.org/license/bsd-2-clause/
+[dnspeek]: https://github.com/Neved4/dnspeek
+[dnsrecce]: https://github.com/Neved4/dnsrecce
+[gotwc]: https://github.com/Neved4/gotwc
+[Homebrew]: https://brew.sh/
+[Neved4]: https://github.com/Neved4
 [sw_name]: https://github.com/Neved4/sw_name
 [tmbackup]: https://github.com/Neved4/tmbackup
 [tmexcludes]: https://github.com/Neved4/tmexcludes
-[gotwc]: https://github.com/Neved4/gotwc
 [twc]: https://github.com/Neved4/twc
 
 ### macOS 
@@ -231,8 +233,6 @@ To install any of the formulas below:
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
 [dgen]: https://dgen.sourceforge.net/
-[dnspeek]: https://github.com/Neved4/dnspeek
-[dnsrecce]: https://github.com/Neved4/dnsrecce
 [dnsrecon]: https://github.com/darkoperator/dnsrecon
 [elegantbouncer]: https://github.com/msuiche/elegant-bouncer
 [evry]: https://github.com/purarue/evry
