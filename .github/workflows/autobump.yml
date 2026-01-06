@@ -11,11 +11,13 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+    env:
+      HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
     steps:
       - name: Update Homebrew formula
         uses: dawidd6/action-homebrew-bump-formula@1446dca236b0440c6f02723a3f14f13be2c04ab0 # v7
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
           user_name: Neved4
           user_email: 63655535+Neved4@users.noreply.github.com
           no_fork: true
@@ -25,6 +27,6 @@ jobs:
       - name: Update Homebrew cask
         uses: eugenesvk/action-homebrew-bump-cask@a05fd49892799eade237259963d787ba0143dab1 # v3.8.5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
           tap: Neved4/homebrew-tap
           livecheck: true
