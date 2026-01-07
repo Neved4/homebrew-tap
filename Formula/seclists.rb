@@ -8,7 +8,7 @@ class Seclists < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/seclists-2025.3"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "7dabd3230bfca73cc276535b3dcf94c08d86fc96f05a27e44013aac481b87df1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "1cf0bd513b40004f1a62c210bd8129a349893da87284b53c45eca5609b1b2bcb"
   end
 
   def install
