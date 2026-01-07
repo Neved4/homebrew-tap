@@ -13,6 +13,13 @@ class Iozone < Formula
     end
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/iozone-3.494"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "c4f64ba6ab49807acebe2545c122bc368808ec26181d98cf0f3bdc4ef7aaa556"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "2d6be5095c8ff276530ac90aac72ac6e47573029119e5986b62b24d84b7407ae"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3eef019ef732ac30ee5db7fcd26c4ef0ce99b4e39081438a52b12bb5cf3cb778"
+  end
+
   def install
     cd "src/current" do
       target = OS.mac? ? "macosx" : OS.kernel_name.downcase
