@@ -8,6 +8,13 @@ class Keyscan < Formula
   sha256 "577c5b3334fa4596c4e18def38de22f31182c0d0bdd269903dd01810fdcd0f3e"
   license "GPL-3.0-only"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/keyscan-0.0.0-20260101-c297a23"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "a8ee10b405585452cfcf409c759909eb19093dca94c7d2d52f37aacda39db9b5"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "9e725fb5f0d86c0338330861a9191e5f6ee17a18bd0fc537303d852197895be7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dd4c4e68a8d811905e51a8ffe0fff651b06d7911bc396ba6da1c9762ec968e30"
+  end
+
   depends_on "python@3.13"
 
   resource "anyio" do
