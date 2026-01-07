@@ -1,8 +1,8 @@
 class Inferno < Formula
   desc "Performance analysis and flamegraph utilities"
   homepage "https://github.com/jonhoo/inferno"
-  url "https://github.com/jonhoo/inferno/archive/refs/tags/v0.9.9.tar.gz"
-  sha256 "b0492a971f32e08e084b8065d656cec6c7d8c4dd7287c1c359612b3254658e5a"
+  url "https://github.com/jonhoo/inferno/archive/refs/tags/v0.12.4.tar.gz"
+  sha256 "af1d4520c9a3ecc25601f0e6f049d6acb484b9736d00f218a5a9859f4a597770"
   license "CDDL-1.0"
 
   bottle do
