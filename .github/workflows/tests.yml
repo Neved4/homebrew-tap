@@ -10,7 +10,7 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: [macos-15, macos-26, ubuntu-latest]
+        os: [macos-26, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: maxim-lobanov/setup-xcode@v1
