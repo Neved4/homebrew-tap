@@ -45,6 +45,7 @@ To install any of the formulas below:
   https://developer.apple.com/documentation/objc
 [<kbd>posix-shell</kbd>]:
   https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
+[<kbd>php</kbd>]: https://www.php.net/
 [<kbd>python</kbd>]: https://www.python.org
 [<kbd>ruby</kbd>]: https://www.ruby-lang.org/en/
 [<kbd>rust</kbd>]: https://www.rust-lang.org/
@@ -151,6 +152,8 @@ To install any of the formulas below:
   GitHub Gists scanner with LLM-based classification.
 - [koino] [<kbd>zig</kbd>]
   CommonMark + GFM compatible Markdown parser and renderer
+- [mixed-content-scan] [<kbd>php</kbd>]
+  Scan your HTTPS-enabled website for Mixed Content.
 - [nbtscan] [<kbd>c</kbd>]
   Scan networks for NetBIOS name information.
 - [packer-tmp] [<kbd>go</kbd>]
@@ -246,6 +249,7 @@ To install any of the formulas below:
 [kamal]: https://github.com/basecamp/kamal
 [koino]: https://github.com/kivikakk/koino
 [lofloccus]: https://github.com/TCB13/LoFloccus
+[mixed-content-scan]: https://github.com/bramus/mixed-content-scan
 [nbtscan]: https://github.com/resurrecting-open-source-projects/nbtscan
 [nfov@tmp]: https://nrlquaker.github.io/nfov/
 [packer-tmp]: https://www.packer.io/
