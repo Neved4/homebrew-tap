@@ -156,6 +156,8 @@ To install any of the formulas below:
   Scan your HTTPS-enabled website for Mixed Content.
 - [nbtscan] [<kbd>c</kbd>]
   Scan networks for NetBIOS name information.
+- [observatory] [<kbd>javascript</kbd>]
+  Mozilla HTTP Observatory CLI.
 - [packer-tmp] [<kbd>go</kbd>]
   Tool for creating identical machine images for multiple platforms.
 - [pd-urlfinder] [<kbd>go</kbd>]
@@ -225,6 +227,7 @@ To install any of the formulas below:
 [alire]: https://github.com/alire-project/alire
 [apfs-clone-checker]: https://github.com/dyorgio/apfs-clone-checker
 [apg-go]: https://github.com/wneessen/apg-go
+[astroguard]: https://github.com/ANG13T/astroguard
 [autorecon]: https://github.com/Tib3rius/AutoRecon
 [boinc@7]: https://boinc.berkeley.edu/
 [burp-browser]: https://www.chromium.org/Home/
@@ -232,6 +235,8 @@ To install any of the formulas below:
 [chromium@api]: https://www.chromium.org/Home/
 [cinny]: https://github.com/cinnyapp/cinny-desktop
 [cluely]: https://cluely.com/
+[codacy-analysis-cli]: https://github.com/codacy/codacy-analysis-cli
+[cronie]: https://github.com/cronie-crond/cronie
 [cut-cdn]: https://github.com/ImAyrix/cut-cdn
 [demagnetize-rs]: https://github.com/jwodder/demagnetize-rs
 [demagnetize]: https://github.com/jwodder/demagnetize
@@ -239,27 +244,37 @@ To install any of the formulas below:
 [dnsrecon]: https://github.com/darkoperator/dnsrecon
 [elegantbouncer]: https://github.com/msuiche/elegant-bouncer
 [evry]: https://github.com/purarue/evry
+[fcron]: https://github.com/yo8192/fcron
 [font-monego]: https://github.com/cseelus/monego
 [freewrite]: https://freewrite.io/
+[gochro]: https://github.com/firefart/gochro
 [google-chrome-testing]: https://developer.chrome.com/blog/chrome-for-testing
 [hyperspec]: https://www.lispworks.com/documentation/common-lisp.html
+[inferno]: https://github.com/jonhoo/inferno
 [interviewcoder]: https://www.interviewcoder.co/
+[iozone]: https://www.iozone.org/
 [johnnybgoode]: https://github.com/SwissArmyWrench/johnnybgoode
 [jsmin]: https://www.crockford.com/javascript/jsmin.html
 [kamal]: https://github.com/basecamp/kamal
+[keyscan]: https://github.com/kevinMEH/keyscan
 [koino]: https://github.com/kivikakk/koino
 [lofloccus]: https://github.com/TCB13/LoFloccus
 [mixed-content-scan]: https://github.com/bramus/mixed-content-scan
 [nbtscan]: https://github.com/resurrecting-open-source-projects/nbtscan
 [nfov@tmp]: https://nrlquaker.github.io/nfov/
+[observatory]: https://github.com/mozilla/observatory-cli
 [packer-tmp]: https://www.packer.io/
 [pd-urlfinder]: https://github.com/projectdiscovery/urlfinder
 [pear]: https://github.com/pear-devs/pear-desktop
 [penelope]: https://github.com/brightio/penelope
+[pprof]: https://github.com/google/pprof
 [puncia]: https://github.com/ARPSyndicate/puncia
 [regular]: https://github.com/dbohdan/regular
 [runtimebrowser]: https://github.com/nst/RuntimeBrowser
+[seclists]: https://github.com/danielmiessler/SecLists
 [spacestation14]: https://spacestation14.com/
+[tidy]: https://github.com/sts10/tidy
+[tuckr]: https://github.com/RaphGL/Tuckr
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
 [unarj]: http://www.arjsoftware.com/files.htm
 [volatility]: https://github.com/volatilityfoundation/volatility3
@@ -268,18 +283,6 @@ To install any of the formulas below:
 [wmiexec-pro]: https://github.com/XiaoliChan/wmiexec-Pro
 [wordlists]: https://gitlab.com/kalilinux/packages/wordlists
 [wordtidy]: https://github.com/sts10/tidy
-[astroguard]: https://github.com/ANG13T/astroguard
-[codacy-analysis-cli]: https://github.com/codacy/codacy-analysis-cli
-[cronie]: https://github.com/cronie-crond/cronie
-[fcron]: https://github.com/yo8192/fcron
-[gochro]: https://github.com/firefart/gochro
-[inferno]: https://github.com/jonhoo/inferno
-[iozone]: https://www.iozone.org/
-[keyscan]: https://github.com/kevinMEH/keyscan
-[seclists]: https://github.com/danielmiessler/SecLists
-[tidy]: https://github.com/sts10/tidy
-[tuckr]: https://github.com/RaphGL/Tuckr
-[pprof]: https://github.com/google/pprof
 
 ## License
 
