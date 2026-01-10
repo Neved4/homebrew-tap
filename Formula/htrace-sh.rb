@@ -6,6 +6,12 @@ class HtraceSh < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/trimstray/htrace.sh.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/htrace-sh-1.1.7"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "256153c61109401e5036897c4bed7546440c05be3babf6781b08e7ea73089904"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "41c502d0d268cf878d1d28b96fddcb85ac0afa7d7f146589e82d7101a8d8a866"
+  end
+
   depends_on "composer"
   depends_on "coreutils"
   depends_on "gnu-getopt"
