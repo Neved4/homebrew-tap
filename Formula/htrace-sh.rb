@@ -24,7 +24,8 @@ class HtraceSh < Formula
     libexec.install Dir["*"]
     (libexec/"bin/htrace.sh").chmod 0555
     env = {
-      PATH: "#{Formula["gnu-getopt"].opt_bin}:#{Formula["gnu-sed"].libexec}/gnubin:#{Formula["coreutils"].libexec}/gnubin:$PATH",
+      PATH: "#{Formula["gnu-getopt"].opt_bin}:#{Formula["gnu-sed"].libexec}/gnubin:" \
+            "#{Formula["coreutils"].libexec}/gnubin:$PATH",
     }
     (bin/"htrace.sh").write_env_script libexec/"bin/htrace.sh", env
   end
