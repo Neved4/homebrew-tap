@@ -1,8 +1,8 @@
 class DemagnetizeRs < Formula
   desc "Convert magnet links to .torrent files"
   homepage "https://github.com/jwodder/demagnetize-rs"
-  url "https://github.com/jwodder/demagnetize-rs/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "dd9d3e9f4a086c2d35dc5f7b81e8a5a8167fb6f22a21bedea31038a52cc9b63c"
+  url "https://github.com/jwodder/demagnetize-rs/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "1b5324046151b9836a71e37c63967f3793df0032e88fb95963b0266469a42b5f"
   license "MIT"
   head "https://github.com/jwodder/demagnetize-rs.git", branch: "master"
 
