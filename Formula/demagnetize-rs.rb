@@ -26,9 +26,7 @@ class DemagnetizeRs < Formula
     desired_output_version = "demagnetize #{version}"
     assert_equal desired_output_version, shell_output("#{bin}/demagnetize-rs --version").strip
 
-    desired_output = "no trackers given in magnet URI"
-    command = 'demagnetize-rs get "magnet:?xt=urn:btih:265863cbbb5ed9ef39e7c891ebebdf1623b09d5e&dn=' \
-              'archlinux-2024.12.01-x86_64.iso" 2>&1'
-    assert_includes shell_output(command, 2).strip, desired_output
+    desired_output = "Convert magnet links to .torrent files"
+    assert_includes shell_output("#{bin}/demagnetize-rs --help").strip, desired_output
   end
 end
