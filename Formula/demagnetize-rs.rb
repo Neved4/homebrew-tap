@@ -7,9 +7,9 @@ class DemagnetizeRs < Formula
   head "https://github.com/jwodder/demagnetize-rs.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/demagnetize-rs-0.6.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "0e66f0c097790bb6a8e5d33805b22952f1283b787c5d89137f6b54b3ef67b139"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "72140af44498b8df67edfbb7c44b2c5f90d465979a25c7960ca9241035ec6493"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/demagnetize-rs-0.6.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "192d2ab48f16faade15531c3b9596be538eb4ba460ee214637692023b09bf214"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f537fac4225373e3da32bbf3eb5d17a398601bd360203df280b5a832c3fc52bd"
   end
 
   depends_on "rust" => :build
