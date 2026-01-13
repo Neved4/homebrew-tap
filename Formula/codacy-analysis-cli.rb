@@ -12,6 +12,18 @@ class CodacyAnalysisCli < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "ee06178e07e71dc60395cdd2970d299c404e26909883266d31de2a0fea2ed0c0"
   end
 
+  livecheck do
+    url :stable
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
+    strategy :git do |tags, regex|
+      tags.filter_map do |tag|
+        next if /^v?2\.0\.0$/.match?(tag)
+
+        tag[regex, 1]
+      end
+    end
+  end
+
   depends_on "openjdk"
 
   def install
