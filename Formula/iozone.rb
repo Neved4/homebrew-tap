@@ -1,8 +1,8 @@
 class Iozone < Formula
   desc "File system benchmark tool"
   homepage "https://www.iozone.org/"
-  url "https://www.iozone.org/src/current/iozone3_494.tgz"
-  sha256 "a36d43831e2829dbc9dc3d5a5a7eb1ca733c9ecc8cbb634022a52928e9b78662"
+  url "https://www.iozone.org/src/current/iozone3_508.tar"
+  sha256 "ee55af310a65ec97e1db214aebd75ee87f458b529cea3da37081a63974e8ace3"
   license :cannot_represent
 
   livecheck do
@@ -21,6 +21,8 @@ class Iozone < Formula
   end
 
   def install
+    ENV.append_to_cflags "-Wno-implicit-function-declaration"
+
     cd "src/current" do
       target = OS.mac? ? "macosx" : OS.kernel_name.downcase
       system "make", "clean"
