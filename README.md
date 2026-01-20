@@ -215,6 +215,8 @@ To install any of the formulas below:
   Google Chrome for Testing override.
 - [interviewcoder]
   Provides assistance during coding interviews.
+- [libation]
+  Audible library manager.
 - [lofloccus] [<kbd>c++</kbd>] [<kbd>go</kbd>]
   Sync Floccus bookmarks to a local folder or any cloud service.
 - [nfov@tmp] [<kbd>typescript</kbd>]
@@ -261,6 +263,7 @@ To install any of the formulas below:
 [kamal]: https://github.com/basecamp/kamal
 [keyscan]: https://github.com/kevinMEH/keyscan
 [koino]: https://github.com/kivikakk/koino
+[libation]: https://github.com/rmcrackan/Libation
 [lofloccus]: https://github.com/TCB13/LoFloccus
 [mixed-content-scan]: https://github.com/bramus/mixed-content-scan
 [nbtscan]: https://github.com/resurrecting-open-source-projects/nbtscan
