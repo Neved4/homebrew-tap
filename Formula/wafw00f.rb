@@ -47,6 +47,9 @@ class Wafw00f < Formula
   end
 
   def install
+    # Temporarily remove to fix build. Permanent solution is https://github.com/EnableSecurity/wafw00f/pull/251.
+    rm "setup.py"
+
     virtualenv_install_with_resources
   end
 
