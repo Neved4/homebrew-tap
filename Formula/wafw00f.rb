@@ -4,7 +4,7 @@ class Wafw00f < Formula
   desc "Web Application Firewall (WAF) fingerprinting tool"
   homepage "https://github.com/EnableSecurity/wafw00f"
   url "https://github.com/EnableSecurity/wafw00f/archive/refs/tags/v2.4.1.tar.gz"
-  sha256 "bcf457cd43509b9de1744baa3e6b878db0dcac46d2b4c73be007594b3bcfff19"
+  sha256 "aae1d10c40bb7e17edf33cdc7e5a4b2a66744647921a21db3d4279cc3dd19508"
   license "BSD-3-Clause"
 
   bottle do
@@ -14,7 +14,7 @@ class Wafw00f < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "f897ae331602e97f69fa835d40a5d422abe7ae26354457454a0f095d9f96cab3"
   end
 
-  depends_on "python@3.13"
+  depends_on "python@3.14"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/e0/2d/a891ca51311197f6ad14a7ef42e2399f36cf2f9bd44752b3dc4eab60fdc5/certifi-2026.1.4.tar.gz"
