@@ -3,8 +3,8 @@ class Wafw00f < Formula
 
   desc "Web Application Firewall (WAF) fingerprinting tool"
   homepage "https://github.com/EnableSecurity/wafw00f"
-  url "https://github.com/EnableSecurity/wafw00f/archive/refs/tags/v2.4.1.tar.gz"
-  sha256 "aae1d10c40bb7e17edf33cdc7e5a4b2a66744647921a21db3d4279cc3dd19508"
+  url "https://github.com/EnableSecurity/wafw00f/archive/refs/tags/v2.4.2.tar.gz"
+  sha256 "4c8e1247780e2c6f1ebf86c18a2db323a9701edb2355e14f99a2692b29c1c973"
   license "BSD-3-Clause"
 
   bottle do
