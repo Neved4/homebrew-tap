@@ -4,8 +4,8 @@ class Volatility < Formula
   desc "Advanced memory forensics framework"
   homepage "https://github.com/volatilityfoundation/volatility3"
   # Update pypi_formula_mappings.json to `{"package_name": "volatility3[full]"}` at version bump
-  url "https://files.pythonhosted.org/packages/f6/70/3caa032a703f316bfee43dcc146a1d5b6a281d2c10da5749e361f6d15f5c/volatility3-2.26.2.tar.gz"
-  sha256 "6c33e3a95ce3c85f2dc996d818ad84cdfb96ac1b13dd29b5049585e76b5703ee"
+  url "https://files.pythonhosted.org/packages/52/94/b5de76a198a0b0b8af49fc6d8da3ddc15a0a791b9ddf09d06045d6a508d9/volatility3-2.27.0.tar.gz"
+  sha256 "12a3fd4c841fadccb6b0bd96e40a99390ca09518e34de0addcbd9ff841a9bc58"
   license :cannot_represent
   version_scheme 1
   head "https://github.com/volatilityfoundation/volatility3.git", branch: "develop"
