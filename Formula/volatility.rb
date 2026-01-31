@@ -11,11 +11,9 @@ class Volatility < Formula
   head "https://github.com/volatilityfoundation/volatility3.git", branch: "develop"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/volatility-2.26.2"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "7dbc813051996692b9828f4bcc5e0950621655381ea85caf021fceb9f00395b5"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "6e73d53ab2b1087267206944b8be44f993b02621dcdf652c265df6e85ac15bd8"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "7a87e1d3da816f89b6dd5330531c45938eefe4536ca7e393cc76869da8a2a1e8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bd97381ada5ac16a7eb8ed21864da0db363486291f8ea28b8fec3d8ee78e81f8"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/volatility-2.27.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "f48bf8dfd3514a215a7b08c34025fc72daf623d24c187aa412e12fbf7e116311"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "103b5a20620fde4b9c1aabe3a2e3ae3656061d89682a8465e8014a04fb6fd178"
   end
 
   depends_on "rust" => :build # for rpds-py
