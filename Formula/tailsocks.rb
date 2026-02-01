@@ -7,7 +7,6 @@ class Tailsocks < Formula
   head "https://github.com/ItalyPaleAle/tailsocks.git", branch: "main"
 
   depends_on "go" => :build
-  depends_on :macos # TODO: try to fix Linux build
 
   def install
     build_pkg = "github.com/italypaleale/tailsocks/buildinfo"
@@ -17,7 +16,7 @@ class Tailsocks < Formula
       -X #{build_pkg}.AppVersion=#{version}
       -X #{build_pkg}.BuildId=#{version}
       -X #{build_pkg}.BuildDate=#{Time.now.utc.iso8601}
-      -X #{build_pkg}.CommitHash="Unknown - Homebrew"
+      -X #{build_pkg}.CommitHash="Unknown"
     ]
     system "go", "build", *std_go_args(output: bin/"tailsocks", ldflags: ldflags.join(" "))
   end
