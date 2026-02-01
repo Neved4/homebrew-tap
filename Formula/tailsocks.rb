@@ -7,6 +7,7 @@ class Tailsocks < Formula
   head "https://github.com/ItalyPaleAle/tailsocks.git", branch: "main"
 
   depends_on "go" => :build
+  depends_on :macos # TODO: try to fix Linux build
 
   def install
     build_pkg = "github.com/italypaleale/tailsocks/buildinfo"
