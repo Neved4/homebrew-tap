@@ -174,6 +174,8 @@ To install any of the formulas below:
   Job scheduler: an alternative to cron and anacron.
 - [seclists] [<kbd>txt</kbd>]
   Collection of multiple security wordlists.
+- [tailsocks] [<kbd>go</kbd>]
+  Route traffic through Tailscale exit nodes using a local SOCKS5 proxy.
 - [tidy] [<kbd>rust</kbd>]
   Word list cleaner and deduper.
 - [tuckr] [<kbd>rust</kbd>]
@@ -279,6 +281,7 @@ To install any of the formulas below:
 [runtimebrowser]: https://github.com/nst/RuntimeBrowser
 [seclists]: https://github.com/danielmiessler/SecLists
 [spacestation14]: https://spacestation14.com/
+[tailsocks]: https://github.com/ItalyPaleAle/tailsocks
 [tidy]: https://github.com/sts10/tidy
 [tuckr]: https://github.com/RaphGL/Tuckr
 [typst-ansi-hl]: https://github.com/frozolotl/typst-ansi-hl
