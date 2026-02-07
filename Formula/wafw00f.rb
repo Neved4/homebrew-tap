@@ -8,9 +8,9 @@ class Wafw00f < Formula
   license "BSD-3-Clause"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wafw00f-2.4.1"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "bb966495cca9659bac80e0fff8967a2753ce63ed70483ac3f18997e55fafe20d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "851ca3246a0ba9fb026e410746791667f3fe94806c7d67168f63cfa51b148c9b"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wafw00f-2.4.2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "bc5a41c37f13e5b1f4e50bd039d5585a5afb5db91123d2bcca1fbce65ba5a420"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "352f900f292fdac00351f58a53285786fcde2efd346fe5550bdfe41f915e39ee"
   end
 
   depends_on "python@3.14"
