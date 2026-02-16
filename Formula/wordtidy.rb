@@ -7,9 +7,9 @@ class Wordtidy < Formula
   head "https://github.com/sts10/tidy.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wordtidy-0.3.20"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "263526abac65920695a4ac05bab81f355313b3b7cfffb7246cc88336f5ea3a20"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ade21c178e8c3971c452485945e077a1e86c6e4a6ad42bbf485ff64d79fb234a"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wordtidy-0.3.24"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "4f7b9113ec306458676755bd9bf00be00fec0804178228b5d228f40444d8e929"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5d03b8cc67cf95eda3bf13ae5c6a71042e9dbcd84bb31e268016155890a18333"
   end
 
   depends_on "rust" => :build
