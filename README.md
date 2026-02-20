@@ -175,7 +175,7 @@ To install any of the formulas below:
 - [regular] [<kbd>typescript</kbd>]
   Job scheduler: an alternative to cron and anacron.
 - [selkie] [<kbd>rust</kbd>]
-  Full Rust implementation of a Mermaid diagram parser and renderer.
+  Mermaid diagram parser and renderer in Rust.
 - [seclists] [<kbd>txt</kbd>]
   Collection of multiple security wordlists.
 - [tailsocks] [<kbd>go</kbd>]
