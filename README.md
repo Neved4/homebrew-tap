@@ -174,6 +174,8 @@ To install any of the formulas below:
   Official CLI utility for Osprey Vision, Subdomain Center & Exploit Observer.
 - [regular] [<kbd>typescript</kbd>]
   Job scheduler: an alternative to cron and anacron.
+- [selkie] [<kbd>rust</kbd>]
+  Full Rust implementation of a Mermaid diagram parser and renderer.
 - [seclists] [<kbd>txt</kbd>]
   Collection of multiple security wordlists.
 - [tailsocks] [<kbd>go</kbd>]
@@ -282,6 +284,7 @@ To install any of the formulas below:
 [puncia]: https://github.com/ARPSyndicate/puncia
 [regular]: https://github.com/dbohdan/regular
 [runtimebrowser]: https://github.com/nst/RuntimeBrowser
+[selkie]: https://github.com/btucker/selkie
 [seclists]: https://github.com/danielmiessler/SecLists
 [spacestation14]: https://spacestation14.com/
 [tailsocks]: https://github.com/ItalyPaleAle/tailsocks
