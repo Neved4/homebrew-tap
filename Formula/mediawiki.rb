@@ -5,6 +5,12 @@ class Mediawiki < Formula
   sha256 "e2f126b19aec422051a0a50e0c6ab7e904f33b3988a47b9da8afbfd0c0a252cc"
   license "GPL-2.0-or-later"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/mediawiki-1.45.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "e3ce7c9d058ad560c5ea5536825fb1d313e24d7f921d9a8e06651892edb25df6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fb3ebc5fa1186e87112c69335d6eb53050e3171473482089b815435238736815"
+  end
+
   depends_on "autoconf" => :build
   depends_on "composer" => :build
   depends_on "diffutils"
