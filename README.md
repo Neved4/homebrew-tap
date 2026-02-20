@@ -154,6 +154,8 @@ To install any of the formulas below:
   GitHub Gists scanner with LLM-based classification.
 - [koino] [<kbd>zig</kbd>]
   CommonMark + GFM compatible Markdown parser and renderer
+- [mediawiki] [<kbd>php</kbd>]
+  Open source wiki engine.
 - [mixed-content-scan] [<kbd>php</kbd>]
   Scan your HTTPS-enabled website for Mixed Content.
 - [nbtscan] [<kbd>c</kbd>]
@@ -267,6 +269,7 @@ To install any of the formulas below:
 [koino]: https://github.com/kivikakk/koino
 [libation]: https://github.com/rmcrackan/Libation
 [lofloccus]: https://github.com/TCB13/LoFloccus
+[mediawiki]: https://www.mediawiki.org/
 [mixed-content-scan]: https://github.com/bramus/mixed-content-scan
 [nbtscan]: https://github.com/resurrecting-open-source-projects/nbtscan
 [nfov@tmp]: https://nrlquaker.github.io/nfov/
