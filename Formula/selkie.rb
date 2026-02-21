@@ -11,6 +11,12 @@ class Selkie < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/selkie-0.3.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "c5345e1d79834cf7d5e9d97b76962745c6f46289a8ff1816175a8b847e201ff9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a7cbd914b75ac421218ddedaa8972d7a7862167efe4bdf0497bb999c5ee8e213"
+  end
+
   depends_on "rust" => :build
 
   def install
