@@ -15,6 +15,7 @@ class Mediawiki < Formula
   depends_on "composer" => :build
   depends_on "diffutils"
   depends_on "mariadb"
+  depends_on "nginx"
   depends_on "php"
 
   resource "apcu" do
@@ -29,14 +30,12 @@ class Mediawiki < Formula
     system Formula["composer"].opt_bin/"composer", "dump-autoload",
       "--no-dev", "--optimize", "--working-dir=#{pkgshare}"
     build_apcu
-    write_mediawiki_router
+    write_mediawiki_nginx_config
     write_mediawiki_server
     (bin/"mediawiki").write_env_script libexec/"mediawiki-server",
-      MW_DATA_DIR:      var/"mediawiki",
-      MEDIAWIKI_APCU:   libexec/"extensions/apcu.so",
-      MEDIAWIKI_PATH:   Formula["diffutils"].opt_bin,
-      MEDIAWIKI_PHP:    Formula["php"].opt_bin/"php",
-      MEDIAWIKI_ROUTER: libexec/"mediawiki-router.php"
+      MW_DATA_DIR:              var/"mediawiki",
+      MEDIAWIKI_NGINX:          Formula["nginx"].opt_bin/"nginx",
+      MEDIAWIKI_NGINX_TEMPLATE: libexec/"mediawiki-nginx.conf.template"
   end
 
   def post_install
@@ -64,6 +63,9 @@ class Mediawiki < Formula
 
       Default data directory:
         #{var}/mediawiki
+
+      Start PHP-FPM before serving pages:
+        brew services start php
     EOS
   end
 
@@ -79,56 +81,43 @@ class Mediawiki < Formula
     end
   end
 
-  def write_mediawiki_router
-    (libexec/"mediawiki-router.php").write <<~PHP
-      <?php
-      declare(strict_types=1);
-
-      function mediawiki_content_type(string $path): ?string
-      {
-          $extension = strtolower(pathinfo($path, PATHINFO_EXTENSION));
-          $types = [
-              'css' => 'text/css; charset=UTF-8',
-              'gif' => 'image/gif',
-              'html' => 'text/html; charset=UTF-8',
-              'ico' => 'image/x-icon',
-              'jpeg' => 'image/jpeg',
-              'jpg' => 'image/jpeg',
-              'js' => 'application/javascript; charset=UTF-8',
-              'json' => 'application/json; charset=UTF-8',
-              'png' => 'image/png',
-              'svg' => 'image/svg+xml',
-              'txt' => 'text/plain; charset=UTF-8',
-              'webp' => 'image/webp',
-              'woff' => 'font/woff',
-              'woff2' => 'font/woff2',
-          ];
-
-          return $types[$extension] ?? null;
+  def write_mediawiki_nginx_config
+    (libexec/"mediawiki-nginx.conf.template").write <<~NGINX
+      worker_processes 1;
+      events {
+          worker_connections 1024;
       }
-
-      $docRoot = realpath($_SERVER['DOCUMENT_ROOT'] ?? '.') ?: '.';
-      $requestPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
-      $candidate = realpath($docRoot . $requestPath);
-
-      if ($candidate && str_starts_with($candidate, $docRoot) && is_file($candidate)) {
-          $extension = strtolower(pathinfo($candidate, PATHINFO_EXTENSION));
-
-          if ($extension !== 'php') {
-              $contentType = mediawiki_content_type($candidate);
-              if ($contentType !== null) {
-                  header('Content-Type: ' . $contentType);
+      http {
+          include #{Formula["nginx"].etc}/nginx/mime.types;
+          default_type application/octet-stream;
+          sendfile on;
+          server {
+              listen __HOST__:__PORT__;
+              root __DOCROOT__;
+              index index.php index.html;
+              charset utf-8;
+              add_header X-Content-Type-Options nosniff always;
+              location = /images/README {
+                  try_files $uri =404;
               }
-
-              header('X-Content-Type-Options: nosniff');
-              readfile($candidate);
-              return true;
+              location ~* ^/images/.+\\.(png|jpe?g|gif|webp|svg|bmp|ico|tiff?)$ {
+                  try_files $uri =404;
+              }
+              location ~* ^/images/ {
+                  return 403;
+              }
+              location / {
+                  try_files $uri $uri/ /index.php?$query_string;
+              }
+              location ~ \\.php$ {
+                  fastcgi_pass 127.0.0.1:__FPM_PORT__;
+                  fastcgi_index index.php;
+                  fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                  include #{Formula["nginx"].etc}/nginx/fastcgi_params;
+              }
           }
       }
-
-      header('X-Content-Type-Options: nosniff');
-      return false;
-    PHP
+    NGINX
   end
 
   def write_mediawiki_server
@@ -139,60 +128,89 @@ class Mediawiki < Formula
       host="${2:-127.0.0.1}"
       port="${1:-8080}"
       data_dir="${MW_DATA_DIR}"
-      apcu_module="${MEDIAWIKI_APCU:-}"
-      path_prefix="${MEDIAWIKI_PATH:-}"
-      php_bin="${MEDIAWIKI_PHP}"
-      router="${MEDIAWIKI_ROUTER}"
-      workers="${PHP_CLI_SERVER_WORKERS:-4}"
+      nginx_bin="${MEDIAWIKI_NGINX}"
+      nginx_template="${MEDIAWIKI_NGINX_TEMPLATE}"
+      runtime_dir="${data_dir}/.mediawiki-nginx"
+      runtime_conf="${runtime_dir}/nginx.conf"
+      fpm_port="${MEDIAWIKI_FPM_PORT:-9000}"
 
-      if [ -n "${path_prefix}" ]
-      then
-          PATH="${path_prefix}:${PATH}"
-          export PATH
-      fi
-      export PHP_CLI_SERVER_WORKERS="${workers}"
+      mkdir -p "${runtime_dir}"
+      sed -e "s|__HOST__|${host}|g" \
+          -e "s|__PORT__|${port}|g" \
+          -e "s|__DOCROOT__|${data_dir}|g" \
+          -e "s|__FPM_PORT__|${fpm_port}|g" \
+          "${nginx_template}" > "${runtime_conf}"
 
-      if [ -n "${apcu_module}" ] && [ -f "${apcu_module}" ]
-      then
-          exec "${php_bin}" \
-              -d "extension=${apcu_module}" \
-              -d apc.enabled=1 \
-              -d apc.enable_cli=1 \
-              -S "${host}:${port}" \
-              -t "${data_dir}" \
-              "${router}"
-      fi
-
-      exec "${php_bin}" -S "${host}:${port}" -t "${data_dir}" "${router}"
+      exec "${nginx_bin}" -g "daemon off;" -c "${runtime_conf}"
     SH
     chmod 0755, libexec/"mediawiki-server"
   end
 
   test do
     port = free_port
+    fpm_port = free_port
     data_dir = testpath/"mediawiki-data"
     data_dir.mkpath
     cp_r pkgshare.children, data_dir
 
-    pid = fork do
-      ENV["MEDIAWIKI_APCU"] = libexec/"extensions/apcu.so"
-      ENV["MW_DATA_DIR"] = data_dir
-      ENV["MEDIAWIKI_PATH"] = Formula["diffutils"].opt_bin
-      ENV["MEDIAWIKI_PHP"] = Formula["php"].opt_bin/"php"
-      ENV["MEDIAWIKI_ROUTER"] = libexec/"mediawiki-router.php"
+    fpm_conf = testpath/"php-fpm-mediawiki.conf"
+    fpm_log = testpath/"php-fpm-mediawiki.log"
+    fpm_conf.write <<~EOS
+      [global]
+      daemonize = no
+      error_log = #{fpm_log}
+      [www]
+      listen = 127.0.0.1:#{fpm_port}
+      pm = static
+      pm.max_children = 2
+      clear_env = no
+      env[PATH] = #{Formula["diffutils"].opt_bin}:/usr/bin:/bin:/usr/sbin:/sbin
+      catch_workers_output = yes
+    EOS
+
+    fpm_pid = fork do
+      exec Formula["php"].opt_sbin/"php-fpm",
+        "-F", "-y", fpm_conf, "-d", "extension=#{libexec}/extensions/apcu.so"
+    end
+
+    nginx_pid = fork do
+      ENV["MW_DATA_DIR"] = data_dir.to_s
+      ENV["MEDIAWIKI_NGINX"] = Formula["nginx"].opt_bin/"nginx"
+      ENV["MEDIAWIKI_NGINX_TEMPLATE"] = libexec/"mediawiki-nginx.conf.template"
+      ENV["MEDIAWIKI_FPM_PORT"] = fpm_port.to_s
       exec libexec/"mediawiki-server", port.to_s, "127.0.0.1"
     end
 
     begin
-      sleep 3
+      sleep 4
       output = shell_output("curl -fsS http://127.0.0.1:#{port}/mw-config/index.php")
       assert_match "MediaWiki", output
+
       css_headers = shell_output("curl -fsS -I http://127.0.0.1:#{port}/resources/lib/codex/codex.style.css")
-      assert_match "Content-Type: text/css", css_headers
-      assert_match "X-Content-Type-Options: nosniff", css_headers
+      assert_match(%r{Content-Type:\s*text/css(?:;\s*charset=utf-8)?}i, css_headers)
+
+      installer_headers = shell_output("curl -fsS -I http://127.0.0.1:#{port}/mw-config/index.php")
+      assert_match "X-Content-Type-Options: nosniff", installer_headers
+
+      cookie = testpath/"installer-cookie.txt"
+      shell_output("curl -fsS -c #{cookie} 'http://127.0.0.1:#{port}/mw-config/index.php?page=Language' >/dev/null")
+      welcome = shell_output("curl -fsSL -b #{cookie} -c #{cookie} -d 'uselang=en' 'http://127.0.0.1:#{port}/mw-config/index.php?page=Language'")
+      refute_match "Could not find APCu", welcome
+      refute_match "GNU diff3 text comparison utility not found", welcome
+      refute_match "Because of a connection error", welcome
+      refute_match "vulnerable to arbitrary scripts execution", welcome
     ensure
-      Process.kill("TERM", pid)
-      Process.wait(pid)
+      Process.kill("TERM", nginx_pid)
+      Process.kill("TERM", fpm_pid)
+      Process.wait(nginx_pid)
+      Process.wait(fpm_pid)
     end
+
+    conf = libexec/"mediawiki-nginx.conf.template"
+    assert_path_exists conf
+    conf_text = conf.read
+    assert_match "location ~* ^/images/.+\\.(png|jpe?g|gif|webp|svg|bmp|ico|tiff?)$", conf_text
+    assert_match "location ~* ^/images/ {", conf_text
+    assert_match "return 403;", conf_text
   end
 end
