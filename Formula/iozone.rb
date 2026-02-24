@@ -20,6 +20,8 @@ class Iozone < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "3eef019ef732ac30ee5db7fcd26c4ef0ce99b4e39081438a52b12bb5cf3cb778"
   end
 
+  patch :DATA
+
   def install
     ENV.append_to_cflags "-Wno-implicit-function-declaration"
 
@@ -47,3 +49,17 @@ class Iozone < Formula
       shell_output("#{bin}/iozone -I -s 16M")
   end
 end
+
+__END__
+diff --git a/src/current/libasync.c b/src/current/libasync.c
+--- a/src/current/libasync.c
++++ b/src/current/libasync.c
+@@ -372,6 +372,9 @@
+  * then the code will wait for the manditory first read.
+  *************************************************************************/
+ 
++struct cache_ent *incache(struct cache *gc, long long fd, off64_t offset,
++  long long size);
++
+ #ifdef HAVE_ANSIC_C
+ int async_read(struct cache *gc, long long fd, char *ubuffer, off64_t offset,
