@@ -32,6 +32,12 @@ class Dnsenum2 < Formula
     sha256 "73c8f5bd3ecf2b350f4adae6d6676d52e08ecc2d7df4a9f089fa68360d400d1f"
   end
 
+  resource "Module-Build" do
+    url "https://cpan.metacpan.org/authors/id/L/LE/LEONT/" \
+        "Module-Build-0.4234.tar.gz"
+    sha256 "66aeac6127418be5e471ead3744648c766bd01482825c5b66652675f2bc86a8f"
+  end
+
   resource "String-Random" do
     url "https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/" \
         "String-Random-0.32.tar.gz"
@@ -60,7 +66,14 @@ class Dnsenum2 < Formula
     ENV.prepend_create_path "PERL5LIB", libexec/"lib/perl5"
     ENV["PERL_MM_USE_DEFAULT"] = "1"
 
+    resource("Module-Build").stage do
+      system "perl", "Build.PL", "--install_base", libexec
+      system "./Build", "install"
+    end
+
     resources.each do |resource_item|
+      next if resource_item.name == "Module-Build"
+
       resource_item.stage do
         if File.exist?("Makefile.PL")
           system "perl", "Makefile.PL",
@@ -80,7 +93,8 @@ class Dnsenum2 < Formula
     system "make"
 
     (libexec/"bin").install "dnsenum.pl" => "dnsenum"
-    bin.write_env_script libexec/"bin/dnsenum",
+    chmod 0755, libexec/"bin/dnsenum"
+    (bin/"dnsenum").write_env_script libexec/"bin/dnsenum",
       PERL5LIB: ENV["PERL5LIB"]
 
     man1.install "dnsenum.1"
