@@ -8,6 +8,12 @@ class Dnsenum2 < Formula
   license "GPL-2.0-or-later"
   head "https://github.com/SparrowOchon/dnsenum2.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/dnsenum2-1.3.2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "f069904d10bf2b05b3229b3f4fe4d882da9f88fde19312294227a9748de072e0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a4ed95766a5fb6fa22647431ef8e216ae272f17cf5166dbb7da3a7df8a9cdcb9"
+  end
+
   depends_on "perl"
 
   resource "Net-IP" do
