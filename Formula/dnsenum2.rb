@@ -8,6 +8,8 @@ class Dnsenum2 < Formula
   license "GPL-2.0-or-later"
   head "https://github.com/SparrowOchon/dnsenum2.git", branch: "master"
 
+  depends_on "perl"
+
   resource "Net-IP" do
     url "https://cpan.metacpan.org/authors/id/M/MA/MANU/" \
         "Net-IP-1.26.tar.gz"
@@ -63,11 +65,13 @@ class Dnsenum2 < Formula
   end
 
   def install
+    perl = Formula["perl"].opt_bin/"perl"
+
     ENV.prepend_create_path "PERL5LIB", libexec/"lib/perl5"
     ENV["PERL_MM_USE_DEFAULT"] = "1"
 
     resource("Module-Build").stage do
-      system "perl", "Build.PL", "--install_base", libexec
+      system perl, "Build.PL", "--install_base", libexec
       system "./Build", "install"
     end
 
@@ -76,11 +80,11 @@ class Dnsenum2 < Formula
 
       resource_item.stage do
         if File.exist?("Makefile.PL")
-          system "perl", "Makefile.PL",
+          system perl, "Makefile.PL",
             "INSTALL_BASE=#{libexec}"
           system "make", "install"
         else
-          system "perl", "Build.PL", "--install_base", libexec
+          system perl, "Build.PL", "--install_base", libexec
           system "./Build", "install"
         end
       end
