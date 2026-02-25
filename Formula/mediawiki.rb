@@ -64,9 +64,6 @@ class Mediawiki < Formula
 
       Default data directory:
         #{var}/mediawiki
-
-      Start PHP-FPM before serving pages:
-        brew services start php
     EOS
   end
 
@@ -131,18 +128,43 @@ class Mediawiki < Formula
       data_dir="${MW_DATA_DIR}"
       nginx_bin="${MEDIAWIKI_NGINX}"
       nginx_template="${MEDIAWIKI_NGINX_TEMPLATE}"
+      php_fpm_bin="#{Formula["php"].opt_sbin}/php-fpm"
+      apcu_ext="#{libexec}/extensions/apcu.so"
       runtime_dir="${data_dir}/.mediawiki-nginx"
       runtime_conf="${runtime_dir}/nginx.conf"
       fpm_port="${MEDIAWIKI_FPM_PORT:-9000}"
+      fpm_conf="${runtime_dir}/php-fpm.conf"
+
+      cleanup() {
+        [ -n "${nginx_pid:-}" ] && kill "${nginx_pid}" 2>/dev/null || true
+        [ -n "${fpm_pid:-}" ] && kill "${fpm_pid}" 2>/dev/null || true
+      }
+      trap cleanup INT TERM EXIT
 
       mkdir -p "${runtime_dir}"
+      cat > "${fpm_conf}" <<EOF
+      [global]
+      daemonize = no
+      error_log = ${runtime_dir}/php-fpm.log
+      [www]
+      listen = 127.0.0.1:${fpm_port}
+      pm = static
+      pm.max_children = 2
+      clear_env = no
+      env[PATH] = #{Formula["diffutils"].opt_bin}:/usr/bin:/bin:/usr/sbin:/sbin
+      catch_workers_output = yes
+      EOF
+      "${php_fpm_bin}" -F -y "${fpm_conf}" -d "extension=${apcu_ext}" &
+      fpm_pid="$!"
       sed -e "s|__HOST__|${host}|g" \
           -e "s|__PORT__|${port}|g" \
           -e "s|__DOCROOT__|${data_dir}|g" \
           -e "s|__FPM_PORT__|${fpm_port}|g" \
           "${nginx_template}" > "${runtime_conf}"
 
-      exec "${nginx_bin}" -g "daemon off;" -c "${runtime_conf}"
+      "${nginx_bin}" -g "daemon off;" -c "${runtime_conf}" &
+      nginx_pid="$!"
+      wait "${nginx_pid}"
     SH
     chmod 0755, libexec/"mediawiki-server"
   end
@@ -154,26 +176,6 @@ class Mediawiki < Formula
     data_dir.mkpath
     cp_r pkgshare.children, data_dir
 
-    fpm_conf = testpath/"php-fpm-mediawiki.conf"
-    fpm_log = testpath/"php-fpm-mediawiki.log"
-    fpm_conf.write <<~EOS
-      [global]
-      daemonize = no
-      error_log = #{fpm_log}
-      [www]
-      listen = 127.0.0.1:#{fpm_port}
-      pm = static
-      pm.max_children = 2
-      clear_env = no
-      env[PATH] = #{Formula["diffutils"].opt_bin}:/usr/bin:/bin:/usr/sbin:/sbin
-      catch_workers_output = yes
-    EOS
-
-    fpm_pid = fork do
-      exec Formula["php"].opt_sbin/"php-fpm",
-        "-F", "-y", fpm_conf, "-d", "extension=#{libexec}/extensions/apcu.so"
-    end
-
     nginx_pid = fork do
       ENV["MW_DATA_DIR"] = data_dir.to_s
       ENV["MEDIAWIKI_NGINX"] = Formula["nginx"].opt_bin/"nginx"
@@ -183,7 +185,7 @@ class Mediawiki < Formula
     end
 
     begin
-      sleep 4
+      sleep 5
       output = shell_output("curl -fsS http://127.0.0.1:#{port}/mw-config/index.php")
       assert_match "MediaWiki", output
 
@@ -202,9 +204,7 @@ class Mediawiki < Formula
       refute_match "vulnerable to arbitrary scripts execution", welcome
     ensure
       Process.kill("TERM", nginx_pid)
-      Process.kill("TERM", fpm_pid)
       Process.wait(nginx_pid)
-      Process.wait(fpm_pid)
     end
 
     conf = libexec/"mediawiki-nginx.conf.template"
