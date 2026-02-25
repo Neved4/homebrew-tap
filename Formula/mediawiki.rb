@@ -170,6 +170,9 @@ class Mediawiki < Formula
   end
 
   test do
+    require "net/http"
+    require "uri"
+
     port = free_port
     fpm_port = free_port
     data_dir = testpath/"mediawiki-data"
@@ -185,8 +188,21 @@ class Mediawiki < Formula
     end
 
     begin
-      sleep 5
-      output = shell_output("curl -fsS http://127.0.0.1:#{port}/mw-config/index.php")
+      uri = URI("http://127.0.0.1:#{port}/mw-config/index.php")
+      output = nil
+      40.times do
+        begin
+          response = Net::HTTP.start(uri.host, uri.port) { |http| http.get(uri.request_uri) }
+          if response.is_a?(Net::HTTPSuccess)
+            output = response.body
+            break
+          end
+        rescue Errno::ECONNREFUSED, Errno::EHOSTUNREACH, Errno::ECONNRESET
+          nil
+        end
+        sleep 0.25
+      end
+      refute_nil output
       assert_match "MediaWiki", output
 
       css_headers = shell_output("curl -fsS -I http://127.0.0.1:#{port}/resources/lib/codex/codex.style.css")
