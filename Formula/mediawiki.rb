@@ -62,6 +62,11 @@ class Mediawiki < Formula
       Then visit:
         http://127.0.0.1:8080/mw-config/index.php
 
+      Database setup notes:
+      - Start DB separately: brew services start mariadb (or run mariadbd-safe manually).
+      - Ensure DB/user exist and grants are correct for MediaWiki.
+      - In installer: host 127.0.0.1, port 3306.
+
       Default data directory:
         #{var}/mediawiki
     EOS
