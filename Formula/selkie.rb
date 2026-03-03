@@ -20,7 +20,7 @@ class Selkie < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", "--bin", "selkie", *std_cargo_args
+    system "cargo", "install", "--features", "eval", "--bin", "selkie", *std_cargo_args
   end
 
   service do
