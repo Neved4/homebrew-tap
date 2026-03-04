@@ -1,11 +1,9 @@
 cask "libation" do
   arch arm: "arm64", intel: "x64"
 
-  version "13.1.9"
-  sha256 arm:          "72bc98cd08ea4b80ba66529d85f44d46573f53470127806aedb871d82aec0829",
-         intel:        "245b0556c11f2d9ddda18f5be6ce38ef4d612c5f73c9af03943ad3899f8c81bf",
-         arm64_linux:  "0", # workaround for brew bug https://github.com/orgs/Homebrew/discussions/6008, https://github.com/Homebrew/homebrew-cask/issues/205491
-         x86_64_linux: "0"
+  version "13.1.10"
+  sha256 arm:   "6b80f86507f67854858c1a4435061acfa934bd01f4e9967ba11b6f29d6c86580",
+         intel: "18a5c934d26002885462721884e4a52557e78fe63730ef10cf0e21a9efde3fd8"
 
   url "https://github.com/rmcrackan/Libation/releases/download/v#{version}/Libation.#{version}-macOS-chardonnay-#{arch}.dmg",
       verified: "github.com/rmcrackan/Libation/"
