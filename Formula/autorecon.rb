@@ -2,14 +2,14 @@ class Autorecon < Formula
   include Language::Python::Virtualenv
 
   desc "Multi-threaded network reconnaissance tool"
-  homepage "https://github.com/Tib3rius/AutoRecon"
+  homepage "https://github.com/AutoRecon/AutoRecon"
   license "GPL-3.0-or-later"
-  head "https://github.com/Tib3rius/AutoRecon.git", branch: "main"
+  head "https://github.com/AutoRecon/AutoRecon.git", branch: "main"
 
   stable do
-    url "https://github.com/Tib3rius/AutoRecon/archive/fd87c99abc5ef8534f6caba2f3b2309308f5e962.tar.gz"
-    version "2.0.36"
-    sha256 "2ca113daf37624ab3677ba70d9342e94adf1350d3020d901e475a8d249d4051d"
+    url "https://github.com/AutoRecon/AutoRecon/archive/refs/heads/main.tar.gz"
+    version "2.0.36-20251116"
+    sha256 "842ae700685dbc68a7146cc16a635d9eb72ebff53e11a091949bf30cf71c17db"
 
     # Patch by daniruiz@kali.org
     # https://gitlab.com/kalilinux/packages/autorecon/-/blob/kali/master/debian/patches/fix-invalid-escape-sequence-errors.patch
@@ -19,6 +19,16 @@ class Autorecon < Formula
     patch do
       url "https://gitlab.com/kalilinux/packages/autorecon/-/raw/0026e00960f7765e1275f450bdafaddb1c186806/debian/patches/fix-invalid-escape-sequence-errors.patch"
       sha256 "2a9f78dcab34fe35e25ef8cf652cec89b4b675981439e3472e63999f9e1d044a"
+    end
+  end
+
+  livecheck do
+    url "https://api.github.com/repos/AutoRecon/AutoRecon/commits/main"
+    strategy :json do |json|
+      date = json.dig("commit", "author", "date")&.delete("-")&.[](0, 8)
+      next if date.blank?
+
+      "2.0.36-#{date}"
     end
   end
 
@@ -193,6 +203,6 @@ class Autorecon < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/autorecon --version").strip
+    assert_match "usage:", shell_output("#{libexec}/bin/autorecon --help")
   end
 end

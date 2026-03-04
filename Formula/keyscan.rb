@@ -3,10 +3,21 @@ class Keyscan < Formula
 
   desc "GitHub Gists scanner with LLM-based classification"
   homepage "https://github.com/kevinMEH/keyscan"
-  url "https://github.com/kevinMEH/keyscan/archive/c297a23da89320e18bbe94060f25dc2b5faef80c.tar.gz"
+  url "https://github.com/kevinMEH/keyscan/archive/refs/heads/main.tar.gz"
   version "0.0.0-20260101-c297a23"
-  sha256 "577c5b3334fa4596c4e18def38de22f31182c0d0bdd269903dd01810fdcd0f3e"
+  sha256 "795016f7051049154a4b571be779b5204e640d1fa150671a10d9b42603b32436"
   license "GPL-3.0-only"
+
+  livecheck do
+    url "https://api.github.com/repos/kevinMEH/keyscan/commits/main"
+    strategy :json do |json|
+      sha = json["sha"]&.[](0, 7)
+      date = json.dig("commit", "author", "date")&.delete("-")&.[](0, 8)
+      next if sha.blank? || date.blank?
+
+      "0.0.0-#{date}-#{sha}"
+    end
+  end
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/keyscan-0.0.0-20260101-c297a23"

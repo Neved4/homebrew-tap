@@ -5,6 +5,11 @@ class Mediawiki < Formula
   sha256 "e2f126b19aec422051a0a50e0c6ab7e904f33b3988a47b9da8afbfd0c0a252cc"
   license "GPL-2.0-or-later"
 
+  livecheck do
+    url "https://releases.wikimedia.org/mediawiki/#{version.major_minor}/"
+    regex(/href=.*?mediawiki[._-]v?(\d+(?:\.\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/mediawiki-1.45.1"
     rebuild 3

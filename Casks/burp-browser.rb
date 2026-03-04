@@ -1,7 +1,7 @@
 cask "burp-browser" do
   arch arm: "MacOsArm64", intel: "MacOsx"
 
-  version "2026.1.5"
+  version "2026.2.3"
   sha256 :no_check
 
   url "https://portswigger-cdn.net/burp/releases/download?product=community&version=#{version}&type=#{arch}",
@@ -21,7 +21,7 @@ cask "burp-browser" do
               item["releaseChannels"]&.include?("Stable") &&
               item["categories"]&.include?("Community") &&
               item["builds"]&.any? do |build|
-                build["ProductPlatform"] == arch.to_s
+                build["BuildCategoryPlatform"] == arch.to_s
               end
       end
     end
@@ -32,13 +32,7 @@ cask "burp-browser" do
     "freesmug-chromium",
   ]
 
-  chromium_app = Dir[
-    "#{staged_path}/Burp Suite Community Edition.app/Contents/Resources/app/" \
-    "burpbrowser/*/Chromium.app",
-  ].first
-  app chromium_app.to_s
-
-  uninstall delete: "#{appdir}/Chromium.app"
+  app "Burp Suite Community Edition.app"
 
   zap trash: "~/.BurpSuite"
 end
