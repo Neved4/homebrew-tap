@@ -6,11 +6,10 @@ class Jsmin < Formula
   sha256 "8b7b13526ee015c1933c89165bfd044156cad867487e1cd0cbe141cabcee8657"
   license "JSON"
 
-  # The GitHub repository doesn't contain any tags, so we have to check the
-  # date in the comment at the top of the `jsmin.c` file.
+  # Upstream has no tags/releases and this formula uses a commit tarball URL,
+  # so automatic livecheck bumps can't update the URL reliably.
   livecheck do
-    url "https://raw.githubusercontent.com/douglascrockford/JSMin/master/jsmin.c"
-    regex(/jsmin\.c\s*(\d{4}-\d{1,2}-\d{1,2})/im)
+    skip "Manual updates only: version/date bumps require updating the commit-based URL and checksum."
   end
 
   def install
