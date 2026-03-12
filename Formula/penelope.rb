@@ -7,9 +7,9 @@ class Penelope < Formula
   head "https://github.com/brightio/penelope.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/penelope-0.18.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "dfc5611d55a14b724113b502b7f6ce6128577cdf4071fcf2127755e00e774ce5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "7014375f002e9c37ac69d0bdc44ad63ab76b392226de67198ff7a4ff7625b814"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/penelope-0.19.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "1488f3c880692279e56d6729894f28b81dea7a3588e15e476fca824cf0effa58"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4a863285d594864246a01d88af300212065b7bb5ce3e8faf8185b28e1af7a663"
   end
 
   depends_on "python@3.14"
