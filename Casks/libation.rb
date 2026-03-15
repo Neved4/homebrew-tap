@@ -1,9 +1,9 @@
 cask "libation" do
   arch arm: "arm64", intel: "x64"
 
-  version "13.2.1"
-  sha256 arm:          "b05dd70fe6d97fb499164e9dd030d8e04c62e8050c3519bff23e873c318a37dd",
-         intel:        "3d773194cf8ce1b2534379ac83a2f8d87d334b00ffb7f4e426305fe9470a3b8e",
+  version "13.3.0"
+  sha256 arm:          "6cdcbfb3a2851c5c1713008600b1e069ebda42423e1cbac465bec23d5ee14f0f",
+         intel:        "c511d6a836d5b0e3310d34f7bc26ea6e87f1579d2aa5b83769c978517c56c6ad",
          arm64_linux:  "0", # workaround for brew bug: Homebrew/homebrew-cask#205491
          x86_64_linux: "0"
 
