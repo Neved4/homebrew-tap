@@ -1,7 +1,7 @@
 cask "google-chrome-testing" do
   arch arm: "arm64", intel: "x64"
 
-  version "146.0.7680.153"
+  version "147.0.7727.24"
   sha256 :no_check
 
   url "https://storage.googleapis.com/chrome-for-testing-public/#{version}/mac-#{arch}/chrome-mac-#{arch}.zip",
