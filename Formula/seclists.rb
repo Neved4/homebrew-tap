@@ -1,8 +1,8 @@
 class Seclists < Formula
   desc "Collection of multiple security wordlists"
   homepage "https://github.com/danielmiessler/SecLists"
-  url "https://github.com/danielmiessler/SecLists/archive/refs/tags/2025.3.tar.gz"
-  sha256 "8fa88740c36777012f637ebb844de43d1020fb4273e080019d5f0c80360f433f"
+  url "https://github.com/danielmiessler/SecLists/archive/refs/tags/2026.1.tar.gz"
+  sha256 "226c49d04974ec6c39dadbf38ba78e67fec8824d729e66907f6050329da98932"
   license "MIT"
 
   bottle do
