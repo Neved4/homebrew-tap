@@ -6,9 +6,9 @@ class Seclists < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/seclists-2025.3"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "b7387a59bb197e148974ef94e6654a10620573ab76ee3ffaaca3efc1f80fcb2e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "1317f422346a306552f55abea6c39e18f699e70099348029ab9fd434bdf08b7f"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/seclists-2026.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "eeff64a9cd5bdf400d7d466f3dc596d46d45eb6636ade97b66a8fb1ea8dc8b14"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6e97c8f93df11f96bedbe51b135f42636b2630232bfd0cc581de63c1a95715a4"
   end
 
   def install
