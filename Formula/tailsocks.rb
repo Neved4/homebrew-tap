@@ -7,9 +7,9 @@ class Tailsocks < Formula
   head "https://github.com/ItalyPaleAle/tailsocks.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/tailsocks-1.2.2"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "e123a730ad726ba6f6cd9c97863f6bdc35c4c278c452571743ff0bdd00f6e431"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "919e570749febcd0a08856b2a16d3cbb8468d91ccad29a15fa3419b19ff9590b"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/tailsocks-1.2.3"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "f699e1cb6ffaab1be275caf0a0ae2cd75ddd946183b06bb8c4ffd933bf3a38d4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "45df8f8f4c86b4fd6abf52af1e5b94c77669fcc6770721f4fff280f1c7cb7930"
   end
 
   depends_on "go" => :build
