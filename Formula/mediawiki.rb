@@ -11,10 +11,9 @@ class Mediawiki < Formula
   end
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/mediawiki-1.45.1"
-    rebuild 3
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "2b550bc50199860b2bbaf2e53d5a1f842eb6244479a40009d424c9ae7bd462d1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "19418829591970b74c23f9b24c45d84d2bd9d9eb84f9d78034ece40e84089388"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/mediawiki-1.45.3"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "4a7c885aebc761d720cc0e1ba77819d81a202b87937a48211a525ae7acdc2ff8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "57805495bc27b992c6fb881ac75cdf4d44804206433bbc7c2891696fcacc4d02"
   end
 
   depends_on "autoconf" => :build
