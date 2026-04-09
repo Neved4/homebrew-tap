@@ -1,8 +1,8 @@
 class Tuckr < Formula
   desc "Dotfile manager"
   homepage "https://github.com/RaphGL/Tuckr"
-  url "https://github.com/RaphGL/Tuckr/archive/refs/tags/0.13.0.tar.gz"
-  sha256 "8878bbe5017e9c34227598eda489f6e0b18e364d7ac75cc4488efbae91b630c8"
+  url "https://github.com/RaphGL/Tuckr/archive/refs/tags/0.13.1.tar.gz"
+  sha256 "4b3bdc51e5de5961d89021f28e5aa1ae976fe37330ffafaa5042ed7d6ee2c7c7"
   license "GPL-3.0-only"
 
   bottle do
