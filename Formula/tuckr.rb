@@ -6,9 +6,9 @@ class Tuckr < Formula
   license "GPL-3.0-only"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/tuckr-0.13.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "f34958855f438b76c55c755bb5730d70f94daf7084a54e07a2565f7292388207"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "046986fa45341dc5a01c2bb22292992afaf1c892cc905322668474aa5a0ad4d0"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/tuckr-0.13.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "17258e7747c3749ed84f5f7bbb058d9f78d283816931b28f06bf8ed07cce1669"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "71ba728531af6726c378ac7dbae951b2bef0ead96490be18bcaa42a2b25f901e"
   end
 
   depends_on "rust" => :build
