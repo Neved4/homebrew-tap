@@ -1,8 +1,8 @@
 class PackerTmp < Formula
   desc "Tool for creating identical machine images for multiple platforms"
   homepage "https://github.com/hashicorp/packer"
-  url "https://github.com/hashicorp/packer/archive/refs/tags/v1.15.1.tar.gz"
-  sha256 "4123971690a5ca44ad0c4e9989aa5e332a4050dc7b102525452ae2c26622911d"
+  url "https://github.com/hashicorp/packer/archive/refs/tags/v1.15.3.tar.gz"
+  sha256 "69db1a7cb08b4766b0a397d864e23d0fbad348e26c82eabac6d6bdd9fb9d5bf5"
   license "BUSL-1.1"
   head "https://github.com/hashicorp/packer.git", branch: "main"
 
