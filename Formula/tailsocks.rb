@@ -1,8 +1,8 @@
 class Tailsocks < Formula
   desc "Route traffic through Tailscale exit nodes using a local SOCKS5 proxy"
   homepage "https://github.com/ItalyPaleAle/tailsocks"
-  url "https://github.com/ItalyPaleAle/tailsocks/archive/refs/tags/v1.2.3.tar.gz"
-  sha256 "8dddb99981d957a1582a1ccccc45a40681bcf97ea56a290e9fb4d4f4fccd3f18"
+  url "https://github.com/ItalyPaleAle/tailsocks/archive/refs/tags/v1.2.4.tar.gz"
+  sha256 "79cff1f85e2463f6db83f431a01de81319a7807c86db799bf085edf9b47d8b1f"
   license "MIT"
   head "https://github.com/ItalyPaleAle/tailsocks.git", branch: "main"
 
