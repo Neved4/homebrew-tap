@@ -1,8 +1,8 @@
 class Wordlists < Formula
   desc "Collection of common wordlists"
   homepage "https://www.kali.org/tools/wordlists/"
-  url "https://gitlab.com/kalilinux/packages/wordlists/-/archive/kali/2026.1.2/wordlists-kali-2026.1.2.tar.gz"
-  sha256 "9e8e42e753afd4c72be2c07794b5af61cab752a5c3de31a1cce969729c2cca0b"
+  url "https://gitlab.com/kalilinux/packages/wordlists/-/archive/kali/2026.2.0/wordlists-kali-2026.2.0.tar.gz"
+  sha256 "ca0e3bda63a5f744635823a2da475c702606d66a61eb53e8f91b06871f30d1f1"
   license :cannot_represent
 
   bottle do
