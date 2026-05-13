@@ -12,6 +12,8 @@ cask "runtimebrowser" do
     skip "No tagged version available"
   end
 
+  depends_on :macos
+
   app "RuntimeBrowser.app"
 
   zap trash: "~/Library/Preferences/ch.seriot.RuntimeBrowser.plist"

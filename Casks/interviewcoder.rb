@@ -9,7 +9,7 @@ cask "interviewcoder" do
   desc "Provides assistance during coding interviews"
   homepage "https://www.interviewcoder.co/"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "systemcontainer.app"
 end
