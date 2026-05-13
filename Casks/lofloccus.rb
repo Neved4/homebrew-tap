@@ -7,6 +7,8 @@ cask "lofloccus" do
   desc "Sync Floccus bookmarks to a local folder or any cloud service"
   homepage "https://github.com/TCB13/LoFloccus"
 
+  depends_on :macos
+
   app "LoFloccus.app"
 
   zap trash: "~/Library/Preferences/LoFloccus"

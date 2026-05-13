@@ -13,5 +13,7 @@ cask "spacestation14" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "Space Station 14 Launcher.app"
 end

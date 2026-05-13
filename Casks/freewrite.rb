@@ -8,7 +8,7 @@ cask "freewrite" do
   desc "Write continuously without distraction"
   homepage "https://freewrite.io/"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "freewrite.app"
 

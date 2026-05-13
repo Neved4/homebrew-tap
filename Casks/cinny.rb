@@ -8,7 +8,7 @@ cask "cinny" do
   homepage "https://github.com/cinnyapp/cinny-desktop"
 
   auto_updates true
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   app "Cinny.app"
 

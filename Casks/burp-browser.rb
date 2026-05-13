@@ -31,6 +31,7 @@ cask "burp-browser" do
     "eloston-chromium",
     "freesmug-chromium",
   ]
+  depends_on :macos
 
   app "Burp Suite Community Edition.app"
 

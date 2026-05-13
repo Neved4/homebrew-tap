@@ -20,7 +20,7 @@ cask "google-chrome-testing" do
 
   auto_updates false
   conflicts_with cask: "google-chrome"
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "chrome-mac-#{arch}/Google Chrome for Testing.app", target: "Google Chrome.app"
 

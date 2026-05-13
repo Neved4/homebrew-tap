@@ -7,6 +7,8 @@ cask "nfov-tmp" do
   desc "ASCII / ANSI art viewer"
   homepage "https://github.com/nrlquaker/nfov"
 
+  depends_on :macos
+
   app "nfov.app"
 
   zap trash: [
