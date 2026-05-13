@@ -6,9 +6,9 @@ class Wordlists < Formula
   license :cannot_represent
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wordlists-2026.1.2"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "2433379e98cab577181e02faf0fb5a0f0a1292c05c9875c313fb6693550e13b5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "716af48442ff15bd24bb274eeba9c738cbd9badfef0fe40be262fc6b8060d8e7"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/wordlists-2026.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "fed1d3f4215cfeb90c56a2ae4283986ed7bb677970e9cb37c3f4a54fae0bb8a3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ed4a0bd7713025c216c382c76e0d396b7a250160a0ed66401244454991d540c7"
   end
 
   def install
