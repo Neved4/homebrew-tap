@@ -7,10 +7,9 @@ class Regular < Formula
   head "https://github.com/dbohdan/regular.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/regular-0.3.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "8dcf4ad975bb63c2666077d412f48b67ef0d5f176ba537e31def0239736540c0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "9d0c4475f9730c4a02cc3be9c928d97755a44d1077f482f2123b790cad6486ea"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "495f080504915c4dcf8a19c41e3ae59186054934ef969c423c9b1e7f1806d5b3"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/regular-0.4.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "727ccf69a71c6d2a8d3e6e49067c83166eefbd49550b7e205ae8a8edcc841490"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ecefad5784e8250eb34e45148c36869a0ccbae05910b56f7a789aa62a5d7afcb"
   end
 
   depends_on "go" => :build
