@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
 
+env:
+  HOMEBREW_NO_REQUIRE_TAP_TRUST: 1
+
 jobs:
   test-bot:
     strategy:
