@@ -21,6 +21,10 @@ class Impacket < Formula
   depends_on "openssl@3"
   depends_on "python@3.13"
 
+  on_linux do
+    depends_on "libffi"
+  end
+
   resource "blinker" do
     url "https://files.pythonhosted.org/packages/21/28/" \
         "9b3f50ce0e048515135495f198351908d99540d69bfdc8c1d15b73dc55ce/" \
