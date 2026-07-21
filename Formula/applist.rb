@@ -8,9 +8,8 @@ class Applist < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/applist-0.1.0"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "08347646c55d0164c0b85f825c17767825b0c34535ced43a7ba870f6a74b1f04"
-    sha256 cellar: :any_skip_relocation, ventura:      "3e1728fac1160792d98fa884158dc55b865a716938794d2b164d1bddb608f455"
-    sha256 cellar: :any_skip_relocation, monterey:     "d78eb9cecd20b916dbaafaf90e4e2abb92c0c8558275de1543d3328163056240"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "20df35879f44d7e2a2105ebad2827b6ba4fee732b129fb751c8b8d227f420323"
   end
 
   depends_on :macos
