@@ -36,12 +36,13 @@ jobs:
           set -e
           printf '%s\n' "$output"
           if [[ $status -ne 0 ]]; then
-            errors="$(printf '%s\n' "$output" | sed -n 's/.*\(autorecon\|keyscan\): Unable to get versions.*/\1/p')"
-            unexpected="$(printf '%s\n' "$output" | grep 'Unable to get versions' | grep -Ev '(autorecon|keyscan): Unable to get versions' || true)"
+            errors="$(printf '%s\n' "$output" | grep 'Unable to get versions' || true)"
+            unexpected="$(printf '%s\n' "$errors" | grep -Ev '^(autorecon|keyscan): Unable to get versions$' || true)"
             if [[ -n "$unexpected" || -z "$errors" ]]; then
               exit "$status"
             fi
-            printf 'Known GitHub API rate-limit failure for: %s\n' "$(printf '%s\n' "$errors" | paste -sd, -)"
+            printf 'Known GitHub API rate-limit failures:\n%s\n' "$errors"
+            exit 0
           fi
 
       - name: Livecheck Casks
