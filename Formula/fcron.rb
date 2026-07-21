@@ -8,10 +8,9 @@ class Fcron < Formula
   license "GPL-2.0-only"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/fcron-3.4.0"
-    sha256 arm64_tahoe:   "d89abe047d21d46f406e38a82d2f1ee7d4026a57907ce2e35597d0b276002e7d"
-    sha256 arm64_sequoia: "44b99f0fd8936eba37596af53af55077073da139eb471ccc9c8ef81f4f27bb1b"
-    sha256 x86_64_linux:  "69ca763c192d63c26825bcc7b98c9df28d8054f925b989edbdc25e366769ad48"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/fcron-3.4.1"
+    sha256 arm64_tahoe:  "30d4532ef813a9750a61d4c8da113b8ac9e34df08007dcf44e56bc573b3e4c6d"
+    sha256 x86_64_linux: "def796e29e37b0226ce6e81456323be2aebd0d068aaf8182449d61f87a800268"
   end
 
   depends_on "autoconf" => :build
