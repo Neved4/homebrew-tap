@@ -6,9 +6,9 @@ class Kamal < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/kamal-2.11.0"
-    sha256 cellar: :any,                 arm64_tahoe:  "d44d12beea9467dc2ad9f563765c09814b775757c21bea47630516b3cd498112"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "8ea256d6903ee32e2b163b6fa0f5bfb9b3069ccb037ba96530a3f5e9598a7c0c"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/kamal-2.12.0"
+    sha256 cellar: :any, arm64_tahoe:  "5fd919d3823beecc55bace4965f150f06ed4f37e94ccf3f46978e623964032a0"
+    sha256 cellar: :any, x86_64_linux: "86524a9d5db16aab0bdc0fc94be2543ea5e53b2c0d0fb51563ee8799e87ccbda"
   end
 
   depends_on "ruby"
