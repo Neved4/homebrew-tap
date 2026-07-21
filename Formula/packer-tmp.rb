@@ -7,9 +7,9 @@ class PackerTmp < Formula
   head "https://github.com/hashicorp/packer.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/packer-tmp-1.15.3"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "ebaf5b920edae9518de37c318de83f9ad15b35bc6022f1c135a582b2e8a88c9b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "04ceccf128bc68d4c1c4d23d053f4db84c58dd39aaa708671c7e715788440f92"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/packer-tmp-1.15.4"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "5adbfd5c46e8cb7ec87ecfc8872b15b9e373189c3b7dfc12b13fcd2f13790272"
+    sha256 cellar: :any,                 x86_64_linux: "68984dabff4a9bc3079b5314f0f2d5f4125e1aad606a7513cb21320ed50db177"
   end
 
   depends_on "go" => :build
