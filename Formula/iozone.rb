@@ -7,11 +7,6 @@ class Iozone < Formula
 
   livecheck do
     skip "Upstream lists 3.511, but its source archive returns HTTP 404"
-    url "https://www.iozone.org/src/current/"
-    regex(/href=.*?iozone[._-]?v?(\d+(?:[._]\d+)+)\.t/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| match&.first&.tr("_", ".") }
-    end
   end
 
   bottle do
