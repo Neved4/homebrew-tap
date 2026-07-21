@@ -4,7 +4,7 @@ class Fcron < Formula
   desc "Periodic command scheduler"
   homepage "https://github.com/yo8192/fcron"
   url "https://github.com/yo8192/fcron/archive/refs/tags/ver3_4_1.tar.gz"
-  version "3_4_1"
+  version "3.4.1"
   sha256 "cd25c98ce339317b06895649e460303a6ce19415b6ee8d9b985c68addeb0b8b7"
   license "GPL-2.0-only"
 
