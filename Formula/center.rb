@@ -23,4 +23,14 @@ class Center < Formula
     system ENV.cc, "-O3", "center.c", "-o", "center"
     bin.install "center"
   end
+
+  test do
+    command = if OS.mac?
+      "script -q /dev/null #{bin}/center"
+    else
+      "script -q -c #{bin}/center /dev/null"
+    end
+    output = pipe_output(command, "Homebrew\n")
+    assert_match "Homebrew", output
+  end
 end
