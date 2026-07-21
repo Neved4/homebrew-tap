@@ -3,8 +3,8 @@ class Dnsrecon < Formula
 
   desc "DNS enumeration and reconnaissance tool"
   homepage "https://github.com/darkoperator/dnsrecon"
-  url "https://github.com/darkoperator/dnsrecon/archive/refs/tags/1.6.1.tar.gz"
-  sha256 "dd286eee791fa482310ffdde5c3713972b2ff8c83cbac65d561647a90f6d0ca2"
+  url "https://github.com/darkoperator/dnsrecon/archive/refs/tags/1.6.3.tar.gz"
+  sha256 "7f7e230bb3fae959ff37ac19d1c1deea25089ac6a1bbbbf3b4e26e78ed96bd7a"
   license "GPL-2.0-only"
   head "https://github.com/darkoperator/dnsrecon.git", branch: "master"
 
