@@ -1,13 +1,13 @@
 cask "pear" do
   arch arm: "-arm64", intel: ""
 
-  version "3.11.0"
-  sha256 arm:          "a2d68bd80117ce376a08229f5cfb0a4570d98aba4e56af8040c725b22e856e0d",
-         intel:        "27f74b53c7c4dd8c77ce44d7c7d0f955cb083e5251701e6ca2b3781e85c4e373",
+  version "3.12.0"
+  sha256 arm:          "1266b1efdf3cd22276b989445ea14f0afd6bc751c26fc0983f24dd527be2f724",
+         intel:        "76e4a859cfbb777ca4383f83455a4ee01a8345356b86f0a91395b9e7dda6a863",
          arm64_linux:  "0", # workaround for brew bug https://github.com/orgs/Homebrew/discussions/6008, https://github.com/Homebrew/homebrew-cask/issues/205491
          x86_64_linux: "0"
 
-  url "https://github.com/pear-devs/pear-desktop/releases/download/v#{version}/YouTube-Music-3.11.0#{arch}.dmg"
+  url "https://github.com/pear-devs/pear-desktop/releases/download/v#{version}/YouTube-Music-#{version}#{arch}.dmg"
   name "Pear Desktop"
   desc "YouTube Music desktop app"
   homepage "https://github.com/pear-devs/pear-desktop"
