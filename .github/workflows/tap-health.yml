@@ -51,6 +51,11 @@ jobs:
       - name: Strict online audit
         run: |
           packages=()
+          if [[ "$RUNNER_OS" == "Linux" ]]; then
+            roots=(Formula)
+          else
+            roots=(Formula Casks)
+          fi
           while IFS= read -r path; do
             name="${path##*/}"
             name="${name%.rb}"
@@ -58,5 +63,5 @@ jobs:
               withjava|runtimebrowser) continue ;;
             esac
             packages+=("Neved4/tap/$name")
-          done < <(find Formula Casks -type f -name '*.rb' -print)
+          done < <(find "${roots[@]}" -type f -name '*.rb' -print)
           brew audit --strict --online "${packages[@]}"
