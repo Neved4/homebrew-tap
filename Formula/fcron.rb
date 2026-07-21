@@ -3,8 +3,9 @@ require "etc"
 class Fcron < Formula
   desc "Periodic command scheduler"
   homepage "https://github.com/yo8192/fcron"
-  url "https://github.com/yo8192/fcron/archive/refs/tags/ver3_4_0.tar.gz"
-  sha256 "8dce281ae56ed19f1f37992406f624a71213d5959cbcb5e8199facf34fec085e"
+  url "https://github.com/yo8192/fcron/archive/refs/tags/ver3_4_1.tar.gz"
+  version "3_4_1"
+  sha256 "cd25c98ce339317b06895649e460303a6ce19415b6ee8d9b985c68addeb0b8b7"
   license "GPL-2.0-only"
 
   bottle do
