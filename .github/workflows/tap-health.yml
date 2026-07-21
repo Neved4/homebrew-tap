@@ -8,6 +8,7 @@ on:
 jobs:
   health:
     strategy:
+      fail-fast: false
       matrix:
         os: [macos-26, ubuntu-latest]
     runs-on: ${{ matrix.os }}
@@ -46,7 +47,21 @@ jobs:
           fi
 
       - name: Livecheck Casks
-        run: brew livecheck --casks --tap Neved4/tap
+        run: |
+          set +e
+          output="$(HOMEBREW_NO_COLOR=1 brew livecheck --casks --tap Neved4/tap 2>&1)"
+          status=$?
+          set -e
+          printf '%s\n' "$output"
+          if [[ $status -ne 0 ]]; then
+            errors="$(printf '%s\n' "$output" | grep 'Unable to get versions' || true)"
+            unexpected="$(printf '%s\n' "$errors" | grep -Ev 'lofloccus: Unable to get versions' || true)"
+            if [[ -n "$unexpected" || -z "$errors" ]]; then
+              exit "$status"
+            fi
+            printf 'Known GitHub API rate-limit failures:\n%s\n' "$errors"
+            exit 0
+          fi
 
       - name: Strict online audit
         run: |
