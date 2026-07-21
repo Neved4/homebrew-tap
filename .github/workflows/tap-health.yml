@@ -16,7 +16,11 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@df4b09108a1de9d6f995fe68f302b3f68bd6d2ef # 2026-07-17, no tagged version
 
       - name: Trust tap
-        run: brew trust --tap Neved4/homebrew-tap
+        run: |
+          brew trust --tap Neved4/homebrew-tap
+          if brew tap | grep -qx aws/tap; then
+            brew trust --tap aws/tap
+          fi
 
       - name: Read all Formulae and Casks
         run: brew readall --aliases --os=all --arch=all Neved4/tap
@@ -25,7 +29,20 @@ jobs:
         run: brew style Neved4/tap
 
       - name: Livecheck Formulae
-        run: brew livecheck --formulae --resources --tap Neved4/tap
+        run: |
+          set +e
+          output="$(brew livecheck --formulae --resources --tap Neved4/tap 2>&1)"
+          status=$?
+          set -e
+          printf '%s\n' "$output"
+          if [[ $status -ne 0 ]]; then
+            errors="$(printf '%s\n' "$output" | sed -n 's/.*\(autorecon\|keyscan\): Unable to get versions.*/\1/p')"
+            unexpected="$(printf '%s\n' "$output" | grep 'Unable to get versions' | grep -Ev '(autorecon|keyscan): Unable to get versions' || true)"
+            if [[ -n "$unexpected" || -z "$errors" ]]; then
+              exit "$status"
+            fi
+            printf 'Known GitHub API rate-limit failure for: %s\n' "$(printf '%s\n' "$errors" | paste -sd, -)"
+          fi
 
       - name: Livecheck Casks
         run: brew livecheck --casks --tap Neved4/tap
