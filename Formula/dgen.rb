@@ -1,8 +1,11 @@
 class Dgen < Formula
   desc "Sega Genesis / Mega Drive emulator"
   homepage "https://dgen.sourceforge.net"
-  url "https://downloads.sourceforge.net/project/dgen/dgen/1.33/dgen-sdl-1.33.tar.gz"
-  sha256 "99e2c06017c22873c77f88186ebcc09867244eb6e042c763bb094b02b8def61e"
+  url "https://git.code.sf.net/p/dgen/dgen.git",
+      tag:      "v1.33",
+      revision: "1c196e63d3e35704a97a2cef60def9df3c9fd1ce"
+
+  head "https://git.code.sf.net/p/dgen/dgen.git", branch: "master"
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/dgen-1.33"
@@ -12,17 +15,16 @@ class Dgen < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "681f2fd2b8eb3deceac795a7e11d535df6fe7cb424cbeec4cc50779dd075d5ab"
   end
 
-  head do
-    url "https://git.code.sf.net/p/dgen/dgen.git", branch: "master"
-
-    depends_on "autoconf" => :build
-    depends_on "automake" => :build
-  end
-
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
   depends_on "libarchive"
   depends_on "sdl12-compat"
 
   def install
+    # Clang 7 and newer interpret adjacent string literals without whitespace as user-defined literals.
+    inreplace "main.cpp", '"DGen/SDL v"VER', '"DGen/SDL v" VER'
+    inreplace "main.cpp", '"DGen/SDL version "VER', '"DGen/SDL version " VER'
+
     args = %W[
       --disable-silent-rules
       --disable-dependency-tracking
@@ -30,7 +32,7 @@ class Dgen < Formula
       --prefix=#{prefix}
     ]
     args << "--disable-asm" if Hardware::CPU.arm?
-    system "./autogen.sh" if build.head?
+    system "./autogen.sh"
     system "./configure", *args
     system "make", "install"
   end

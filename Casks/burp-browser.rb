@@ -11,20 +11,7 @@ cask "burp-browser" do
   homepage "https://portswigger.net/burp/"
 
   livecheck do
-    url "https://portswigger.net/burp/releases/data"
-    strategy :json do |json|
-      all_versions = json.dig("ResultSet", "Results")
-      next if all_versions.blank?
-
-      all_versions.filter_map do |item|
-        item["version"] if
-              item["releaseChannels"]&.include?("Stable") &&
-              item["categories"]&.include?("Community") &&
-              item["builds"]&.any? do |build|
-                build["BuildCategoryPlatform"] == arch.to_s
-              end
-      end
-    end
+    skip "No reliable way to identify downloadable Community releases"
   end
 
   conflicts_with cask: [

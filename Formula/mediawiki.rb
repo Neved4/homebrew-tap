@@ -24,8 +24,13 @@ class Mediawiki < Formula
   depends_on "php"
 
   resource "apcu" do
-    url "https://pecl.php.net/get/apcu-5.1.24.tgz"
-    sha256 "5c28a55b27082c69657e25b7ecf553e2cf6b74ec3fa77d6b76f4fb982e001e43"
+    url "https://pecl.php.net/get/apcu-5.1.28.tgz"
+    sha256 "ca9c1820810a168786f8048a4c3f8c9e3fd941407ad1553259fb2e30b5f057bf"
+
+    livecheck do
+      url "https://pecl.php.net/rest/r/apcu/latest.txt"
+      regex(/^v?(\d+(?:\.\d+)+)$/i)
+    end
   end
 
   def install

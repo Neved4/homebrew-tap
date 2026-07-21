@@ -2,7 +2,8 @@ cask "font-monego" do
   version "0.0.0,ad2acdcfc48277dabdededd3a46f1348f720d110"
   sha256 "62a0135b020858a024736b6b3415ae5f37240c31cca138b849f4a906e12c69da"
 
-  url "https://github.com/cseelus/monego/archive/refs/heads/#{version.csv.second}.tar.gz"
+  # A commit archive is intentional because upstream has no tagged releases.
+  url "https://github.com/cseelus/monego/archive/#{version.csv.second}.tar.gz?download=1"
   name "Monego"
   desc "Beloved Monaco monospaced font, recreated with bold and italic variants"
   homepage "https://github.com/cseelus/monego"

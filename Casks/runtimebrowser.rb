@@ -12,6 +12,8 @@ cask "runtimebrowser" do
     skip "No tagged version available"
   end
 
+  disable! date: "2026-07-21", because: :discontinued
+
   depends_on :macos
 
   app "RuntimeBrowser.app"
