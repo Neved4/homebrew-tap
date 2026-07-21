@@ -31,7 +31,7 @@ jobs:
       - name: Livecheck Formulae
         run: |
           set +e
-          output="$(brew livecheck --formulae --resources --tap Neved4/tap 2>&1)"
+          output="$(HOMEBREW_NO_COLOR=1 brew livecheck --formulae --resources --tap Neved4/tap 2>&1)"
           status=$?
           set -e
           printf '%s\n' "$output"
