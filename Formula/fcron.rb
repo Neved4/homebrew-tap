@@ -21,6 +21,7 @@ class Fcron < Formula
   end
 
   def install
+    inreplace "save.c", "fdatasync(fd)", "fsync(fd)" if OS.mac?
     system "autoconf"
     user = Etc.getpwuid(Process.uid).name
     group = Etc.getgrgid(Process.gid).name
