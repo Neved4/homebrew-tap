@@ -1,8 +1,8 @@
 class Kamal < Formula
   desc "Deploy web apps in containers to servers running Docker with zero downtime"
   homepage "https://github.com/basecamp/kamal"
-  url "https://rubygems.org/downloads/kamal-2.11.0.gem"
-  sha256 "1408864425e0dec7e0a14d712a3b13f614e9f3a425b7661d3f9d287a51d7dd75"
+  url "https://rubygems.org/downloads/kamal-2.12.0.gem"
+  sha256 "c51d1ab085e515470f98d0c0f043637122b5ebf76e8b610cb1fbbed0b7f9b8fa"
   license "MIT"
 
   bottle do
