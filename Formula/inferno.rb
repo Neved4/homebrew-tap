@@ -6,9 +6,9 @@ class Inferno < Formula
   license "CDDL-1.0"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/inferno-0.12.6"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "0c3c3dfa1fa5813f319dd9b4873a09ef9d2b88e8b0bfcba46a799a5ce5fa33e6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5d60aeb07b3284e0393010ad0feca1b6e66af5731f398f049f4b51fd073e06fd"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/inferno-0.12.8"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "1ff7c0b738d62d7c600cfadc43236406337db6d0e07e78a9f3092cd8074d208e"
+    sha256 cellar: :any,                 x86_64_linux: "82b7c85e0581ea62c6491ae50a42ae352830a1c50e7c6f6053cf345d511bf7a2"
   end
 
   depends_on "rust" => :build
