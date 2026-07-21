@@ -7,6 +7,18 @@ cask "lofloccus" do
   desc "Sync Floccus bookmarks to a local folder or any cloud service"
   homepage "https://github.com/TCB13/LoFloccus"
 
+  livecheck do
+    url "https://api.github.com/repos/TCB13/LoFloccus/releases"
+    strategy :json do |json|
+      json.filter_map do |release|
+        next if release["draft"] || release["prerelease"]
+        next unless release["assets"]&.any? { |asset| asset["name"]&.match?(/macOS\.zip\z/i) }
+
+        release["tag_name"]
+      end
+    end
+  end
+
   depends_on :macos
 
   app "LoFloccus.app"
