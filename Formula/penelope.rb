@@ -1,8 +1,8 @@
 class Penelope < Formula
   desc "Powerful shell handler built as a modern netcat replacement"
   homepage "https://github.com/brightio/penelope"
-  url "https://github.com/brightio/penelope/archive/refs/tags/v0.20.0.tar.gz"
-  sha256 "6b71d02aaaf115cfdb018426a79a0f389d56a4ace6f78af761cb6b41df7bf40f"
+  url "https://github.com/brightio/penelope/archive/refs/tags/v0.21.0.tar.gz"
+  sha256 "6356f2504fe28ae6f7a93ac2377e0734b0eb5f019b23a0a6360d42ef4308a7e1"
   license "GPL-3.0-or-later"
   head "https://github.com/brightio/penelope.git", branch: "main"
 
