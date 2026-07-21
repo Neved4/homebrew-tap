@@ -134,7 +134,7 @@ class Kamal < Formula
   end
 
   def install
-    gem = Formula["ruby"].opt_bin/"gem"
+    gem = formula_opt_bin("ruby")/"gem"
     ENV["GEM_HOME"] = libexec
     ENV["GEM_PATH"] = libexec
 

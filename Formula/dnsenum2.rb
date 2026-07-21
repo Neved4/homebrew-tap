@@ -71,7 +71,7 @@ class Dnsenum2 < Formula
   end
 
   def install
-    perl = Formula["perl"].opt_bin/"perl"
+    perl = formula_opt_bin("perl")/"perl"
 
     ENV.prepend_create_path "PERL5LIB", libexec/"lib/perl5"
     ENV["PERL_MM_USE_DEFAULT"] = "1"
