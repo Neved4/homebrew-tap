@@ -9,10 +9,8 @@ class Dgen < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/dgen-1.33"
-    sha256 cellar: :any,                 arm64_sequoia: "b5bcaea02db2a0e6c7d1ab10c3766aea6111414666fdcdf3f64a1fe8b655a137"
-    sha256 cellar: :any,                 arm64_sonoma:  "3c42b0826677c00fa0902a720b3eebea4d0e335f81edde4c7cf489849dc07259"
-    sha256 cellar: :any,                 ventura:       "db54c0245c266031c8986760cbaeea387deac1b4c379266635e303ace24c3430"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "681f2fd2b8eb3deceac795a7e11d535df6fe7cb424cbeec4cc50779dd075d5ab"
+    rebuild 1
+    sha256 cellar: :any, x86_64_linux: "3ec4e3ac20894717b141680d6bce7c0265ed9e92eab152786d78189c1c94f548"
   end
 
   depends_on "autoconf" => :build
