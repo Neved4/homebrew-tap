@@ -11,10 +11,9 @@ class Unarj < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/unarj-2.65"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "2322006fa53e1e6318c91c2f5b9f0266319405282e0dd9dd9b7d2d5e1419bfea"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "0ed47a012058845d2dee6e3ea9c4197f030aec7314d49abd68ffea006ed36c94"
-    sha256 cellar: :any_skip_relocation, ventura:       "4b6bffaea32945e763707c417a41a01d4d728945c779b7e6338cb6a23a2577cf"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "451bacefa8a1caf04023bf2e095296357ddf80d0bf6a6df57580f119a95be18c"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "a76c6bdeeba4f238225a07376fbb156b12077aff030ac7c94b69e42eeb3566ae"
+    sha256 cellar: :any,                 x86_64_linux: "1dd7073c1d38a7a93a4456c9e046f799cabd8322c87ae0a6117b9a3e1f27578e"
   end
 
   resource "testfile" do
