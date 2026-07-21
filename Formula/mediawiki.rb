@@ -32,14 +32,14 @@ class Mediawiki < Formula
     pkgshare.install Dir["*"]
     lua_binaries = pkgshare/"extensions/Scribunto/includes/Engines/LuaStandalone/binaries"
     rm_r lua_binaries if lua_binaries.exist?
-    system Formula["composer"].opt_bin/"composer", "dump-autoload",
+    system formula_opt_bin("composer")/"composer", "dump-autoload",
       "--no-dev", "--optimize", "--working-dir=#{pkgshare}"
     build_apcu
     write_mediawiki_nginx_config
     write_mediawiki_server
     (bin/"mediawiki").write_env_script libexec/"mediawiki-server",
       MW_DATA_DIR:              var/"mediawiki",
-      MEDIAWIKI_NGINX:          Formula["nginx"].opt_bin/"nginx",
+      MEDIAWIKI_NGINX:          formula_opt_bin("nginx")/"nginx",
       MEDIAWIKI_NGINX_TEMPLATE: libexec/"mediawiki-nginx.conf.template"
   end
 
@@ -80,8 +80,8 @@ class Mediawiki < Formula
     resource("apcu").stage do
       source_dir = Dir["*"].find { |entry| (Pathname(entry)/"config.m4").exist? } || "."
       cd source_dir do
-        system Formula["php"].opt_bin/"phpize"
-        system "./configure", "--with-php-config=#{Formula["php"].opt_bin}/php-config"
+        system formula_opt_bin("php")/"phpize"
+        system "./configure", "--with-php-config=#{formula_opt_bin("php")}/php-config"
         system "make"
         (libexec/"extensions").install "modules/apcu.so"
       end
@@ -160,7 +160,7 @@ class Mediawiki < Formula
       pm = static
       pm.max_children = 2
       clear_env = no
-      env[PATH] = #{Formula["diffutils"].opt_bin}:/usr/bin:/bin:/usr/sbin:/sbin
+      env[PATH] = #{formula_opt_bin("diffutils")}:/usr/bin:/bin:/usr/sbin:/sbin
       catch_workers_output = yes
       EOF
       "${php_fpm_bin}" -F -y "${fpm_conf}" -d "extension=${apcu_ext}" &
@@ -190,7 +190,7 @@ class Mediawiki < Formula
 
     nginx_pid = fork do
       ENV["MW_DATA_DIR"] = data_dir.to_s
-      ENV["MEDIAWIKI_NGINX"] = Formula["nginx"].opt_bin/"nginx"
+      ENV["MEDIAWIKI_NGINX"] = formula_opt_bin("nginx")/"nginx"
       ENV["MEDIAWIKI_NGINX_TEMPLATE"] = libexec/"mediawiki-nginx.conf.template"
       ENV["MEDIAWIKI_FPM_PORT"] = fpm_port.to_s
       exec libexec/"mediawiki-server", port.to_s, "127.0.0.1"
