@@ -8,10 +8,9 @@ class Johnnybgoode < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/johnnybgoode-1.2.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "84bee17fd8789a0827204c283dec19724d0f9618c4a67bff44edbece8516cd49"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "9b0098218a2c274a5b884c192b254ae159da71c344b4f8ed9c303d8bbc9c399c"
-    sha256 cellar: :any_skip_relocation, ventura:       "b6e7d424174af32091e517981ad079cff43268dcef060873fc415e7ec9b79e35"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8223b2f15bfca3fdb46eba45de3d5e9443a61d20f97d10f32fb2aed8918d5887"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "73664c4494fcb51a01d1bb580bd37a15c78331eb714228af243246a4b869442d"
+    sha256 cellar: :any,                 x86_64_linux: "fcb169e2761d17618e20eacd8b4aa4b5c1e1456e33ce6e32183137ae4b090c71"
   end
 
   depends_on "rust" => :build
