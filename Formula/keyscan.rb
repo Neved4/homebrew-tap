@@ -4,8 +4,8 @@ class Keyscan < Formula
   desc "GitHub Gists scanner with LLM-based classification"
   homepage "https://github.com/kevinMEH/keyscan"
   url "https://github.com/kevinMEH/keyscan/archive/refs/heads/main.tar.gz"
-  version "0.0.0-20260101-c297a23"
-  sha256 "795016f7051049154a4b571be779b5204e640d1fa150671a10d9b42603b32436"
+  version "0.0.0-20260507-c309a27"
+  sha256 "04d6cfa6ef4f1b637b0395b87dc049d3c81f040a2f5eb3d884d5fa6ebb6eed31"
   license "GPL-3.0-only"
 
   livecheck do

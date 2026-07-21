@@ -25,6 +25,7 @@ jobs:
           force: true
           livecheck: true
       - name: Update Homebrew cask
+        if: ${{ always() }}
         uses: eugenesvk/action-homebrew-bump-cask@6b066272df85c164f0496877387ecc8d989a194f # v3.8.6
         with:
           token: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
