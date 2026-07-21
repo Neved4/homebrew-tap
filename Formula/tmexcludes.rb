@@ -21,4 +21,8 @@ class Tmexcludes < Formula
     bin.write_exec_script libexec/"tmexcludes.sh"
     bin.install_symlink "tmexcludes.sh" => "tmexcludes"
   end
+
+  test do
+    assert_match "usage: tmexcludes <command>", shell_output("#{bin}/tmexcludes 2>&1", 1)
+  end
 end

@@ -22,6 +22,6 @@ class Applist < Formula
 
   test do
     desired_output = "/System/Library/CoreServices/Finder.app"
-    assert_includes shell_output("#{bin}/applist").strip, desired_output
+    assert_includes shell_output(bin/"applist").strip, desired_output
   end
 end

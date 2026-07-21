@@ -21,4 +21,8 @@ class Tmbackup < Formula
     bin.write_exec_script libexec/"src/tmbackup.sh"
     bin.install_symlink "tmbackup.sh" => "tmbackup"
   end
+
+  test do
+    system "sh", "-n", bin/"tmbackup"
+  end
 end

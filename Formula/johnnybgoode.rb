@@ -20,8 +20,17 @@ class Johnnybgoode < Formula
     system "cargo", "install", *std_cargo_args
   end
 
-  # test do
-  #   desired_output = "No such file or directory"
-  #   assert_includes shell_output("#{bin}/johnnybgoode path 11.03 2>&1", 101).strip, desired_output
-  # end
+  test do
+    (testpath/"johnny-home").mkpath
+    (testpath/"config.yaml").write <<~YAML
+      johnnydecimal_home: #{testpath}/johnny-home
+      name_scheme: default
+      regex:
+    YAML
+
+    output = shell_output(
+      "JOHNNYBGOODE_CONFIG_PATH=#{testpath}/config.yaml #{bin}/johnnybgoode invalid 2>&1",
+    )
+    assert_match 'johnnybgoode: "invalid" is not a recognized command', output
+  end
 end
