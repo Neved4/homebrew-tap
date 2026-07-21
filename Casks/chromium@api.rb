@@ -14,7 +14,7 @@ cask "chromium@api" do
     "eloston-chromium",
     "freesmug-chromium",
   ]
-  depends_on macos: :big_sur
+  depends_on macos: :ventura
 
   app "chrome-mac/Chromium.app"
   shimscript = "#{staged_path}/chromium.wrapper.sh"

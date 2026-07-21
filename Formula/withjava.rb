@@ -19,6 +19,8 @@ class Withjava < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "bb969f32f130c43194f37cc6216c93ceb21b869809b8c76299404b0188464af7"
   end
 
+  disable! date: "2026-07-21", because: :repo_removed
+
   depends_on "rust" => :build
 
   def install

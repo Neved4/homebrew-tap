@@ -7,6 +7,8 @@ cask "nfov-tmp" do
   desc "ASCII / ANSI art viewer"
   homepage "https://github.com/nrlquaker/nfov"
 
+  deprecate! date: "2026-07-21", because: :discontinued
+
   depends_on :macos
 
   app "nfov.app"
