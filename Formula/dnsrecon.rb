@@ -9,9 +9,9 @@ class Dnsrecon < Formula
   head "https://github.com/darkoperator/dnsrecon.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/dnsrecon-1.6.1"
-    sha256 cellar: :any, arm64_tahoe:  "653e7e7e06149eb6219c29d951d25beffe9831273edbb7c3900c441d3b86ba21"
-    sha256 cellar: :any, x86_64_linux: "b9d44c1b76c67bb9edd5d361d206ce4d56596325a433bac1e025597fbd4ef461"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/dnsrecon-1.6.3"
+    sha256 cellar: :any, arm64_tahoe:  "ada6043e6fdf25d1760bd572082b387ade1a21b492d311ba842467a889f558c7"
+    sha256 cellar: :any, x86_64_linux: "9a51639e5b3a5931ac428e0cf00d177db00ff42e273025f11ce7f42038063905"
   end
 
   depends_on "pkg-config" => :build
