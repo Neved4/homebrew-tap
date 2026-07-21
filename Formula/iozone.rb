@@ -11,7 +11,8 @@ class Iozone < Formula
 
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/iozone-3.510"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "eb9a383b64f842ec5d784fad317f49328a2b7e7eb5271c38c1cbd60c4a0d1360"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "1c12e86938f398cffc0733d5777635284520438b58075e8eb66d643817a683fd"
   end
 
   def install
