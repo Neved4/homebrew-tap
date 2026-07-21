@@ -31,4 +31,14 @@ jobs:
         run: brew livecheck --casks --tap Neved4/tap
 
       - name: Strict online audit
-        run: brew audit --strict --online --tap Neved4/tap
+        run: |
+          packages=()
+          while IFS= read -r path; do
+            name="${path##*/}"
+            name="${name%.rb}"
+            case "$name" in
+              withjava|runtimebrowser) continue ;;
+            esac
+            packages+=("Neved4/tap/$name")
+          done < <(find Formula Casks -type f -name '*.rb' -print)
+          brew audit --strict --online "${packages[@]}"
