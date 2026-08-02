@@ -1,5 +1,5 @@
 cask "pear" do
-  arch arm: "-arm64", intel: ""
+  arch arm: "-arm64"
 
   version "3.12.0"
   sha256 arm:          "1266b1efdf3cd22276b989445ea14f0afd6bc751c26fc0983f24dd527be2f724",
