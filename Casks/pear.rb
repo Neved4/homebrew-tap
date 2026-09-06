@@ -23,8 +23,7 @@ cask "pear" do
   app "YouTube Music.app"
 
   postflight_steps do
-    print("Removing quarantine attribute from YouTube Music.app.\n")
-    system "xattr -cr '/Applications/YouTube Music.app'"
+    run "/usr/bin/xattr", args: ["-cr", "/Applications/YouTube Music.app"]
   end
 
   zap trash: [
