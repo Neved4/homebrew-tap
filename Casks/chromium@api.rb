@@ -20,24 +20,27 @@ cask "chromium@api" do
   binary shimscript, target: "chromium"
 
   preflight_steps do
-    run "/bin/sh", args: [
-      "-c",
-      "cat > '{{staged_path}}/chromium.wrapper.sh' <<'EOF'\n#!/bin/sh\nexec '{{appdir}}/Chromium.app/Contents/MacOS/Chromium' \"$@\"\nEOF\nchmod +x '{{staged_path}}/chromium.wrapper.sh'",
-    ]
+    run "/bin/sh", args: ["-c", <<~EOS]
+      cat > '{{staged_path}}/chromium.wrapper.sh' <<'EOF'
+      #!/bin/sh
+      exec '{{appdir}}/Chromium.app/Contents/MacOS/Chromium' "$@"
+      EOF
+      chmod +x '{{staged_path}}/chromium.wrapper.sh'
+    EOS
   end
 
   postflight_steps do
     run "/usr/bin/plutil", args: [
       "-replace", "LSEnvironment.GOOGLE_API_KEY", "-string",
-      "AIzaSyCkfPOPZXDKNn8hhgu3JrA62wIgC93d44k", "{{appdir}}/Chromium.app/Contents/Info.plist",
+      "AIzaSyCkfPOPZXDKNn8hhgu3JrA62wIgC93d44k", "{{appdir}}/Chromium.app/Contents/Info.plist"
     ]
     run "/usr/bin/plutil", args: [
       "-replace", "LSEnvironment.GOOGLE_DEFAULT_CLIENT_ID", "-string",
-      "811574891467.apps.googleusercontent.com", "{{appdir}}/Chromium.app/Contents/Info.plist",
+      "811574891467.apps.googleusercontent.com", "{{appdir}}/Chromium.app/Contents/Info.plist"
     ]
     run "/usr/bin/plutil", args: [
       "-replace", "LSEnvironment.GOOGLE_DEFAULT_CLIENT_SECRET", "-string",
-      "kdloedMFGdGla2P1zacGjAQh", "{{appdir}}/Chromium.app/Contents/Info.plist",
+      "kdloedMFGdGla2P1zacGjAQh", "{{appdir}}/Chromium.app/Contents/Info.plist"
     ]
   end
 
