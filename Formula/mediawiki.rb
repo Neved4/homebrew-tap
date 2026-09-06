@@ -49,12 +49,11 @@ class Mediawiki < Formula
       MEDIAWIKI_NGINX_TEMPLATE: libexec/"mediawiki-nginx.conf.template"
   end
 
-  def post_install
-    data_dir = var/"mediawiki"
-    return if (data_dir/"index.php").exist?
-
-    data_dir.mkpath
-    cp_r pkgshare.children, data_dir
+  post_install_steps do
+    unless_path_exists "mediawiki/index.php", base: :var do
+      mkdir_p "mediawiki", base: :var
+      copy "*", "mediawiki", source_base: :pkgshare, target_base: :var, source_glob: true
+    end
   end
 
   service do
