@@ -14,20 +14,28 @@ jobs:
     env:
       HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
     steps:
-      - name: Update Homebrew formula
-        uses: dawidd6/action-homebrew-bump-formula@dfa608a07e77f96aa34d0c8a35fc62efa863417f # Homebrew 5 compatibility
-        with:
-          token: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
-          user_name: Neved4
-          user_email: 63655535+Neved4@users.noreply.github.com
-          no_fork: true
-          tap: Neved4/homebrew-tap
-          force: true
-          livecheck: true
-      - name: Update Homebrew cask
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@df4b09108a1de9d6f995fe68f302b3f68bd6d2ef # 2026-07-17
+      - name: Configure git
+        run: |
+          git config --global user.name Neved4
+          git config --global user.email 63655535+Neved4@users.noreply.github.com
+      - name: Autobump formulae
+        env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
+        run: |
+          brew livecheck --formula --newer-only --full-name --json --tap=Neved4/homebrew-tap \
+            | jq -r '.[] | select(.version.outdated == true) | [.formula, .version.latest] | @tsv' \
+            | while IFS=$'\t' read -r formula version; do
+                brew bump-formula-pr --no-audit --no-browse --version="$version" "$formula"
+              done
+      - name: Autobump casks
         if: ${{ always() }}
-        uses: eugenesvk/action-homebrew-bump-cask@4fd4f2a0dd6b9b4faeb02b790bbab185c5ebf79d # Homebrew 5 compatibility
-        with:
-          token: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
-          tap: Neved4/homebrew-tap
-          livecheck: true
+        env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
+        run: |
+          brew livecheck --cask --newer-only --full-name --json --tap=Neved4/homebrew-tap \
+            | jq -r '.[] | select(.version.outdated == true) | [.cask, .version.latest] | @tsv' \
+            | while IFS=$'\t' read -r cask version; do
+                brew bump-cask-pr --no-audit --no-browse --version="$version" "$cask"
+              done
