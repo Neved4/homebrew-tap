@@ -104,7 +104,6 @@ class Puncia < Formula
   end
 
   test do
-    desired_output = "Panthera(P.)uncia [v#{version}]"
-    assert_includes shell_output("#{bin}/puncia --version", 1).strip, desired_output
+    assert_equal "puncia #{version}", shell_output("#{bin}/puncia --version").strip
   end
 end
