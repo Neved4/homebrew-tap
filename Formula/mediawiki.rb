@@ -52,7 +52,7 @@ class Mediawiki < Formula
   post_install_steps do
     unless_path_exists "mediawiki/index.php", base: :var do
       mkdir_p "mediawiki", base: :var
-      copy "*", "mediawiki", source_base: :pkgshare, target_base: :var, source_glob: true
+      run "/bin/sh", args: ["-c", "cp -R '{{pkgshare}}'/.' '{{var}}/mediawiki/'"]
     end
   end
 
