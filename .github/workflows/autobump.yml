@@ -15,7 +15,7 @@ jobs:
       HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
     steps:
       - name: Update Homebrew formula
-        uses: dawidd6/action-homebrew-bump-formula@a0e064e08103c01870c6d1b05168d1b726aab119 # v8
+        uses: dawidd6/action-homebrew-bump-formula@dfa608a07e77f96aa34d0c8a35fc62efa863417f # Homebrew 5 compatibility
         with:
           token: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
           user_name: Neved4
@@ -26,7 +26,7 @@ jobs:
           livecheck: true
       - name: Update Homebrew cask
         if: ${{ always() }}
-        uses: eugenesvk/action-homebrew-bump-cask@6b066272df85c164f0496877387ecc8d989a194f # v3.8.6
+        uses: eugenesvk/action-homebrew-bump-cask@4fd4f2a0dd6b9b4faeb02b790bbab185c5ebf79d # Homebrew 5 compatibility
         with:
           token: ${{ secrets.HOMEBREW_TAP_TOKEN || github.token }}
           tap: Neved4/homebrew-tap
