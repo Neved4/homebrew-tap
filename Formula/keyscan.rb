@@ -18,7 +18,6 @@ class Keyscan < Formula
       "0.0.0-#{date}-#{sha}"
     end
   end
-
   bottle do
     root_url "https://github.com/Neved4/homebrew-tap/releases/download/keyscan-0.0.0-20260818-675ff83"
     sha256 cellar: :any_skip_relocation, arm64_tahoe:  "8cf791142c052d512236f63a411adc08a51ce42b536037033a31448b7da58657"

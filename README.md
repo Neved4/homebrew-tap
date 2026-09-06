@@ -20,6 +20,21 @@ To install any of the formulas below:
     brew tap Neved4/tap
     ```
 
+   Homebrew 6.0 and newer require explicit trust for third-party taps. If
+   you intend to use this tap by short formula or cask names, trust it once:
+
+    ```sh
+    brew trust --tap Neved4/tap
+    ```
+
+   For a one-off install, prefer the fully qualified name instead. This lets
+   Homebrew trust only the requested item:
+
+    ```sh
+    brew install Neved4/tap/<name>
+    brew install --cask Neved4/tap/<name>
+    ```
+
 2. Install a formula:
 
     ```sh
