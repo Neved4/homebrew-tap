@@ -4,8 +4,7 @@ cask "chromium@api" do
   version :latest
   sha256 :no_check
 
-  url "https://download-chromium.appspot.com/dl/#{arch}?type=snapshots",
-      verified: "download-chromium.appspot.com/dl/"
+  url "https://download-chromium.appspot.com/dl/#{arch}?type=snapshots"
   name "Chromium"
   desc "Free and open-source web browser"
   homepage "https://www.chromium.org/Home"
@@ -27,18 +26,10 @@ cask "chromium@api" do
     EOS
   end
 
-  postflight do
-    dict = {
-      "LSEnvironment.GOOGLE_API_KEY"               => "AIzaSyCkfPOPZXDKNn8hhgu3JrA62wIgC93d44k",
-      "LSEnvironment.GOOGLE_DEFAULT_CLIENT_ID"     => "811574891467.apps.googleusercontent.com",
-      "LSEnvironment.GOOGLE_DEFAULT_CLIENT_SECRET" => "kdloedMFGdGla2P1zacGjAQh",
-    }
-
-    plist = "#{appdir}/Chromium.app/Contents/Info.plist"
-
-    dict.each do |key, val|
-      system("plutil -replace #{key} -string '#{val}' #{plist}")
-    end
+  postflight_steps do
+    run "/usr/bin/plutil", args: ["-replace", "LSEnvironment.GOOGLE_API_KEY", "-string", "AIzaSyCkfPOPZXDKNn8hhgu3JrA62wIgC93d44k", "#{appdir}/Chromium.app/Contents/Info.plist"]
+    run "/usr/bin/plutil", args: ["-replace", "LSEnvironment.GOOGLE_DEFAULT_CLIENT_ID", "-string", "811574891467.apps.googleusercontent.com", "#{appdir}/Chromium.app/Contents/Info.plist"]
+    run "/usr/bin/plutil", args: ["-replace", "LSEnvironment.GOOGLE_DEFAULT_CLIENT_SECRET", "-string", "kdloedMFGdGla2P1zacGjAQh", "#{appdir}/Chromium.app/Contents/Info.plist"]
   end
 
   zap trash: [

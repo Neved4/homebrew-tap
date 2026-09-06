@@ -4,8 +4,7 @@ cask "burp-browser" do
   version "2026.3.3"
   sha256 :no_check
 
-  url "https://portswigger-cdn.net/burp/releases/download?product=community&version=#{version}&type=#{arch}",
-      verified: "portswigger-cdn.net/burp/releases/"
+  url "https://portswigger-cdn.net/burp/releases/download?product=community&version=#{version}&type=#{arch}"
   name "Burp Chromium"
   desc "Chromium browser extracted from Burp Suite Community Edition"
   homepage "https://portswigger.net/burp/"

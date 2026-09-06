@@ -2,8 +2,7 @@ cask "freewrite" do
   version :latest
   sha256 :no_check
 
-  url "https://github.com/farzaa/freewrite/releases/download/prod/freewrite.zip",
-      verified: "github.com/farzaa/freewrite/"
+  url "https://github.com/farzaa/freewrite/releases/download/prod/freewrite.zip"
   name "freewrite"
   desc "Write continuously without distraction"
   homepage "https://freewrite.io/"
