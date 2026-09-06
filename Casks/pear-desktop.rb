@@ -1,4 +1,4 @@
-cask "pear" do
+cask "pear-desktop" do
   arch arm: "-arm64"
 
   version "3.12.0"
