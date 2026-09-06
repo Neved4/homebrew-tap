@@ -19,7 +19,6 @@ class Keyscan < Formula
     end
   end
 
-
   depends_on "python@3.13"
 
   resource "anyio" do
