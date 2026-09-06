@@ -4,8 +4,8 @@ class Keyscan < Formula
   desc "GitHub Gists scanner with LLM-based classification"
   homepage "https://github.com/kevinMEH/keyscan"
   url "https://github.com/kevinMEH/keyscan/archive/refs/heads/main.tar.gz"
-  version "0.0.0-20260507-c309a27"
-  sha256 "04d6cfa6ef4f1b637b0395b87dc049d3c81f040a2f5eb3d884d5fa6ebb6eed31"
+  version "0.0.0-20260818-675ff83"
+  sha256 "ac6ad623c4254cabd771eee65506e30262ed734d22faf235fa21792e2f7749ec"
   license "GPL-3.0-only"
 
   livecheck do
@@ -19,11 +19,6 @@ class Keyscan < Formula
     end
   end
 
-  bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/keyscan-0.0.0-20260507-c309a27"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "c1093f5de5b0641788e5e3df8694e408a3da69a12751cc59c01a275b8cf55fae"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "df73ff34582412d217d4335419d8a74df1fb03c689a915aefe1a095124b45791"
-  end
 
   depends_on "python@3.13"
 
