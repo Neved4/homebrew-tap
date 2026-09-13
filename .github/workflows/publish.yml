@@ -45,6 +45,11 @@ jobs:
           PULL_REQUEST: ${{ github.event.pull_request.number }}
         run: brew pr-pull --debug --retain-bottle-dir --tap="$GITHUB_REPOSITORY" "$PULL_REQUEST"
 
+      - name: Generate build provenance
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: "${{ steps.pull_bottles.outputs.bottle_path }}/*.tar.gz"
+
       - name: Push commits
         uses: Homebrew/actions/git-try-push@f8d4222eb633e65c2a0157383cf80861fc7fae7f # 2026.09.07.1
         with:
