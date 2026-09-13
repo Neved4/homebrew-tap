@@ -6,6 +6,12 @@ on:
       - main
   pull_request:
 
+permissions: {}
+
+defaults:
+  run:
+    shell: bash -xeuo pipefail {0}
+
 jobs:
   test-bot:
     strategy:
@@ -20,7 +26,9 @@ jobs:
 
       - name: Set up Homebrew
         id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@df4b09108a1de9d6f995fe68f302b3f68bd6d2ef # 2026-07-17, no tagged version
+        uses: Homebrew/actions/setup-homebrew@f8d4222eb633e65c2a0157383cf80861fc7fae7f # 2026.09.07.1
+        with:
+          token: ${{ secrets.HOMEBREW_TAP_TOKEN }}
 
       - name: Trust tap
         run: brew trust --tap Neved4/homebrew-tap
@@ -33,16 +41,6 @@ jobs:
           restore-keys: ${{ matrix.os }}-rubygems-
 
       - run: brew test-bot --only-cleanup-before
-
-      # Homebrew's Linux sandbox requires bwrap on PATH before brew pr-pull runs brew doctor.
-      # The sysctls enable the rootless user namespaces that bwrap needs to create the sandbox.
-      - name: Set up Homebrew Linux sandbox
-        if: runner.os == 'Linux'
-        run: |
-          brew install bubblewrap
-          sudo sysctl -w kernel.unprivileged_userns_clone=1
-          sudo sysctl -w user.max_user_namespaces=28633
-          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 || true
 
       - run: brew test-bot --only-setup
 
