@@ -240,7 +240,7 @@ To install any of the formulas below:
   Audible library manager.
 - [lofloccus] [<kbd>c++</kbd>] [<kbd>go</kbd>]
   Sync Floccus bookmarks to a local folder or any cloud service.
-- [nfov@tmp] [<kbd>typescript</kbd>]
+- [nfov] [<kbd>typescript</kbd>]
   ASCII / ANSI art viewer.
 - [pear] [<kbd>typescript</kbd>]
   YouTube Music desktop app.
@@ -289,7 +289,7 @@ To install any of the formulas below:
 [mediawiki]: https://www.mediawiki.org/
 [mixed-content-scan]: https://github.com/bramus/mixed-content-scan
 [nbtscan]: https://github.com/resurrecting-open-source-projects/nbtscan
-[nfov@tmp]: https://nrlquaker.github.io/nfov/
+[nfov]: https://nrlquaker.github.io/nfov/
 [observatory]: https://github.com/mozilla/observatory-cli
 [packer-tmp]: https://www.packer.io/
 [pd-urlfinder]: https://github.com/projectdiscovery/urlfinder
