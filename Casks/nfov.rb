@@ -1,4 +1,4 @@
-cask "nfov-tmp" do
+cask "nfov" do
   version "1.3.1"
   sha256 "a23ef50f243453cec012a2f2a754fb44b3c5e997a0703feabda53235274c1e69"
 
@@ -6,8 +6,6 @@ cask "nfov-tmp" do
   name "nfov"
   desc "ASCII / ANSI art viewer"
   homepage "https://github.com/nrlquaker/nfov"
-
-  deprecate! date: "2026-07-21", because: :discontinued
 
   depends_on :macos
 
