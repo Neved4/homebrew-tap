@@ -7,6 +7,10 @@ on:
 
 permissions: {}
 
+concurrency:
+  group: bottle-publishing
+  cancel-in-progress: false
+
 defaults:
   run:
     shell: bash -xeuo pipefail {0}
@@ -15,6 +19,7 @@ jobs:
   pr-pull:
     if: contains(github.event.pull_request.labels.*.name, 'pr-pull')
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       actions: read
       attestations: write
@@ -33,6 +38,31 @@ jobs:
       - name: Set up git
         id: git_setup
         uses: Homebrew/actions/git-user-config@f8d4222eb633e65c2a0157383cf80861fc7fae7f # 2026.09.07.1
+
+      - name: Make release bottle uploads safe to retry
+        run: |
+          python3 - "$(brew --repository)/Library/Homebrew/github_releases.rb" <<'PYTHON'
+          from pathlib import Path
+          import sys
+
+          path = Path(sys.argv[1])
+          source = path.read_text()
+          original = '        GitHub.upload_release_asset user, repo, release["id"], local_file:, remote_file:'
+          replacement = '''        asset = release.fetch("assets").find { |entry| entry.fetch("name") == remote_file }
+                  if asset
+                    digest = "sha256:#{Digest::SHA256.file(local_file).hexdigest}"
+                    unless asset["state"] == "uploaded" && asset["digest"] == digest
+                      odie "Existing release asset #{remote_file} does not match the bottle being published"
+                    end
+                    ohai "Reusing verified release asset #{remote_file}"
+                    next
+                  end
+                  GitHub.upload_release_asset user, repo, release["id"], local_file:, remote_file:'''
+          if source.count(original) != 1:
+              raise SystemExit("Homebrew release uploader changed; refusing to patch")
+          source = source.replace('require "json"', 'require "json"\nrequire "digest"', 1)
+          path.write_text(source.replace(original, replacement, 1))
+          PYTHON
 
       - name: Pull bottles
         id: pull_bottles
