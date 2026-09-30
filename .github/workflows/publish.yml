@@ -83,8 +83,10 @@ jobs:
       - name: Push commits
         uses: Homebrew/actions/git-try-push@f8d4222eb633e65c2a0157383cf80861fc7fae7f # 2026.09.07.1
         with:
-          token: ${{ github.token }}
+          # setup-homebrew already configures the tap token globally.
+          # A local Authorization header would duplicate the global header.
           branch: main
+          tries: 3
 
       - name: Delete branch
         if: github.event.pull_request.head.repo.fork == false
