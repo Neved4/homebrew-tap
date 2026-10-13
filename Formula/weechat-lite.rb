@@ -36,6 +36,7 @@ class WeechatLite < Formula
     tcltk = Formula["tcl-tk"]
     args = %W[
       -DENABLE_ENCHANT=OFF
+      -DENABLE_SPELL=OFF
       -DENABLE_GUILE=OFF
       -DENABLE_JAVASCRIPT=OFF
       -DENABLE_MAN=ON
