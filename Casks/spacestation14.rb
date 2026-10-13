@@ -1,6 +1,6 @@
 cask "spacestation14" do
-  version "0.40.1"
-  sha256 "8b1e987ba1f619046b1aadd699518b08e24ba7966d4c208a7551fd8565af81dd"
+  version "0.40.2"
+  sha256 "d0de678667938de8171391b15d43ded89744692e5a7e09231a0544490d87ff36"
 
   url "https://github.com/space-wizards/SS14.Launcher/releases/download/v#{version}/SS14.Launcher_macOS.zip"
   name "Space Station 14 Launcher"
