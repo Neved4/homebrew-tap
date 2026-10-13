@@ -1,8 +1,8 @@
 class Mediawiki < Formula
   desc "Wiki software package written in PHP"
   homepage "https://www.mediawiki.org/"
-  url "https://releases.wikimedia.org/mediawiki/1.45/mediawiki-1.45.4.tar.gz"
-  sha256 "cb7c824468eb5a511a72f08e6291d09dc8af12e0a0ffdc2532ee3f76bb0cad7c"
+  url "https://releases.wikimedia.org/mediawiki/1.45/mediawiki-1.45.6.tar.gz"
+  sha256 "d7120634cb03de6910c56f47f064ae60575599aed529794db543a38f60108a9e"
   license "GPL-2.0-or-later"
 
   livecheck do
