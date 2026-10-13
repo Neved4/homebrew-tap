@@ -6,6 +6,12 @@ class WeechatLite < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/weechat/weechat.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/weechat-lite-4.10.1"
+    sha256 arm64_tahoe:  "17277629d43812444668dfd5739197a178ee88bc17312e93018b87d4b98b0739"
+    sha256 x86_64_linux: "7aac86f378e5b9a2e92d958513640afcda239b28bfed1c304b6f204e6366d229"
+  end
+
   depends_on "asciidoctor" => :build
   depends_on "cmake" => :build
   depends_on "gettext" => :build # for xgettext
