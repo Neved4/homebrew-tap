@@ -1,8 +1,8 @@
 class CodacyAnalysisCli < Formula
   desc "Codacy static analysis CLI"
   homepage "https://github.com/codacy/codacy-analysis-cli"
-  url "https://github.com/codacy/codacy-analysis-cli/releases/download/7.10.1/codacy-analysis-cli-assembly.jar"
-  sha256 "a4f3aa089ef1d46c7c2c6741fbff864f8f7a119f3752a4a26ad4af727eeb6ec4"
+  url "https://github.com/codacy/codacy-analysis-cli/releases/download/7.10.3/codacy-analysis-cli-assembly.jar"
+  sha256 "6b7bc83d8d1adc2b7269a83bb1cb7a2a8f447e13f5836e46ba62478a78870cf4"
   license "AGPL-3.0-only"
 
   livecheck do
