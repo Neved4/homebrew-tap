@@ -37,6 +37,7 @@ class WeechatLite < Formula
     args = %W[
       -DENABLE_ENCHANT=OFF
       -DENABLE_SPELL=OFF
+      -DPython_EXECUTABLE=#{formula_opt_bin("python@3.14")}/python3.14
       -DENABLE_GUILE=OFF
       -DENABLE_JAVASCRIPT=OFF
       -DENABLE_MAN=ON
