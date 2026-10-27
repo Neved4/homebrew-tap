@@ -9,9 +9,9 @@ class Puncia < Formula
   head "https://github.com/ARPSyndicate/puncia.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/puncia-0.40"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "97334e6631e48f6c3fb73c34078a3a5bfe7d142a2454cfda4a77dc2d2714dc2c"
-    sha256 cellar: :any,                 x86_64_linux: "350a301b416202d31d3cb326be5629277d9e3e897c72b15138a5e576ce0927be"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/puncia-0.42"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "f212e1f49e766a647c92bbf2499c827c3d24e5685c9ea59c474735a21a17d685"
+    sha256 cellar: :any,                 x86_64_linux: "c6ab7108e839e98490d9e64ee8ca33e8ba002f1f3beed30ee0b626c016277531"
   end
 
   depends_on "python@3.13"
