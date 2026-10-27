@@ -18,9 +18,9 @@ class CodacyAnalysisCli < Formula
   end
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/codacy-analysis-cli-7.10.3"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "6f197e421489d11ff80b5b01f9d3599f907ad76e550894b5da9dcc6c1ebc57d2"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "24eff64ff9067e69827ab27e04b67ab630dc2083e867e7674cfd62bf41835fb1"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/codacy-analysis-cli-7.10.5"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "9e8fc82915188e177bd744a6b6126861118d5293c8564bd5be9deac1842a75e6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f16455ef24de84b4a85bbadd6b0f1cc5d32c51e3ad2f5a7effff78c02ad2cf58"
   end
 
   depends_on "openjdk"
