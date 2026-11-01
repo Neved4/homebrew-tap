@@ -7,9 +7,9 @@ class WeechatLite < Formula
   head "https://github.com/weechat/weechat.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/Neved4/homebrew-tap/releases/download/weechat-lite-4.10.1"
-    sha256 arm64_tahoe:  "17277629d43812444668dfd5739197a178ee88bc17312e93018b87d4b98b0739"
-    sha256 x86_64_linux: "7aac86f378e5b9a2e92d958513640afcda239b28bfed1c304b6f204e6366d229"
+    root_url "https://github.com/Neved4/homebrew-tap/releases/download/weechat-lite-4.10.2"
+    sha256 arm64_tahoe:  "ad58b05175be4461fdd1d3fb49de2998a5e760364852b046125fb643a70649cd"
+    sha256 x86_64_linux: "f2b40c4714c79629b0b7f9d366a080a99d531cfb11a2fd434cee37171c72e40f"
   end
 
   depends_on "asciidoctor" => :build
