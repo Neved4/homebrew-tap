@@ -1,8 +1,8 @@
 class WeechatLite < Formula
   desc "Extensible IRC client without spell checking"
   homepage "https://weechat.org/"
-  url "https://weechat.org/files/src/weechat-4.10.1.tar.xz"
-  sha256 "b8744c6f5dc5543062791f563e0516dbc96a36161e1a03c468b3b7dcc8be5aff"
+  url "https://weechat.org/files/src/weechat-4.10.2.tar.xz"
+  sha256 "6fcd05f350c808a4206d6951af36a9eec11b145b6a1a2a8a2b29dd3502e07022"
   license "GPL-3.0-or-later"
   head "https://github.com/weechat/weechat.git", branch: "main"
 
